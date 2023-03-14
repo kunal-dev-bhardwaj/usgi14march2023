@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.denzcoskun:ImageSlideshow:0.0.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/52958bb491ad977a11af23d27fdfae66/jetified-ImageSlideshow-0.0.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/52958bb491ad977a11af23d27fdfae66/jetified-ImageSlideshow-0.0.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/52958bb491ad977a11af23d27fdfae66/jetified-ImageSlideshow-0.0.5/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9a914888be158676516258727f63a7bc/jetified-ImageSlideshow-0.0.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9a914888be158676516258727f63a7bc/jetified-ImageSlideshow-0.0.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9a914888be158676516258727f63a7bc/jetified-ImageSlideshow-0.0.5/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f08af3b59c34e3ed0590dbcb1046b202/jetified-ImageSlideshow-0.0.5/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f08af3b59c34e3ed0590dbcb1046b202/jetified-ImageSlideshow-0.0.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f08af3b59c34e3ed0590dbcb1046b202/jetified-ImageSlideshow-0.0.5/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.denzcoskun/ImageSlideshow/0.0.5/a47636291b9b3a665a27a5824aabb749a2f9ae01/ImageSlideshow-0.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

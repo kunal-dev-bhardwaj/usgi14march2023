@@ -1,0 +1,1144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".metaapp.health.CalculatorPlanDetails">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_45sdp">
+
+                <ImageView
+                    android:id="@+id/img_plan_back"
+                    android:layout_gravity="center"
+                    android:src="@drawable/back_motor_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/TxtViewVehicleType"
+                    android:text="Details"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/red_new"/>
+            </LinearLayout>
+
+            <!-- <ImageView
+                 android:layout_width="30dp"
+                 android:layout_height="30dp"
+                 android:layout_alignParentEnd="true"
+                 android:layout_centerInParent="true"
+                 android:layout_gravity="center"
+                 android:layout_marginRight="@dimen/_10sdp"
+                 android:src="@drawable/calls" />-->
+        </RelativeLayout>
+
+        <View
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:background="#CBEFE2E2"
+            android:elevation="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For Adult 2"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="16dp"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/black"
+                android:textFontWeight="700"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select the Sum Insured"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textSize="11dp"
+                    android:textColor="@color/black"
+                    android:textFontWeight="500"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textFontWeight="500"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textSize="11dp"
+                    android:textColor="#CC0022"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/GenderLiner"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/grey_border"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:paddingStart="@dimen/_15sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/black"
+                    android:id="@+id/edt_amount_spinner"
+                    android:background="@null"
+                    android:clickable="false"
+                    android:textColorHint="@color/black"
+                    android:focusable="false"
+                    android:text="10 Lakh"
+                    android:cursorVisible="false"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </EditText>
+
+
+                <LinearLayout
+                    android:id="@+id/amount_dropdown"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:gravity="end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:layout_gravity="end"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        app:tint="@color/black">
+                    </ImageView>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select the Sum Insured"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textSize="11dp"
+                    android:textColor="@color/black"
+                    android:textFontWeight="500"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textFontWeight="500"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textSize="11dp"
+                    android:textColor="#CC0022"/>
+            </LinearLayout>
+
+
+
+            <HorizontalScrollView
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+
+                        android:id="@+id/relativeComp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:orientation="vertical"
+                        android:layout_width="@dimen/_220sdp"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/red_border_line"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:id="@+id/BookNowLinerComprehensive"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/red_btn_bg"
+                                android:orientation="horizontal"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:text="Silver"
+                                    android:textColor="@color/white"
+                                    android:textFontWeight="700"
+                                    android:textSize="21dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/_2sdp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:text="Premium Amount"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/_5sdp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/grey_border"
+                                    android:orientation="vertical"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="5dp">
+
+                                    <RadioButton
+                                        android:id="@+id/btnradio_silver_1year"
+                                        android:layout_width="75dp"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@drawable/radiobutton"
+                                        android:checked="true"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:text="1 Year"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_8sdp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:text="Premium "
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:text="Premium "
+                                        android:textColor="@color/black"
+                                        android:textSize="8dp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:id="@+id/silver_1year"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:text="0.00"
+                                        android:paddingBottom="10dp"
+                                        android:textColor="@color/black"
+                                        android:textFontWeight="600"
+                                        android:textSize="11dp">
+
+                                    </TextView>
+
+                                    <!--  <TextView
+                                          android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:layout_gravity="center"
+                                          android:layout_marginBottom="5dp"
+                                          android:fontFamily="@font/montserrat_semibold"
+                                          android:gravity="center"
+                                          android:text=""
+                                          android:textColor="#707070"
+                                          android:textFontWeight="400"
+                                          android:textSize="9dp"/>-->
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/grey_border"
+                                    android:orientation="vertical"
+
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="5dp">
+
+                                    <RadioButton
+                                        android:id="@+id/btnradio_silver_2year"
+                                        android:layout_width="75dp"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@drawable/radiobutton"
+                                        android:checked="false"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:text="2 Year"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_8sdp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:text="Premium "
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:text="Premium "
+                                        android:textColor="@color/black"
+                                        android:textSize="8dp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:id="@+id/silver_2year"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:gravity="center"
+                                        android:text="0.00"
+                                        android:layout_marginTop="10dp"
+                                        android:paddingBottom="10dp"
+                                        android:textColor="@color/black"
+                                        android:textFontWeight="600"
+                                        android:textSize="11dp">
+
+                                    </TextView>
+
+                                    <!--  <TextView
+                                          android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:layout_gravity="center"
+                                          android:layout_marginBottom="5dp"
+                                          android:fontFamily="@font/montserrat_semibold"
+                                          android:gravity="center"
+                                          android:text=""
+                                          android:textColor="#707070"
+                                          android:textFontWeight="400"
+                                          android:textSize="9dp"/>-->
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/grey_border"
+                                    android:orientation="vertical"
+
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="5dp">
+
+                                    <RadioButton
+                                        android:id="@+id/btnradio_silver_3year"
+                                        android:layout_width="75dp"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@drawable/radiobutton"
+                                        android:checked="false"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:text="3 Year"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_8sdp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:text="Premium "
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:text="Premium "
+                                        android:textColor="@color/black"
+                                        android:textSize="8dp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:id="@+id/silver_3year"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:gravity="center"
+                                        android:text="0.00"
+                                        android:paddingBottom="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:textColor="@color/black"
+                                        android:textFontWeight="600"
+                                        android:textSize="11dp">
+
+                                    </TextView>
+
+                                    <!--  <TextView
+                                          android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:layout_gravity="center"
+                                          android:layout_marginBottom="5dp"
+                                          android:fontFamily="@font/montserrat_semibold"
+                                          android:gravity="center"
+                                          android:text=""
+                                          android:textColor="#707070"
+                                          android:textFontWeight="400"
+                                          android:textSize="9dp"/>
+-->
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:orientation="vertical"
+                        android:layout_width="@dimen/_220sdp"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/red_border_line"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/red_btn_bg"
+                                android:orientation="horizontal"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:text="Gold"
+                                    android:textColor="@color/white"
+                                    android:textFontWeight="700"
+                                    android:textSize="21dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/_2sdp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:text="Premium Amount"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/_5sdp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/grey_border"
+                                    android:orientation="vertical"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="5dp">
+
+                                    <RadioButton
+                                        android:id="@+id/btnradio_gold_1year"
+                                        android:layout_width="75dp"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@drawable/radiobutton"
+                                        android:checked="true"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:text="1 Year"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_8sdp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:text="Premium "
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:text="Premium "
+                                        android:textColor="@color/black"
+                                        android:textSize="8dp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:id="@+id/gold_1year"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:gravity="center"
+                                        android:text="0.00"
+                                        android:layout_marginTop="10dp"
+                                        android:paddingBottom="10dp"
+                                        android:textColor="@color/black"
+                                        android:textFontWeight="600"
+                                        android:textSize="11dp">
+
+                                    </TextView>
+
+                                    <!--  <TextView
+                                          android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:layout_gravity="center"
+                                          android:layout_marginBottom="5dp"
+                                          android:fontFamily="@font/montserrat_semibold"
+                                          android:gravity="center"
+                                          android:text=""
+                                          android:textColor="#707070"
+                                          android:textFontWeight="400"
+                                          android:textSize="9dp"/>-->
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/grey_border"
+                                    android:orientation="vertical"
+
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="5dp">
+
+                                    <RadioButton
+                                        android:id="@+id/btnradio_gold_2year"
+                                        android:layout_width="75dp"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@drawable/radiobutton"
+                                        android:checked="false"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:text="2 Year"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_8sdp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:text="Premium "
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:text="Premium "
+                                        android:textColor="@color/black"
+                                        android:textSize="8dp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:id="@+id/gold_2year"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:gravity="center"
+                                        android:text="0.00"
+                                        android:paddingBottom="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:textColor="@color/black"
+                                        android:textFontWeight="600"
+                                        android:textSize="11dp">
+
+                                    </TextView>
+
+                                    <!--   <TextView
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:layout_gravity="center"
+                                           android:layout_marginBottom="5dp"
+                                           android:fontFamily="@font/montserrat_semibold"
+                                           android:gravity="center"
+                                           android:text=""
+                                           android:textColor="#707070"
+                                           android:textFontWeight="400"
+                                           android:textSize="9dp"/>-->
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/grey_border"
+                                    android:orientation="vertical"
+
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="5dp">
+
+                                    <RadioButton
+                                        android:id="@+id/btnradio_gold_3year"
+                                        android:layout_width="75dp"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@drawable/radiobutton"
+                                        android:checked="false"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:text="3 Year"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_8sdp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:text="Premium "
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:text="Premium "
+                                        android:textColor="@color/black"
+                                        android:textSize="8dp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:id="@+id/gold_3year"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:gravity="center"
+                                        android:text="0.00"
+                                        android:paddingBottom="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:textColor="@color/black"
+                                        android:textFontWeight="600"
+                                        android:textSize="11dp">
+
+                                    </TextView>
+                                    <!--
+
+                                                                            <TextView
+                                                                                android:layout_width="wrap_content"
+                                                                                android:layout_height="wrap_content"
+                                                                                android:layout_gravity="center"
+                                                                                android:layout_marginBottom="5dp"
+                                                                                android:fontFamily="@font/montserrat_semibold"
+                                                                                android:gravity="center"
+                                                                                android:text=""
+                                                                                android:textColor="#707070"
+                                                                                android:textFontWeight="400"
+                                                                                android:textSize="9dp"/>
+                                    -->
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:orientation="vertical"
+                        android:layout_width="@dimen/_220sdp"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/red_border_line"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/red_btn_bg"
+                                android:orientation="horizontal"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:text="Diamond"
+                                    android:textColor="@color/white"
+                                    android:textFontWeight="700"
+                                    android:textSize="21dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/_2sdp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:text="Premium Amount"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp">
+
+                                </TextView>
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/_5sdp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/grey_border"
+                                    android:orientation="vertical"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="5dp">
+
+                                    <RadioButton
+                                        android:id="@+id/btnradio_diamond_1year"
+                                        android:layout_width="75dp"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@drawable/radiobutton"
+                                        android:checked="true"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:text="1 Year"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_8sdp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:text="Premium "
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:text="Premium "
+                                        android:textColor="@color/black"
+                                        android:textSize="8dp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:id="@+id/diamond_1year"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:gravity="center"
+                                        android:text="0.00"
+                                        android:paddingBottom="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:textColor="@color/black"
+                                        android:textFontWeight="600"
+                                        android:textSize="11dp">
+
+                                    </TextView>
+
+                                    <!--  <TextView
+                                          android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:layout_gravity="center"
+                                          android:layout_marginBottom="5dp"
+                                          android:fontFamily="@font/montserrat_semibold"
+                                          android:gravity="center"
+                                          android:text=""
+                                          android:textColor="#707070"
+                                          android:textFontWeight="400"
+                                          android:textSize="9dp"/>
+-->
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/grey_border"
+                                    android:orientation="vertical"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="5dp">
+
+                                    <RadioButton
+                                        android:id="@+id/btnradio_diamond_2year"
+                                        android:layout_width="75dp"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@drawable/radiobutton"
+                                        android:checked="false"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:text="2 Year"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_8sdp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:text="Premium "
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:text="Premium "
+                                        android:textColor="@color/black"
+                                        android:textSize="8dp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:id="@+id/diamond_2year"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:gravity="center"
+                                        android:text="0.00"
+                                        android:paddingBottom="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:textColor="@color/black"
+                                        android:textFontWeight="600"
+                                        android:textSize="11dp">
+
+                                    </TextView>
+                                    <!--
+                                                                            <TextView
+                                                                                android:layout_width="wrap_content"
+                                                                                android:layout_height="wrap_content"
+                                                                                android:layout_gravity="center"
+                                                                                android:layout_marginBottom="5dp"
+                                                                                android:fontFamily="@font/montserrat_semibold"
+                                                                                android:gravity="center"
+                                                                                android:text=""
+                                                                                android:textColor="#707070"
+                                                                                android:textFontWeight="400"
+                                                                                android:textSize="9dp"/>-->
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/grey_border"
+                                    android:orientation="vertical"
+
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="5dp">
+
+                                    <RadioButton
+                                        android:id="@+id/btnradio_diamond_3year"
+                                        android:layout_width="75dp"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@drawable/radiobutton"
+                                        android:checked="false"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:text="3 Year"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_8sdp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:text="Premium "
+                                        android:textColor="@color/black"
+                                        android:textSize="10dp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:text="Premium "
+                                        android:textColor="@color/black"
+                                        android:textSize="8dp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:id="@+id/diamond_3year"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:gravity="center"
+                                        android:text="0.00"
+                                        android:paddingBottom="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:textColor="@color/black"
+                                        android:textFontWeight="600"
+                                        android:textSize="11dp">
+
+                                    </TextView>
+
+                                    <!-- <TextView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:layout_gravity="center"
+                                         android:layout_marginBottom="5dp"
+                                         android:fontFamily="@font/montserrat_semibold"
+                                         android:gravity="center"
+                                         android:text=""
+                                         android:textColor="#707070"
+                                         android:textFontWeight="400"
+                                         android:textSize="9dp"/>
+-->
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_35sdp"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+        <Button
+            android:fontFamily="@font/montserrat_semibold"
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/red_btn_bg"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/txt_color"
+            android:textSize="@dimen/_15sdp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@drawable/viewback1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header_part2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bookedback"
+        android:padding="@dimen/_8sdp">
+
+        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Descriptions of Accident/Loss"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/header_image_part2"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/drop_down3" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/contant_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_8sdp"
+        android:orientation="vertical"
+        android:weightSum="7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center|left"
+                android:layout_weight="0.5"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp">
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:typeface="serif" />
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:id="@+id/loss_intim_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/lightblack"
+                    android:hint="Select date"
+                    android:textSize="@dimen/_11sdp"
+                    android:typeface="serif" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/grey" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center|left"
+                android:layout_weight="0.5"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp">
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:typeface="serif" />
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:id="@+id/loss_intim_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/lightblack"
+                    android:hint="Select time"
+                    android:textSize="@dimen/_11sdp"
+                    android:typeface="serif" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/grey" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center|left"
+            android:padding="@dimen/_5sdp">
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Place"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:typeface="serif" />
+            <EditText
+                android:id="@+id/intim_place"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/profile_editbox_bg"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_11sdp"
+                android:typeface="serif" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/grey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center|left"
+            android:padding="@dimen/_5sdp">
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:typeface="serif" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+                    <EditText
+                        android:id="@+id/loss_intim_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/lightblack"
+                        android:inputType="textVisiblePassword|textMultiLine"
+                        android:background="@drawable/profile_editbox_bg"
+                        android:imeOptions="actionDone"
+                        android:textSize="@dimen/_11sdp"
+                        android:typeface="serif" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/claim_loss_select_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.10"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:src="@drawable/pin" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/grey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center|left"
+                android:layout_weight="0.5"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp">
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:typeface="serif" />
+                <EditText
+                    android:id="@+id/loss_intim_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/profile_editbox_bg"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_11sdp"
+                    android:typeface="serif" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/grey" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center|left"
+                android:layout_weight="0.5"
+                android:paddingStart="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp">
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="State"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:typeface="serif" />
+                <EditText
+                    android:id="@+id/loss_intim_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/lightblack"
+                    android:inputType="text"
+                    android:background="@drawable/profile_editbox_bg"
+                    android:imeOptions="actionDone"
+                    android:textSize="@dimen/_11sdp"
+                    android:typeface="serif" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/grey" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center|left"
+            android:padding="@dimen/_5sdp">
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type of Loss"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:typeface="serif" />
+            <Spinner
+                android:id="@+id/intim_spiner_loss_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_1sdp"
+                android:typeface="serif" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/grey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp"
+            android:weightSum="1">
+
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.40"
+                android:text="Police Notify"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_12sdp"
+                android:typeface="serif" />
+
+
+            <RadioGroup
+                android:id="@+id/loss_intim_radio_group"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".60"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:buttonTint="@color/lightblack"
+                    android:id="@+id/loss_intim_police_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:buttonTint="@color/lightblack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:checked="true"
+                    android:text="No" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center|left"
+            android:padding="@dimen/_5sdp">
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:typeface="serif" />
+            <EditText
+                android:id="@+id/loss_intim_description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/profile_editbox_bg"
+                android:imeOptions="actionDone"
+                android:textColor="@color/lightblack"
+                android:maxLines="5"
+                android:lines="5"
+                android:gravity="top|left"
+                android:nestedScrollingEnabled="true"
+                android:textSize="@dimen/_11sdp"
+                android:typeface="serif" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/grey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/loss_image_part"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_4sdp">
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Vehicle Images"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_12sdp"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_90sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/doc_background"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/capture_font"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/camera_icon2" />
+
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:text="Front"
+                                android:textStyle="bold"
+                                android:textColor="@color/lightblack"
+                                android:typeface="serif" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/doc_background"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/capture_back"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/camera_icon2" />
+
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:text="Back"
+                                android:textColor="@color/lightblack"
+                                android:textStyle="bold"
+                                android:typeface="serif" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/doc_background"
+                            android:orientation="vertical">
+
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:text="Left"
+                                android:textColor="@color/lightblack"
+                                android:textStyle="bold"
+                                android:typeface="serif" />
+
+                            <ImageView
+                                android:id="@+id/capture_left"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/camera_icon2" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_90sdp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/doc_background"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/capture_right"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/camera_icon2" />
+
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:gravity="center"
+                                    android:text="Right"
+                                    android:textColor="@color/lightblack"
+                                    android:textStyle="bold"
+                                    android:typeface="serif" />
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/doc_background"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/capture_engine"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/camera_icon2" />
+
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:gravity="center"
+                                    android:text="Engine"
+                                    android:textColor="@color/lightblack"
+                                    android:textStyle="bold"
+                                    android:typeface="serif" />
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/doc_background"
+                                android:orientation="vertical">
+
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:gravity="center"
+                                    android:text="Others"
+                                    android:textColor="@color/lightblack"
+                                    android:textStyle="bold"
+                                    android:typeface="serif" />
+
+                                <ImageView
+                                    android:id="@+id/capture_other"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:background="@drawable/camera_icon2" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

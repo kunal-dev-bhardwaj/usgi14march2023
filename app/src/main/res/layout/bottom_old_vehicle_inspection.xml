@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_marginTop="@dimen/_30sdp"
+        android:id="@+id/li"
+        android:background="@drawable/white_background_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/black"
+            android:text="Schedule Inspection For Your Vehicle"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <View
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/background"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </View>
+
+
+        <ScrollView
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Prefer Date for Vehicle Inspection"
+                        android:textColor="@color/black"
+                        android:textSize="10dp">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/white_grey"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edt_registration_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:focusable="false"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:hint="DD/MM/YYY"
+                            android:paddingStart="15dp"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="3.5"
+                            android:src="@drawable/motor_dob_img">
+
+                        </ImageView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="Prefer Time for Vehicle Inspection"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/white_grey"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:hint="HH:MM..AM/PM"
+                                android:inputType="text"
+                                android:paddingStart="15dp"
+                                android:textColor="@color/lightblack"
+                                android:textColorHint="@color/lightblack"
+                                android:textSize="12dp" />
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="3.5"
+                                android:src="@drawable/clock_icon">
+
+                            </ImageView>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="Address Where the Vehicle will be Available for Inspection"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_135sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/white_grey"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:hint="Enter Your Address"
+                                android:inputType="text"
+                                android:paddingStart="15dp"
+                                android:textColor="@color/lightblack"
+                                android:textColorHint="@color/lightblack"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="Pincode"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/white_grey"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:hint="Enter Pincode"
+                                android:inputType="text"
+                                android:paddingStart="15dp"
+                                android:textColor="@color/lightblack"
+                                android:textColorHint="@color/lightblack"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="State"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/white_grey"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:hint="Select Your State"
+                                android:inputType="text"
+                                android:paddingStart="15dp"
+                                android:textColor="@color/lightblack"
+                                android:textColorHint="@color/lightblack"
+                                android:textSize="12dp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="3.5"
+                                android:src="@drawable/spinner_drop_down"
+                                app:tint="@color/black">
+
+                            </ImageView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="City"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/white_grey"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:hint="Select Your City"
+                                android:inputType="text"
+                                android:paddingStart="15dp"
+                                android:textColor="@color/lightblack"
+                                android:textColorHint="@color/lightblack"
+                                android:textSize="12dp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="3.5"
+                                android:src="@drawable/spinner_drop_down"
+                                app:tint="@color/black">
+
+                            </ImageView>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:id="@+id/continue_button"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/red_btn_bg"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:gravity="center"
+                            android:text="Continue "
+                            android:textColor="@color/white"
+                            android:textSize="16dp">
+
+                        </TextView>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/li"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-49dp"
+        android:src="@drawable/cross_motor_icon">
+
+    </ImageView>
+
+</RelativeLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@drawable/viewback1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header_part7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bookedback"
+        android:padding="@dimen/_8sdp">
+
+        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Declaration"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+
+            />
+
+        <ImageView
+            android:id="@+id/header_image_part7"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/drop_down2" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/contant_layout_7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="I undersigned, legal beneficiary of the above claim, declare that all details mentioned in this form are true and I agree to the mode of payment
+against the particular claim number mentioned above.
+."
+            android:textColor="@color/lightblack"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_8sdp"
+            android:orientation="vertical"
+            android:weightSum="7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:paddingStart="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_4sdp"
+                android:weightSum="1">
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.60"
+                    android:text="Place"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_12sdp"
+                    android:typeface="serif" />
+
+
+                <EditText
+                    android:id="@+id/intim_declear_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:background="@drawable/profile_editbox_bg"
+                    android:hint="Enter Place"
+                    android:inputType="textVisiblePassword"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_11sdp"
+                    android:typeface="serif" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:weightSum="1">
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.60"
+                    android:text="Date"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_12sdp"
+                    android:typeface="serif" />
+
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:id="@+id/intim_declear_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:background="@drawable/profile_editbox_bg"
+                    android:hint="Select Date"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_11sdp"
+                    android:typeface="serif" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/_4sdp">
+
+                <CheckBox
+                    android:id="@+id/claim_intim_declear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/lightblack"
+                    android:text="I Agree to the Terms of Agreement." />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mm"
+    tools:context=".metaapp.motor.activities.motor_policies.Private_car_vehicle_details">
+    <LinearLayout
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp">
+        <ImageView
+            android:id="@+id/AddDetailsBack"
+            android:layout_gravity="center"
+            android:src="@drawable/back_motor_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Add Details"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textColor="@color/red_new"/>
+    </LinearLayout>
+    <View
+        android:layout_marginRight="@dimen/_2sdp"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:background="#CBEFE2E2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp">
+
+    </View>
+    <LinearLayout
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/llHeadRoundImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/universal_logo" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical">
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_18sdp"
+                android:text="Universal Sompo" />
+
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_14sdp"
+                android:text="General Insurance Co. Ltd." />
+
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_14sdp"
+                android:text="Suraksha, Hamesha Aapke Saath" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15sdp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:text="Motor Insurance"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:textColor="@color/colorPrimary"/>
+    <View
+        android:visibility="gone"
+        android:background="@color/lightblack"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+    </View>
+    <ScrollView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageBike"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="@dimen/_100sdp">
+
+            </ImageView>
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/ModelNameTxt"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13sdp"
+                        android:text="Vehicle Brand"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textColor="@color/black"/>
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13sdp"
+                        android:text="*"
+                        android:visibility="visible"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:textColor="@color/red"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/gender_liner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/vehicleBrand"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Select Vehicle Brand"
+                        android:paddingStart="15dp"
+                        android:layout_weight="1"
+                        android:editable="false"
+                        android:cursorVisible="false"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/_12sdp" />
+                    <ImageView
+                        android:id="@+id/vehicleBrandSpinner"
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_weight="3.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/black">
+
+                    </ImageView>
+                    <Spinner
+                        android:visibility="gone"
+                        android:scrollbars="none"
+                        android:layout_weight="0.2"
+                        android:id="@+id/manufacture_year_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@drawable/dropdown_icon"
+                        android:textSize="@dimen/_12sdp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13sdp"
+                        android:text="@string/vehicle_model"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textColor="@color/black"/>
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13sdp"
+                        android:text="*"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:textColor="@color/red"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/white_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/vehicle_model"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/vehicle_model"
+                        android:inputType="text"
+                        android:paddingStart="15dp"
+                        android:editable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:clickable="false"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/_12sdp" />
+                    <ImageView
+                        android:id="@+id/vehicleModelSpinner"
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_weight="3.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/black">
+
+                    </ImageView>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13sdp"
+                        android:text="@string/vehicle_registration_date"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textColor="@color/black"/>
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13sdp"
+                        android:text="*"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:textColor="@color/red"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edt_registration_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="DD/MM/YYY"
+                        android:paddingStart="15dp"
+                        android:focusable="false"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/_12sdp" />
+                    <ImageView
+                        android:id="@+id/calendarIcon"
+                        android:layout_gravity="center"
+                        android:src="@drawable/motor_dob_img"
+                        android:layout_weight="3.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </ImageView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13sdp"
+                        android:text="@string/manufacture_name"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:textColor="@color/black"/>
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13sdp"
+                        android:text="*"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:textColor="@color/red"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/white_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/StateEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:inputType="text"
+                        android:hint="Select State"
+                        android:paddingStart="15dp"
+                        android:layout_weight="1"
+                        android:editable="false"
+                        android:cursorVisible="false"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <ImageView
+                        android:id="@+id/stateNameSpinner"
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_weight="3.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/black">
+
+                    </ImageView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13sdp"
+                        android:text="@string/RTO_location_zone"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textColor="@color/black"/>
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13sdp"
+                        android:text="*"
+                        android:visibility="visible"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:textColor="@color/red"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/white_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/rto_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Select RTO"
+                        android:inputType="text"
+                        android:layout_weight="1"
+                        android:paddingStart="15dp"
+                        android:editable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:clickable="false"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/_12sdp" />
+                    <ImageView
+                        android:id="@+id/rtoLocationSpinner"
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_weight="3.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/black">
+
+                    </ImageView>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:visibility="gone"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:id="@+id/btn_previous"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/red_btn_bg"
+                    android:text="@string/previous"
+                    android:textAllCaps="false"
+                    android:textColor="@color/txt_color"
+                    android:textSize="@dimen/txt_size"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/red_btn_bg"
+                    android:gravity="center"
+                    android:text="@string/Confirm"
+                    android:textAllCaps="false"
+                    android:textColor="@color/txt_color"
+                    android:textSize="@dimen/txt_size"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

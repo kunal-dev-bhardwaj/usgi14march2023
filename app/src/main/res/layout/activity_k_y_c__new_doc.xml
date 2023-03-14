@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".metaapp.motor.activities.KYC_New_doc">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:id="@+id/camera_llayout"
+        android:layout_width="@dimen/_175sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_toRightOf="@+id/rel1"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_white_background"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:background="@drawable/camera_icon2" />
+
+        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_1sdp"
+            android:layout_toRightOf="@+id/ivgal1"
+            android:gravity="center"
+            android:text="Camera"
+            android:textColor="@color/lightblack"
+            android:textSize="@dimen/_14sdp"
+            android:typeface="serif" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rel3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/curved_rectangle_dashed">
+
+        <ImageView
+            android:id="@+id/img_uploaded_preview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:scaleType="fitXY"
+            android:background="@drawable/image_preview"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

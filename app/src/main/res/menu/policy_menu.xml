@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:visible="true"
+        android:id="@+id/health_menu_changer"
+        android:orderInCategory="100"
+        android:title="notify"
+        app:actionLayout="@layout/health_menu_changer"
+        app:showAsAction="always" />
+
+    <item
+        android:visible="false"
+
+        android:id="@+id/noitify_menu"
+        android:orderInCategory="100"
+        android:title="notify"
+        app:actionLayout="@layout/notification_menu"
+        app:showAsAction="always" />
+
+
+    <item
+        android:visible="false"
+        android:id="@+id/tips_menu"
+        android:menuCategory="secondary"
+        android:orderInCategory="1"
+        android:title="Tips"
+        app:actionLayout="@layout/bulb_menu"
+        app:showAsAction="always" />
+
+</menu>

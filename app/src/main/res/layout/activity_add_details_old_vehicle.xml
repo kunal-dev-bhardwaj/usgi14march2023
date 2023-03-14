@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".metaapp.motor.activities.motor_renewal.Add_Details_Old_Vehicle">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp">
+            <ImageView
+                android:id="@+id/backAddDetails"
+                android:layout_gravity="center"
+                android:src="@drawable/back_motor_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/TxtViewVehicleType"
+                android:text="Two-Wheeler Insurance"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/red_new"/>
+        </LinearLayout>
+        <View
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:background="#CBEFE2E2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp">
+        </View>
+
+        <ScrollView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:text="Do you already have an insurance for this vehicle "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/red_new"
+                            android:text="*"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <RadioButton
+                            android:text="Yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/YesPreviousRadio"
+                            android:checked="false"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textSize="@dimen/_14sdp"
+                            android:textColor="@color/black"
+                            android:buttonTint="@drawable/radiobutton"
+                            />
+                        <RadioButton
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textSize="@dimen/_14sdp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="@dimen/_40sdp"
+                            android:text="No"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/NoPreviousRadio"
+                            android:checked="false"
+                            android:buttonTint="@drawable/radiobutton"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/PreviousPolicyLiner"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:fontFamily="@font/montserrat_medium"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/black"
+                                android:text="Enter Previous Policy Number "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                            <TextView
+                                android:fontFamily="@font/montserrat_medium"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/red_new"
+                                android:text="*"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/white_grey"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:orientation="horizontal">
+                            <EditText
+                                android:id="@+id/policyNumberEdit"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:hint="Enter Policy Number"
+                                android:paddingStart="15dp"
+                                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ/1234567890-"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textColor="@color/lightblack"
+                                android:textColorHint="@color/lightblack"
+                                android:textSize="12dp"  />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:fontFamily="@font/montserrat_medium"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/black"
+                                android:text="Insurance Company Name "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                            <TextView
+                                android:fontFamily="@font/montserrat_medium"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/red_new"
+                                android:text="*"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/white_grey"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:orientation="horizontal">
+                            <Spinner
+                                android:visibility="visible"
+                                android:id="@+id/SpinnerCompany"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp">
+                            </Spinner>
+
+                            <LinearLayout
+                                android:id="@+id/CompanyLiner"
+                                android:visibility="gone"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp">
+                                <EditText
+                                    android:visibility="visible"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:cursorVisible="false"
+                                    android:editable="false"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:id="@+id/CompanyNameEdit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:hint="Select Company"
+                                    android:inputType="text"
+                                    android:lines="3"
+                                    android:paddingStart="15dp"
+                                    android:layout_weight="0.6"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:textColor="@color/lightblack"
+                                    android:textColorHint="@color/lightblack"
+                                    android:textSize="12dp" />
+
+                                <LinearLayout
+                                    android:visibility="visible"
+                                    android:id="@+id/companySpinner"
+                                    android:gravity="end"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="3.5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_marginEnd="@dimen/_20sdp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/spinner_drop_down"
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="@dimen/_20sdp"
+                                        app:tint="@color/black">
+
+                                    </ImageView>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:text="Previous Policy Type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <LinearLayout
+
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp">
+
+
+                            <RadioButton
+                                android:layout_weight="1.4"
+                                android:text="Comprehensive"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ComprehensivePolicyRadio"
+                                android:checked="true"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/black"
+                                android:buttonTint="@drawable/radiobutton"
+                                />
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/black"
+                                android:text="Own damage (standalone)"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/OwnDamagedRadio"
+                                android:checked="false"
+                                android:buttonTint="@drawable/radiobutton"
+                                />
+
+                            <RadioButton
+                                android:visibility="gone"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/black"
+                                android:text="Liability"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/LiabilityRadio"
+                                android:checked="false"
+                                android:buttonTint="@drawable/radiobutton"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:visibility="visible"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_weight="1.1"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:id="@+id/PreviousEndDateTxt"
+                                        android:fontFamily="@font/montserrat_medium"
+                                        android:textSize="@dimen/_9sdp"
+                                        android:textColor="@color/black"
+                                        android:text="Previous policy end date"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                    </TextView>
+                                    <TextView
+                                        android:fontFamily="@font/montserrat_medium"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:textColor="@color/red_new"
+                                        android:text="*"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                    </TextView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/white_grey"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_35sdp"
+                                    android:orientation="horizontal">
+
+                                    <EditText
+                                        android:editable="false"
+                                        android:cursorVisible="false"
+                                        android:id="@+id/endDateEdit"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent"
+                                        android:hint="Policy end date"
+                                        android:drawableEnd="@drawable/calender_cal"
+                                        android:layout_marginEnd="15dp"
+                                        android:paddingStart="15dp"
+                                        android:focusable="false"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:textColor="@color/lightblack"
+                                        android:textColorHint="@color/lightblack"
+                                        android:textSize="12dp" />
+
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+                            <!--                       <LinearLayout-->
+                            <!--                           android:visibility="gone"-->
+                            <!--                           android:id="@+id/SAODLiner"-->
+                            <!--                           android:layout_marginStart="@dimen/_5sdp"-->
+                            <!--                           android:layout_weight="1"-->
+                            <!--                           android:orientation="vertical"-->
+                            <!--                           android:layout_width="match_parent"-->
+                            <!--                           android:layout_height="wrap_content">-->
+                            <!--                           <LinearLayout-->
+                            <!--                               android:layout_width="match_parent"-->
+                            <!--                               android:layout_height="wrap_content">-->
+                            <!--                               <TextView-->
+                            <!--                                   android:fontFamily="@font/montserrat_medium"-->
+                            <!--                                   android:textSize="@dimen/_9sdp"-->
+                            <!--                                   android:textColor="@color/black"-->
+                            <!--                                   android:text="TP policy effective to date"-->
+                            <!--                                   android:layout_width="wrap_content"-->
+                            <!--                                   android:layout_height="wrap_content">-->
+
+                            <!--                               </TextView>-->
+                            <!--                               <TextView-->
+                            <!--                                   android:fontFamily="@font/montserrat_medium"-->
+                            <!--                                   android:textSize="@dimen/_10sdp"-->
+                            <!--                                   android:textColor="@color/red_new"-->
+                            <!--                                   android:text="*"-->
+                            <!--                                   android:layout_width="match_parent"-->
+                            <!--                                   android:layout_height="wrap_content">-->
+
+                            <!--                               </TextView>-->
+                            <!--                           </LinearLayout>-->
+
+                            <!--                           <LinearLayout-->
+                            <!--                               android:layout_marginStart="@dimen/_5sdp"-->
+                            <!--                               android:layout_marginTop="10dp"-->
+                            <!--                               android:background="@drawable/white_grey"-->
+                            <!--                               android:layout_width="match_parent"-->
+                            <!--                               android:layout_height="@dimen/_35sdp"-->
+                            <!--                               android:orientation="horizontal">-->
+                            <!--                               <EditText-->
+                            <!--                                   android:id="@+id/TpEndDateEdit"-->
+                            <!--                                   android:focusable="false"-->
+                            <!--                                   android:hint="Effective to date"-->
+                            <!--                                   android:editable="false"-->
+                            <!--                                   android:cursorVisible="false"-->
+                            <!--                                   android:layout_width="match_parent"-->
+                            <!--                                   android:layout_height="match_parent"-->
+                            <!--                                   android:background="@android:color/transparent"-->
+                            <!--                                   android:paddingStart="15dp"-->
+                            <!--                                   android:layout_weight="1"-->
+                            <!--                                   android:fontFamily="@font/montserrat_regular"-->
+                            <!--                                   android:textColor="@color/lightblack"-->
+                            <!--                                   android:textColorHint="@color/lightblack"-->
+                            <!--                                   android:textSize="12dp"  />-->
+
+                            <!--                           </LinearLayout>-->
+                            <!--                       </LinearLayout>-->
+                            <LinearLayout
+                                android:visibility="visible"
+                                android:id="@+id/SAODLiner"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:fontFamily="@font/montserrat_medium"
+                                        android:textSize="@dimen/_9sdp"
+                                        android:textColor="@color/black"
+                                        android:text="TP policy effective from date"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                    </TextView>
+                                    <TextView
+                                        android:fontFamily="@font/montserrat_medium"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:textColor="@color/red_new"
+                                        android:text="*"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                    </TextView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/white_grey"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_35sdp"
+                                    android:orientation="horizontal">
+                                    <EditText
+                                        android:id="@+id/TpEndDateEdit"
+                                        android:focusable="false"
+                                        android:hint="Effective from date"
+                                        android:editable="false"
+                                        android:cursorVisible="false"
+                                        android:drawableEnd="@drawable/calender_cal"
+                                        android:layout_marginEnd="15dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent"
+                                        android:paddingStart="15dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:textColor="@color/lightblack"
+                                        android:textColorHint="@color/lightblack"
+                                        android:textSize="12dp"  />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:visibility="visible"
+                            android:id="@+id/SAODLinerEffective"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:textSize="@dimen/_9sdp"
+                                    android:textColor="@color/black"
+                                    android:text="TP policy effective to date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+                                <TextView
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/red_new"
+                                    android:text="*"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/white_grey"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:orientation="horizontal">
+                                <EditText
+                                    android:id="@+id/TpFromDateEdit"
+                                    android:focusable="false"
+                                    android:editable="false"
+                                    android:hint="Effective to date"
+                                    android:cursorVisible="false"
+                                    android:layout_width="match_parent"
+                                    android:layout_marginEnd="15dp"
+                                    android:layout_height="match_parent"
+                                    android:drawableEnd="@drawable/calender_cal"
+                                    android:background="@android:color/transparent"
+                                    android:paddingStart="15dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:textColor="@color/lightblack"
+                                    android:textColorHint="@color/lightblack"
+                                    android:textSize="12dp"  />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <!--                        <LinearLayout-->
+                        <!--                            android:visibility="gone"-->
+                        <!--                            android:id="@+id/SAODLinerEffective"-->
+                        <!--                            android:layout_marginTop="@dimen/_2sdp"-->
+                        <!--                            android:layout_weight="1"-->
+                        <!--                            android:orientation="vertical"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content">-->
+                        <!--                            <LinearLayout-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="wrap_content">-->
+                        <!--                                <TextView-->
+                        <!--                                    android:fontFamily="@font/montserrat_medium"-->
+                        <!--                                    android:textSize="@dimen/_9sdp"-->
+                        <!--                                    android:textColor="@color/black"-->
+                        <!--                                    android:text="TP policy effective from date"-->
+                        <!--                                    android:layout_width="wrap_content"-->
+                        <!--                                    android:layout_height="wrap_content">-->
+
+                        <!--                                </TextView>-->
+                        <!--                                <TextView-->
+                        <!--                                    android:fontFamily="@font/montserrat_medium"-->
+                        <!--                                    android:textSize="@dimen/_10sdp"-->
+                        <!--                                    android:textColor="@color/red_new"-->
+                        <!--                                    android:text="*"-->
+                        <!--                                    android:layout_width="match_parent"-->
+                        <!--                                    android:layout_height="wrap_content">-->
+
+                        <!--                                </TextView>-->
+                        <!--                            </LinearLayout>-->
+
+                        <!--                            <LinearLayout-->
+                        <!--                                android:layout_marginBottom="@dimen/_5sdp"-->
+                        <!--                                android:layout_marginTop="10dp"-->
+                        <!--                                android:background="@drawable/white_grey"-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="@dimen/_35sdp"-->
+                        <!--                                android:orientation="horizontal">-->
+                        <!--                                <EditText-->
+                        <!--                                    android:id="@+id/TpFromDateEdit"-->
+                        <!--                                    android:focusable="false"-->
+                        <!--                                    android:editable="false"-->
+                        <!--                                    android:hint="Effective from date"-->
+                        <!--                                    android:cursorVisible="false"-->
+                        <!--                                    android:layout_width="match_parent"-->
+                        <!--                                    android:layout_height="match_parent"-->
+                        <!--                                    android:background="@android:color/transparent"-->
+                        <!--                                    android:paddingStart="15dp"-->
+                        <!--                                    android:layout_weight="1"-->
+                        <!--                                    android:fontFamily="@font/montserrat_regular"-->
+                        <!--                                    android:textColor="@color/lightblack"-->
+                        <!--                                    android:textColorHint="@color/lightblack"-->
+                        <!--                                    android:textSize="12dp"  />-->
+
+                        <!--                            </LinearLayout>-->
+                        <!--                        </LinearLayout>-->
+
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:fontFamily="@font/montserrat_medium"
+                                android:textSize="14dp"
+                                android:textColor="@color/black"
+                                android:text="Previous Policy Expiry Date "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                            <TextView
+                                android:fontFamily="@font/montserrat_medium"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/red_new"
+                                android:text="*"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/white_grey"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/SaodEndDateEdit"
+                                android:focusable="false"
+                                android:editable="false"
+                                android:hint="Policy end date"
+                                android:cursorVisible="false"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:paddingStart="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textColor="@color/lightblack"
+                                android:textColorHint="@color/lightblack"
+                                android:textSize="12dp"  />
+                            <LinearLayout
+                                android:id="@+id/EndDateIcon"
+                                android:gravity="end"
+                                android:layout_gravity="end"
+                                android:layout_weight="3.5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_marginEnd="@dimen/_15sdp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/motor_dob_img"
+                                    android:layout_width="@dimen/_30sdp"
+                                    android:layout_height="@dimen/_25sdp">
+                                </ImageView>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@+id/BonusLiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:textSize="14dp"
+                                    android:textColor="@color/black"
+                                    android:text="@string/claim"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+                                <TextView
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/red_new"
+                                    android:text="*"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <RadioButton
+                                    android:text="Yes"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/YesPreviousClaimRadio"
+                                    android:checked="false"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:textSize="@dimen/_14sdp"
+                                    android:textColor="@color/black"
+                                    android:buttonTint="@drawable/radiobutton"
+                                    />
+                                <RadioButton
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:textSize="@dimen/_14sdp"
+                                    android:textColor="@color/black"
+                                    android:layout_marginStart="@dimen/_40sdp"
+                                    android:text="No"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/NoPreviousClaimRadio"
+                                    android:checked="true"
+                                    android:buttonTint="@drawable/radiobutton"
+                                    />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/ClaimLiner"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:textSize="14dp"
+                                    android:textColor="@color/black"
+                                    android:text="Please select applicable - No Claim Bonus "
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+                                <TextView
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/red_new"
+                                    android:text="*"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_marginEnd="@dimen/_12sdp"
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:id="@+id/zeroLiner"
+                                    android:layout_margin="@dimen/_5sdp"
+                                    android:background="@drawable/light_grey_border_"
+                                    android:layout_weight="1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:textSize="14dp"
+                                        android:textColor="@color/new_darker_gray"
+                                        android:text="0%"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </TextView>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/tenLiner"
+                                    android:layout_margin="@dimen/_5sdp"
+                                    android:background="@drawable/light_grey_border_"
+                                    android:layout_weight="1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:textSize="14dp"
+                                        android:textColor="@color/new_darker_gray"
+                                        android:text="20%"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </TextView>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/twentyLiner"
+                                    android:layout_margin="@dimen/_5sdp"
+                                    android:background="@drawable/light_grey_border_"
+                                    android:layout_weight="1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:textSize="14dp"
+                                        android:textColor="@color/new_darker_gray"
+                                        android:text="25%"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </TextView>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginEnd="@dimen/_12sdp"
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:id="@+id/FortyLiner"
+                                    android:layout_margin="@dimen/_5sdp"
+                                    android:background="@drawable/light_grey_border_"
+                                    android:layout_weight="1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:textSize="14dp"
+                                        android:textColor="@color/new_darker_gray"
+                                        android:text="35%"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </TextView>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/fiftyLiner"
+                                    android:layout_margin="@dimen/_5sdp"
+                                    android:background="@drawable/light_grey_border_"
+                                    android:layout_weight="1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:textSize="14dp"
+                                        android:textColor="@color/new_darker_gray"
+                                        android:text="40%"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </TextView>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/sixtyLiner"
+                                    android:layout_margin="@dimen/_5sdp"
+                                    android:background="@drawable/light_grey_border_"
+                                    android:layout_weight="1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_semibold"
+                                        android:textSize="14dp"
+                                        android:textColor="@color/new_darker_gray"
+                                        android:text="50%"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </TextView>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:id="@+id/confirmButton"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/red_btn_bg"
+                        android:text="@string/Confirm"
+                        android:textAllCaps="false"
+                        android:textColor="@color/txt_color"
+                        android:textSize="@dimen/txt_size"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

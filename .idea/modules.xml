@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/metainsuretechworkingusgiandroid32faa70e70d8.iml" filepath="$PROJECT_DIR$/.idea/modules/metainsuretechworkingusgiandroid32faa70e70d8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/metainsuretechworkingusgiandroid32faa70e70d8.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/metainsuretechworkingusgiandroid32faa70e70d8.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/metainsuretechworkingusgiandroid32faa70e70d8.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/metainsuretechworkingusgiandroid32faa70e70d8.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/metainsuretechworkingusgiandroid32faa70e70d8.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/metainsuretechworkingusgiandroid32faa70e70d8.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/metainsuretechworkingusgiandroid32faa70e70d8.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/metainsuretechworkingusgiandroid32faa70e70d8.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/biometric-auth/metainsuretechworkingusgiandroid32faa70e70d8.biometric-auth.iml" filepath="$PROJECT_DIR$/.idea/modules/biometric-auth/metainsuretechworkingusgiandroid32faa70e70d8.biometric-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/biometric-auth/metainsuretechworkingusgiandroid32faa70e70d8.biometric-auth.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/biometric-auth/metainsuretechworkingusgiandroid32faa70e70d8.biometric-auth.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/biometric-auth/metainsuretechworkingusgiandroid32faa70e70d8.biometric-auth.main.iml" filepath="$PROJECT_DIR$/.idea/modules/biometric-auth/metainsuretechworkingusgiandroid32faa70e70d8.biometric-auth.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/biometric-auth/metainsuretechworkingusgiandroid32faa70e70d8.biometric-auth.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/biometric-auth/metainsuretechworkingusgiandroid32faa70e70d8.biometric-auth.unitTest.iml" />
+    </modules>
+  </component>
+</project>

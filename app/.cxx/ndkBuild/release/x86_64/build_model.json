@@ -1,0 +1,60 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8",
+      "sdkFolder": "C:\\Users\\Lenovo\\AppData\\Local\\Android\\Sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\build\\intermediates",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app",
+      "makeFile": "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\src\\main\\jni\\Android.mk",
+      "buildSystem": "NDK_BUILD",
+      "compilerSettingsCacheFolder": "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\.cxx",
+      "cxxFolder": "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\.cxx",
+      "ndkFolder": "C:\\Users\\Lenovo\\AppData\\Local\\Android\\Sdk\\ndk\\22.0.7026061",
+      "ndkVersion": "22.0.7026061",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "release",
+    "soFolder": "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\build\\intermediates\\ndkBuild\\release\\lib",
+    "objFolder": "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\build\\intermediates\\ndkBuild\\release\\obj\\local",
+    "jsonFolder": "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\.cxx\\ndkBuild\\release",
+    "gradleBuildOutputFolder": "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\.cxx\\cxx\\release",
+    "isDebuggableEnabled": false,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "X86_64",
+  "abiPlatformVersion": 23,
+  "cxxBuildFolder": "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\.cxx\\ndkBuild\\release\\x86_64",
+  "jsonFile": "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\.cxx\\ndkBuild\\release\\x86_64\\android_gradle_build.json",
+  "gradleBuildOutputFolder": "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\.cxx\\cxx\\release\\x86_64",
+  "objFolder": "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\build\\intermediates\\ndkBuild\\release\\obj\\local\\x86_64",
+  "buildCommandFile": "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\.cxx\\ndkBuild\\release\\x86_64\\build_command.txt",
+  "buildOutputFile": "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\.cxx\\ndkBuild\\release\\x86_64\\build_output.txt",
+  "modelOutputFile": "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\.cxx\\ndkBuild\\release\\x86_64\\build_model.json",
+  "jsonGenerationLoggingRecordFile": "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\.cxx\\ndkBuild\\release\\x86_64\\json_generation_record.json",
+  "compileCommandsJsonFile": "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\.cxx\\ndkBuild\\release\\x86_64\\compile_commands.json"
+}

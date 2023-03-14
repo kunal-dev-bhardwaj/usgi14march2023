@@ -1,0 +1,14 @@
+[
+  {
+    "level": "INFO",
+    "message": "Start JSON generation. Platform version: 23 min SDK version: armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "JSON \u0027H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\.cxx\\ndkBuild\\release\\armeabi-v7a\\android_gradle_build.json\u0027 was up-to-date"
+  },
+  {
+    "level": "INFO",
+    "message": "JSON generation completed without problems"
+  }
+]

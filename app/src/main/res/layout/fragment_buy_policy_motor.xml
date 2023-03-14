@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".metaapp.motor.fragments.BuyPolicyMotor">
+
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="@dimen/_5sdp"
+        android:maxHeight="@dimen/_40sdp"
+        app:theme="@style/ToolbarIconColor"
+        app:titleTextColor="@android:color/white">
+
+        <LinearLayout
+            android:id="@+id/back"
+
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/black_new_img"
+            android:gravity="center">
+
+            <ImageView
+
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_arrow_back"
+                app:tint="@color/white">
+
+            </ImageView>
+        </LinearLayout>
+
+        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+            android:id="@+id/toolbar_title1"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Buy Policy"
+            android:textColor="@color/lightblack"
+            android:textSize="@dimen/_14sdp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/_10sdp"
+          android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_below="@+id/toolbar1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/buy_tab"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            app:tabMode="scrollable"
+            app:tabIndicator="@null"
+            app:tabGravity="fill"
+            android:visibility="gone"
+            app:tabPaddingStart="25dp"
+            app:tabPaddingEnd="25dp"
+            app:tabBackground="@drawable/tab_color_selector"
+            app:tabSelectedTextColor="@color/new_red"
+            app:tabTextColor="@color/lightblack"
+            app:tabTextAppearance="@style/TabLayoutStyle"
+            />
+
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/OrderItemsPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/OrderItemsLayout"
+            android:layout_centerInParent="true"
+            tools:layout_editor_absoluteX="8dp" />
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:visibility="gone"
+        android:layout_below="@+id/toolbar1"
+        android:layout_above="@+id/liner_txt"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:padding="@dimen/_8sdp"
+                android:background="@drawable/cardview_shadow">
+                <LinearLayout
+
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center|start"
+                    android:orientation="vertical">
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13sdp"
+                        android:text="Buy insurance for your personal vehicle"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginEnd="@dimen/_3sdp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/rounded_corner_buy_button"
+                    android:alpha="0.7">
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:id="@+id/btn_four_wheeler"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="@dimen/_13sdp"
+                        android:typeface="serif" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:padding="@dimen/_8sdp"
+                android:background="@drawable/cardview_shadow">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center|start"
+                    android:orientation="vertical">
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:text="Buy insurance for your two wheeler"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginEnd="@dimen/_3sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:orientation="vertical"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/rounded_corner_buy_button"
+                    android:alpha="0.7">
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:id="@+id/btn_two_wheeler"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="@dimen/_13sdp"
+                        android:typeface="serif" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:padding="@dimen/_8sdp"
+                android:background="@drawable/cardview_shadow">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center|start"
+                    android:orientation="vertical">
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:text="Buy long term insurance for your two wheeler"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginEnd="@dimen/_3sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/rounded_corner_buy_button"
+                    android:alpha="0.7">
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:id="@+id/btn_long_term_two_wheeler"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_38sdp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:text="Long term two Wheeler"
+                        android:textSize="@dimen/_12sdp"
+                        android:typeface="serif" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:padding="@dimen/_8sdp"
+                android:background="@drawable/cardview_shadow">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center|start"
+                    android:orientation="vertical">
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:text="Buy insurance for your commercial vehicle"                android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginEnd="@dimen/_3sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/rounded_corner_buy_button"
+                    android:alpha="0.7">
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:id="@+id/btn_commercial"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:text="Commercial"
+                        android:textSize="@dimen/_13sdp"
+                        android:typeface="serif" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/liner_txt"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:background="@drawable/btn_bg">
+        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+            android:id="@+id/renewal_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/_13sdp"
+            android:typeface="serif"
+            android:text="Renewal Policy"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

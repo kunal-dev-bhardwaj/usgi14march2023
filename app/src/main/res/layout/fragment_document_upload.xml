@@ -1,0 +1,315 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.15"
+                    android:background="@color/lightish_grey"
+                    android:orientation="vertical">
+                    <Spinner
+                        android:id="@+id/doc_autotxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@drawable/dropdown_icon"
+                        android:hint="Document Type"
+                        android:prompt="@string/document_type_head"
+                        android:textSize="@dimen/_12sdp"
+                        android:background="@null" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/image_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.85"
+                    android:gravity="center"
+                    android:background="@color/light_orange"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:src="@drawable/dropdown_icon"
+                        app:tint="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/rc_relative_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_height="@dimen/_35sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.15"
+                        android:background="@color/lightish_grey"
+                        android:orientation="vertical">
+                        <Spinner
+                            android:id="@+id/spn_veh_reg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableRight="@drawable/dropdown_icon"
+                            android:hint="Document Type"
+                            android:prompt="@string/document_type_head"
+                            android:textSize="@dimen/_12sdp"
+                            android:background="@null" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/image_click1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.85"
+                        android:gravity="center"
+                        android:background="@color/light_orange"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="@dimen/_12sdp"
+                            android:layout_height="@dimen/_12sdp"
+                            android:src="@drawable/dropdown_icon"
+                            app:tint="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/poll_doc_rc_llayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight="0.14"
+                        android:weightSum="1">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.15"
+                            android:background="@color/lightish_grey"
+                            android:orientation="vertical">
+                            <Spinner
+                                android:id="@+id/poll_doc_spn_veh_reg"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:drawableRight="@drawable/dropdown_icon"
+                                android:prompt="@string/document_type_head"
+                                android:textSize="@dimen/_12sdp"
+                                android:background="@null" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/image_click2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.85"
+                            android:gravity="center"
+                            android:background="@color/light_orange"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="@dimen/_12sdp"
+                                android:layout_height="@dimen/_12sdp"
+                                android:src="@drawable/dropdown_icon"
+                                app:tint="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/expiry_date_llayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_weight="0.86"
+                        android:gravity="center"
+                        android:background="@android:color/white"
+                        android:paddingStart="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_1sdp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:src="@drawable/calendar"
+                            app:tint="@color/lightblack" />
+
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                            android:id="@+id/expir_date_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="POC Exp Date"
+                            android:textColor="#FF0000"
+                            android:textSize="@dimen/_7sdp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/gallery_llayout"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_below="@+id/tvexmpldoctype"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_white_background"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_4sdp"
+                        android:background="@drawable/gallery_icon2" />
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginStart="@dimen/_1sdp"
+                        android:layout_toRightOf="@+id/ivgal"
+                        android:gravity="center"
+                        android:text="Gallery"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_14sdp"
+                        android:typeface="serif" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/camera_llayout"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_below="@+id/tvexmpldoctype"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/rel1"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_white_background"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_4sdp"
+                        android:background="@drawable/camera_icon2" />
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginStart="@dimen/_1sdp"
+                        android:layout_toRightOf="@+id/ivgal1"
+                        android:gravity="center"
+                        android:text="Camera"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_14sdp"
+                        android:typeface="serif" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:id="@+id/tvprev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel2"
+                android:gravity="center"
+                android:text="Preview"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            -<RelativeLayout
+            android:background="@drawable/curved_rectangle_dashed"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_width="match_parent"
+            android:id="@+id/rel3"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/tvprev">
+
+            <ImageView
+                android:background="@drawable/image_preview"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_width="match_parent"
+                android:id="@+id/img_uploaded_preview"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"/>
+
+        </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel3"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:gravity="right">
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/rounded_with_green_color"
+                    android:foregroundGravity="right"
+                    android:gravity="center"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_14sdp"
+                    android:typeface="serif" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

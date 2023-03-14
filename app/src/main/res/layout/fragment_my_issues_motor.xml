@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/_8sdp"
+        android:id="@+id/issue_list"
+        android:dividerHeight="@dimen/_1sdp"
+        android:divider="@color/grey" />
+
+    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+        android:layout_width="match_parent"
+        android:textSize="@dimen/_20sdp"
+        android:text="@string/no_issue_track"
+        android:gravity="center"
+        android:id="@+id/no_issue_to_track"
+        android:typeface="serif"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "383237442357",
+    "project_id": "usgi-pulz-21462",
+    "storage_bucket": "usgi-pulz-21462.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383237442357:android:d22250aa22760be8ffda7c",
+        "android_client_info": {
+          "package_name": "com.universalsompo.meta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "383237442357-sbp99gk18mtdkp5oqr1var8qvub5ufav.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.universalsompo.meta",
+            "certificate_hash": "f3edb3d27c1174e1e5cc68342a47a5ae50a470b4"
+          }
+        },
+        {
+          "client_id": "383237442357-3n6vo554niv1hf6fslpq4u0n9us9r3jc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFxUhgAKIx1OW40yV9MAmB9nXCiRoiPMs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "383237442357-3n6vo554niv1hf6fslpq4u0n9us9r3jc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

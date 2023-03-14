@@ -1,0 +1,2412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".metaapp.motor.activities.motor_renewal.RenewalVehicleDetails">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp">
+            <ImageView
+                android:id="@+id/vehicleDetailsBack"
+                android:layout_gravity="center"
+                android:src="@drawable/back_motor_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/TxtViewVehicleType"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/red_new"/>
+        </LinearLayout>
+        <View
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:background="#CBEFE2E2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp">
+        </View>
+
+        <ScrollView
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/hand_motor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_gravity="center"
+                                android:textColor="@color/new_red"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:textSize="@dimen/_11sdp"
+                                android:text="Good Going "
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+
+                            </TextView>
+                            <TextView
+                                android:id="@+id/NameVehicleTxt"
+                                android:textColor="@color/new_red"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:textSize="@dimen/_11sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:textColor="@color/new_darker_gray"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="Here you can find all of the information about your plan."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:background="#FFF6ED"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textSize="@dimen/_15sdp"
+                        android:text="CKYC Details"
+                        android:layout_width="@dimen/_155sdp"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="Mobile Number"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:textColor="@color/black"/>
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_13sdp"
+                                android:text="*"
+                                android:layout_marginLeft="@dimen/_2sdp"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:textColor="@color/red"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/white_grey"
+                            android:orientation="horizontal">
+                            <com.hbb20.CountryCodePicker
+                                android:id="@+id/country_cp"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                app:ccpDialog_background="@color/white"
+                                app:ccpDialog_searchEditTextTint="@color/lightblack"
+                                app:ccpDialog_showTitle="true"
+                                app:ccpDialog_textColor="@color/lightblack"
+                                app:ccp_textSize="12dp" />
+                            <EditText
+                                android:id="@+id/edt_phoneNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:hint="@string/phone"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textColor="@color/lightblack"
+                                android:textColorHint="@color/lightblack"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="DOB"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:textColor="@color/black"/>
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_13sdp"
+                                android:text="*"
+                                android:layout_marginLeft="@dimen/_2sdp"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:textColor="@color/red"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/white_grey"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/edt_Dob"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:focusable="false"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:hint="DD-MM-YYY"
+                                android:paddingStart="15dp"
+                                android:textColor="@color/lightblack"
+                                android:textColorHint="@color/lightblack"
+                                android:textSize="12dp" />
+
+                            <ImageView
+                                android:id="@+id/calendarIconSelf_motor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="3.5"
+                                android:src="@drawable/motor_dob_img">
+
+                            </ImageView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="ID Type"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:textColor="@color/black"/>
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_13sdp"
+                                android:text="*"
+                                android:layout_marginLeft="@dimen/_2sdp"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:textColor="@color/red"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linear_IdType"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/white_grey"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:paddingStart="@dimen/_15sdp"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textColor="@color/black"
+                                android:id="@+id/edt_IdType_motor"
+                                android:background="@null"
+                                android:hint="Id Type"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:cursorVisible="false"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </EditText>
+
+
+                            <LinearLayout
+                                android:id="@+id/IDTypeSpinner_motor"
+                                android:layout_gravity="center"
+                                android:layout_weight="4"
+                                android:gravity="end"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:layout_marginEnd="@dimen/_15sdp"
+                                    android:layout_gravity="end"
+                                    android:src="@drawable/spinner_drop_down"
+                                    android:layout_width="@dimen/_25sdp"
+                                    android:layout_height="@dimen/_25sdp"
+                                    app:tint="@color/black">
+                                </ImageView>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <!--                    <LinearLayout-->
+                        <!--                        android:background="@drawable/white_grey"-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="@dimen/_35sdp"-->
+                        <!--                        android:orientation="horizontal"-->
+                        <!--                        android:weightSum="1">-->
+                        <!--                        <LinearLayout-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="match_parent"-->
+                        <!--                            android:layout_weight="0.15"-->
+                        <!--                            android:orientation="vertical">-->
+                        <!--                            <Spinner-->
+                        <!--                                android:id="@+id/IDTypeSpinner_motor"-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="match_parent"-->
+                        <!--                                android:textSize="@dimen/_12sdp" />-->
+                        <!--                        </LinearLayout>-->
+
+                        <!--                    </LinearLayout>-->
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="ID Number"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:textColor="@color/black"/>
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_13sdp"
+                                android:text="*"
+                                android:layout_marginLeft="@dimen/_2sdp"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:textColor="@color/red"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/white_grey"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/IDNumberEdit_motor"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:hint="********"
+                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 / = abcdefghijklmnopqrstuvwxyz"
+                                android:editable="true"
+                                android:inputType="textCapCharacters"
+                                android:paddingStart="15dp"
+                                android:textColor="@color/lightblack"
+                                android:textColorHint="@color/lightblack"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:id="@+id/VerifyButton"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:background="@drawable/red_btn_bg"
+                        android:orientation="vertical"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_38sdp">
+                        <TextView
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textSize="16dp"
+                            android:textColor="@color/white"
+                            android:text="Verify "
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        </TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:background="#FFF6ED"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:text="Owner Details"
+                    android:layout_width="@dimen/_155sdp"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:text="Title "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13sdp"
+                            android:text="*"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:textColor="@color/red"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@drawable/white_grey"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/titleEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:hint="Mrs."
+                            android:inputType="text"
+                            android:paddingStart="15dp"
+                            android:clickable="false"
+                            android:editable="false"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="12dp"  />
+                        <ImageView
+                            android:id="@+id/titleImage"
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_drop_down"
+                            android:layout_weight="3.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/black">
+
+                        </ImageView>
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/FullNameTittle"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:text="Enter Your Full Name "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13sdp"
+                            android:text="*"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:textColor="@color/red"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/white_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/fullNameEdit"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:hint="Enter Your Name"
+                            android:inputType="text"
+                            android:editable="true"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:cursorVisible="false"
+                            android:paddingStart="15dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="12dp"  />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:text="Email ID "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13sdp"
+                            android:text="*"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:textColor="@color/red"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/white_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/emailIDText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:hint="Enter Your Email-ID"
+                            android:inputType="text"
+                            android:paddingStart="15dp"
+                            android:layout_weight="1"
+                            android:editable="false"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:cursorVisible="false"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:text="Registered Address "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13sdp"
+                            android:text="*"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:textColor="@color/red"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/white_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_135sdp"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:id="@+id/registeredAddressEdit"
+                            android:gravity="top"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:hint="Enter Your Registered Address"
+                            android:inputType="textMultiLine"
+                            android:maxLines="6"
+                            android:paddingStart="15dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:text="PinCode "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13sdp"
+                            android:text="*"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:textColor="@color/red"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/white_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/PinCodeEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:hint="Enter Pincode"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:paddingStart="15dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:text="State "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13sdp"
+                            android:text="*"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:textColor="@color/red"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/white_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/StateRegisterAddressEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:hint="Select Your State"
+                            android:paddingStart="15dp"
+                            android:clickable="false"
+                            android:editable="false"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="12dp" />
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/StateRegisterAddressSpinner"
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_drop_down"
+                            android:layout_weight="3.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/black">
+
+                        </ImageView>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:text="City "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13sdp"
+                            android:text="*"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:textColor="@color/red"/>
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/white_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/CityRegisterEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:hint="Select Your City"
+                            android:inputType="text"
+                            android:paddingStart="15dp"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:editable="false"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="12dp" />
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/CityRegisterSpinner"
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_drop_down"
+                            android:layout_weight="3.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/black">
+
+                        </ImageView>
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:button="@drawable/cb_selector"
+                        android:checked="false"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/CheckboxCommunication"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </CheckBox>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textSize="@dimen/_10sdp"
+                        android:textColor="@color/new_darker_gray"
+                        android:text="Communication address same as registered"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:text="Communication Address "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13sdp"
+                            android:text="*"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:textColor="@color/red"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/white_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_135sdp"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:id="@+id/CommunicationAddressEdit"
+                            android:gravity="top"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:hint="Enter Your Communication Address"
+                            android:inputType="textMultiLine"
+                            android:maxLines="6"
+                            android:paddingStart="15dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:text="PinCode "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13sdp"
+                            android:text="*"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:textColor="@color/red"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/white_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/CommunicationPinCodeEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:hint="Enter PinCode"
+                            android:inputType="number"
+                            android:paddingStart="15dp"
+                            android:layout_weight="1"
+                            android:maxLength="6"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:text="State "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13sdp"
+                            android:text="*"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:textColor="@color/red"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/white_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/StateCommunicationEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:hint="Select Your State"
+                            android:paddingStart="15dp"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:editable="false"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="12dp" />
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/StateCommunicationSpinner"
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_drop_down"
+                            android:layout_weight="3.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/black">
+
+                        </ImageView>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:text="City "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13sdp"
+                            android:text="*"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:textColor="@color/red"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/white_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/CityCommunicationEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:hint="Select Your City"
+                            android:inputType="text"
+                            android:paddingStart="15dp"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:editable="false"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="12dp" />
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/CityCommunicationSpinner"
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_drop_down"
+                            android:layout_weight="3.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/black">
+
+                        </ImageView>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:background="#FFF6ED"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:text="Vehicle Details"
+                    android:layout_width="@dimen/_155sdp"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:text="Vehicle Number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13sdp"
+                            android:text="*"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:textColor="@color/red"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/white_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:inputType="textCapCharacters"
+                            android:id="@+id/VehicleNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:hint="Enter Vehicle Number"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890"
+                            android:paddingStart="15dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:text="Chassis Number "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13sdp"
+                            android:text="*"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:textColor="@color/red"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/white_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/VehicleChasisNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:hint="Enter Chassis Number (xxxXXX123) "
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                            android:paddingStart="15dp"
+                            android:layout_weight="1"
+                            android:focusable="true"
+                            android:cursorVisible="true"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:text="Engine Number "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13sdp"
+                            android:text="*"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:textColor="@color/red"/>
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/white_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:orientation="horizontal">
+                        <EditText
+
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                            android:id="@+id/VehicleEngineNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:hint="Enter Engine Number(xxxXXX123) "
+                            android:paddingStart="15dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/PolicyLiner"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:background="#FFF6ED"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textSize="@dimen/_15sdp"
+                        android:text="Previous Policy Details"
+                        android:layout_width="@dimen/_205sdp"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:text="Previous Policy Number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/white_grey"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:orientation="horizontal">
+                            <EditText
+                                android:editable="false"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:cursorVisible="false"
+                                android:id="@+id/policyNumberEdit"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:hint="2815/5626666/03/000"
+                                android:inputType="number"
+                                android:paddingStart="15dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textColor="@color/lightblack"
+                                android:textColorHint="@color/lightblack"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:text="Previous Policy Company"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/white_grey"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:orientation="horizontal">
+                            <EditText
+                                android:editable="false"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:cursorVisible="false"
+                                android:id="@+id/CompanyNameEdit"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:hint="Select Company"
+                                android:inputType="text"
+                                android:paddingStart="15dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textColor="@color/lightblack"
+                                android:textColorHint="@color/lightblack"
+                                android:textSize="12dp" />
+                            <ImageView
+                                android:visibility="gone"
+                                android:id="@+id/CompanyPolicySpinner"
+                                android:layout_gravity="center"
+                                android:src="@drawable/spinner_drop_down"
+                                android:layout_weight="3.5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:tint="@color/black">
+
+                            </ImageView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linear_TpEffectivieFromDate"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:text="TP policy effective from date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/white_grey"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:editable="false"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:cursorVisible="false"
+                                android:id="@+id/TpEffectiveFromDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:hint="DD/MM/YYY"
+                                android:paddingStart="15dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textColor="@color/lightblack"
+                                android:textColorHint="@color/lightblack"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <LinearLayout
+                                android:id="@+id/iconLinear"
+                                android:gravity="end"
+                                android:layout_gravity="end"
+                                android:layout_weight="3.5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_marginEnd="@dimen/_20sdp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/motor_dob_img"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp">
+
+                                </ImageView>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linear_TpEffectivieToDate"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:text="TP policy effective to date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/white_grey"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:editable="false"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:cursorVisible="false"
+                                android:id="@+id/TpEffectiveToDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:hint="DD/MM/YYY"
+                                android:paddingStart="15dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textColor="@color/lightblack"
+                                android:textColorHint="@color/lightblack"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <LinearLayout
+                                android:id="@+id/iconLineer"
+                                android:gravity="end"
+                                android:layout_gravity="end"
+                                android:layout_weight="3.5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_marginEnd="@dimen/_20sdp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/motor_dob_img"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp">
+
+                                </ImageView>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:text="Previous Policy Type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <LinearLayout
+
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp">
+
+
+                            <RadioButton
+                                android:layout_weight="1.4"
+                                android:text="Comprehensive"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/ComprehensivePolicyRadio"
+                                android:checked="true"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/black"
+                                android:buttonTint="@drawable/radiobutton"
+                                />
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/black"
+                                android:text="Own damage (standalone)"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/OwnDamagedRadio"
+                                android:checked="false"
+                                android:buttonTint="@drawable/radiobutton"
+                                />
+
+                            <RadioButton
+                                android:visibility="gone"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/black"
+                                android:text="Liability"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/LiabilityRadio"
+                                android:checked="false"
+                                android:buttonTint="@drawable/radiobutton"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_weight="1.1"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/PreviousEndDateTxt"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/black"
+                                android:text="Previous Policy End Date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/white_grey"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:clickable="false"
+                                    android:cursorVisible="false"
+                                    android:id="@+id/endRegistrationDate"
+                                    android:editable="false"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:hint="Policy end date"
+                                    android:drawableEnd="@drawable/calender_cal"
+                                    android:layout_marginEnd="15dp"
+                                    android:paddingStart="15dp"
+                                    android:focusable="false"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:textColor="@color/lightblack"
+                                    android:textColorHint="@color/lightblack"
+                                    android:textSize="12dp" />
+
+
+                                <LinearLayout
+                                    android:visibility="gone"
+                                    android:id="@+id/iconLiner"
+                                    android:gravity="end"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="3.5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_marginEnd="@dimen/_20sdp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/motor_dob_img"
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="@dimen/_20sdp">
+
+                                    </ImageView>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:visibility="gone"
+                            android:id="@+id/SAODLiner"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:textSize="@dimen/_9sdp"
+                                    android:textColor="@color/black"
+                                    android:text="TP policy effective from date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+                                <TextView
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/red_new"
+                                    android:text="*"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/white_grey"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_35sdp"
+                                android:orientation="horizontal">
+                                <EditText
+                                    android:id="@+id/TpEndDateEdit"
+                                    android:focusable="false"
+                                    android:hint="Effective from date"
+                                    android:editable="false"
+                                    android:cursorVisible="false"
+                                    android:drawableEnd="@drawable/calender_cal"
+                                    android:layout_marginEnd="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:paddingStart="15dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:textColor="@color/lightblack"
+                                    android:textColorHint="@color/lightblack"
+                                    android:textSize="12dp"  />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/SAODLinerEffective"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:fontFamily="@font/montserrat_medium"
+                                android:textSize="@dimen/_9sdp"
+                                android:textColor="@color/black"
+                                android:text="TP policy effective to date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                            <TextView
+                                android:fontFamily="@font/montserrat_medium"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/red_new"
+                                android:text="*"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/white_grey"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:orientation="horizontal">
+                            <EditText
+                                android:id="@+id/TpFromDateEdit"
+                                android:focusable="false"
+                                android:editable="false"
+                                android:hint="Effective to date"
+                                android:cursorVisible="false"
+                                android:layout_width="match_parent"
+                                android:layout_marginEnd="15dp"
+                                android:layout_height="match_parent"
+                                android:drawableEnd="@drawable/calender_cal"
+                                android:background="@android:color/transparent"
+                                android:paddingStart="15dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textColor="@color/lightblack"
+                                android:textColorHint="@color/lightblack"
+                                android:textSize="12dp"  />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/NCBLiner"
+                        android:visibility="gone"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:text="NCB Value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/white_grey"
+                            android:layout_width="@dimen/_150sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:orientation="horizontal">
+                            <EditText
+                                android:id="@+id/NCBValueEditSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:hint="00%"
+                                android:editable="false"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:cursorVisible="false"
+                                android:inputType="text"
+                                android:paddingStart="15dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textColor="@color/lightblack"
+                                android:textColorHint="@color/lightblack"
+                                android:textSize="12dp"  />
+                            <ImageView
+                                android:visibility="gone"
+                                android:id="@+id/NCBValueSpinnerIcon"
+                                android:layout_gravity="center"
+                                android:src="@drawable/spinner_drop_down"
+                                android:layout_weight="3.5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:tint="@color/black">
+
+                            </ImageView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/liabilityLiner"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:textSize="10dp"
+                                android:textColor="@color/black"
+                                android:text="OD Plan Date Range"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:background="@drawable/white_grey"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/ODPlanFromDateEdit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:hint="From DD/MM/YYYY"
+                                    android:paddingStart="15dp"
+                                    android:focusable="false"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:textColor="@color/lightblack"
+                                    android:textColorHint="@color/lightblack"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:visibility="invisible"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:textSize="10dp"
+                                android:textColor="@color/black"
+                                android:text="Previous Policy End Date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:background="@drawable/white_grey"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/ODPlanEndDateEdit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:hint="To DD/MM/YYYY"
+                                    android:paddingStart="15dp"
+                                    android:focusable="false"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:textColor="@color/lightblack"
+                                    android:textColorHint="@color/lightblack"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:textSize="10dp"
+                                android:textColor="@color/black"
+                                android:text="TP Plan Date Range"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:background="@drawable/white_grey"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/TpPlanFromDateEdit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:hint="From DD/MM/YYYY"
+                                    android:paddingStart="15dp"
+                                    android:focusable="false"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:textColor="@color/lightblack"
+                                    android:textColorHint="@color/lightblack"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                android:visibility="invisible"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:textSize="10dp"
+                                android:textColor="@color/black"
+                                android:text="Previous Policy End Date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:background="@drawable/white_grey"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/TpPlanEndDateEdit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:hint="To DD/MM/YYYY"
+                                    android:paddingStart="15dp"
+                                    android:focusable="false"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:textColor="@color/lightblack"
+                                    android:textColorHint="@color/lightblack"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/NomineeLiner"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:background="#FFF6ED"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textSize="@dimen/_15sdp"
+                        android:text="Nominee Details"
+                        android:layout_width="@dimen/_155sdp"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:fontFamily="@font/montserrat_medium"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/black"
+                                android:text="Nominee Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_13sdp"
+                                android:text="*"
+                                android:layout_marginLeft="@dimen/_2sdp"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:textColor="@color/red"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/white_grey"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:orientation="horizontal">
+                            <EditText
+
+                                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                android:id="@+id/NomineeName"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:hint="Enter Nominee Name"
+                                android:paddingStart="15dp"
+                                android:inputType="text"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textColor="@color/lightblack"
+                                android:textColorHint="@color/lightblack"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:visibility="visible"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:fontFamily="@font/montserrat_medium"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/black"
+                                android:text="Nominee Relationship"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_13sdp"
+                                android:text="*"
+                                android:layout_marginLeft="@dimen/_2sdp"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:textColor="@color/red"/>
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:id="@+id/NomineeRelationImage"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/white_grey"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:orientation="horizontal">
+                            <EditText
+                                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                android:id="@+id/NomineeRelationEdit"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:inputType="text"
+                                android:paddingStart="15dp"
+                                android:editable="false"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:cursorVisible="false"
+                                android:hint="Enter Nominee RelationShip"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textColor="@color/lightblack"
+                                android:textColorHint="@color/lightblack"
+                                android:textSize="12dp"  />
+                            <ImageView
+                                android:visibility="visible"
+                                android:layout_gravity="center"
+                                android:src="@drawable/spinner_drop_down"
+                                android:layout_weight="3.5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:tint="@color/black">
+
+                            </ImageView>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginBottom="@dimen/_65sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:id="@+id/CheckedTermCondition"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:button="@drawable/cb_selector"
+                        android:checked="false"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </CheckBox>
+
+                    <TextView
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textSize="@dimen/_10sdp"
+                        android:textColor="@color/new_darker_gray"
+                        android:text="By tapping on continue I declare that I have provided correct details and have read Universal Sompo T &amp; C"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+    <View
+        android:layout_above="@+id/li"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </View>
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/li"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:text="Total Premium "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/TotalPremiumTxt"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textSize="@dimen/_16sdp"
+                        android:textColor="@color/new_red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/ViewDetails"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textSize="12dp"
+                        android:textColor="@color/blue"
+                        android:text="@string/ViewDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_6sdp"
+                android:id="@+id/continue_button"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/red_btn_bg"
+                android:layout_weight="1.5"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp">
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:text="Continue "
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

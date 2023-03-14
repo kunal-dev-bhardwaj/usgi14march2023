@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.yellowmessenger:YMChatbot-Android:v1.7.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/be604092b9a989c816d29167c1809ab8/YMChatbot-Android-v1.7.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/be604092b9a989c816d29167c1809ab8/YMChatbot-Android-v1.7.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/be604092b9a989c816d29167c1809ab8/YMChatbot-Android-v1.7.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.yellowmessenger/YMChatbot-Android/v1.7.0/c5addf306af55d2febd793d4e512c06365cb7eb6/YMChatbot-Android-v1.7.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

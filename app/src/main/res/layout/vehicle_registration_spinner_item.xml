@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.universalsompo.meta.metaapp.utilities.CustomTextView1 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_35sdp"
+    android:background="@drawable/profile_editbox_bg"
+    android:textSize="@dimen/_14sdp"
+    android:text="hgdd"
+    android:textColor="@color/lightblack"
+    android:gravity="center"
+    android:typeface="serif" />

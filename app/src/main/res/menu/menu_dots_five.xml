@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/sendEmail"
+            android:orderInCategory="100"
+            android:icon="@drawable/email_icon"
+            android:title="Email Policy" />
+
+        <!--<item
+            android:id="@+id/downloadPolicy"
+            android:orderInCategory="101"
+            android:title="Download Policy"
+            android:icon="@drawable/download_icon"/>-->
+
+        <item
+            android:id="@+id/fileClaim"
+            android:orderInCategory="102"
+            android:title="Claim"
+            android:icon="@drawable/claim_icon"/>
+    </group>
+</menu>

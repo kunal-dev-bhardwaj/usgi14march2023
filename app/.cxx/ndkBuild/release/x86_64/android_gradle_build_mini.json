@@ -1,0 +1,18 @@
+{
+  "buildFiles": [
+    "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\src\\main\\jni\\Android.mk",
+    "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\src\\main\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\Lenovo\\AppData\\Local\\Android\\Sdk\\ndk\\22.0.7026061\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dH:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dH:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-23 NDK_OUT\u003dH:/inmortal/USGIGit/USGIGit/metainsuretech-workingusgiandroid-32faa70e70d8/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dH:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\build\\intermediates\\ndkBuild\\release\\lib clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\Lenovo\\AppData\\Local\\Android\\Sdk\\ndk\\22.0.7026061\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dH:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dH:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-23 NDK_OUT\u003dH:/inmortal/USGIGit/USGIGit/metainsuretech-workingusgiandroid-32faa70e70d8/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dH:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\build\\intermediates\\ndkBuild\\release\\lib {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "keys-release-x86_64": {
+      "artifactName": "keys",
+      "buildCommand": "C:\\Users\\Lenovo\\AppData\\Local\\Android\\Sdk\\ndk\\22.0.7026061\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dH:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dH:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-23 NDK_OUT\u003dH:/inmortal/USGIGit/USGIGit/metainsuretech-workingusgiandroid-32faa70e70d8/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dH:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\build\\intermediates\\ndkBuild\\release\\lib H:/inmortal/USGIGit/USGIGit/metainsuretech-workingusgiandroid-32faa70e70d8/app/build/intermediates/ndkBuild/release/obj/local/x86_64/libkeys.so",
+      "abi": "x86_64",
+      "output": "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\build\\intermediates\\ndkBuild\\release\\obj\\local\\x86_64\\libkeys.so"
+    }
+  }
+}

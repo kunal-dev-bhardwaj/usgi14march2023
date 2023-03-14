@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".metaapp.motor.activities.motor_renewal.RenewalFinalMotor">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp">
+                <ImageView
+                    android:id="@+id/RenewalSummaryBack"
+                    android:layout_gravity="center"
+                    android:src="@drawable/back_motor_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/RenewalPolicyType"
+                    android:text="Two-Wheeler Insurance"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/red_new"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:background="#CBEFE2E2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp">
+        </View>
+        <ScrollView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:src="@drawable/right_img_green" />
+
+                    <LinearLayout
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textSize="14dp"
+                            android:textColor="@color/new_red"
+                            android:text="The final step is super-quick!"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <TextView
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textSize="14dp"
+                            android:textColor="@color/new_darker_gray"
+                            android:text="Just confirm your details &amp; move to payment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    app:cardElevation="@dimen/_12sdp"
+                    app:cardCornerRadius="@dimen/_12sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:padding="@dimen/_10sdp"
+                            android:background="#FFF6ED"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textSize="14dp"
+                            android:text="Vehicle Details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_1sdp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <LinearLayout
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/new_darker_gray"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:text="Vehicle Number"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/VehicleNumberText"
+                                    android:gravity="end"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="2.5"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/new_darker_gray"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:text="Make Model"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/VehicleModelNumber"
+                                    android:gravity="end"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="2.5"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/new_darker_gray"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:text="Registration Year"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/RegistrationYear"
+                                    android:gravity="end"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="2.5"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_marginBottom="@dimen/_20sdp"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/new_darker_gray"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:text="Insured Declared Value"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/IDVTxt"
+                                    android:gravity="end"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="2"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    app:cardElevation="@dimen/_12sdp"
+                    app:cardCornerRadius="@dimen/_12sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:padding="@dimen/_10sdp"
+                            android:background="#FFF6ED"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textSize="14dp"
+                            android:text="Vehicle Owner Details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/new_darker_gray"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:text="Name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/OwnerNameTxt"
+                                    android:gravity="end"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="3"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/new_darker_gray"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:text="Email Address"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/OwnerGmailId"
+                                    android:gravity="end"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="2.5"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/new_darker_gray"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:text="Mobile Number"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/OwnerMobileNumber"
+                                    android:gravity="end"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="2.5"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/new_darker_gray"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:text="Pincode"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/PinCodeTxt"
+                                    android:gravity="end"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="2.5"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    app:cardElevation="@dimen/_12sdp"
+                    app:cardCornerRadius="@dimen/_12sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:background="@color/pink_light"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/imgeBike"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_70sdp">
+
+                            </ImageView>
+                            <LinearLayout
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/PlanTypeTXT"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/new_red"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+                                <TextView
+                                    android:id="@+id/ModelVehicleTxt"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/new_darker_gray"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+
+                                <TextView
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_gravity="end"
+                                    android:text="@string/UpgradePlan"
+                                    android:id="@+id/UpgradePlanTxt"
+                                    android:textSize="13dp"
+                                    android:textColor="@color/sky_new_blue"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/new_darker_gray"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:text="Policy Start Date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/PolicyStartDate"
+                                    android:gravity="end"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="2"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/new_darker_gray"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:text="Policy Plan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/PlanType"
+                                    android:gravity="end"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="2"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/new_red"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+
+                                <ImageView
+                                    android:visibility="gone"
+                                    android:src="@drawable/motor_edit_icon"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp">
+
+                                </ImageView>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/new_darker_gray"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:text="DV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+
+                                <TextView
+                                    android:gravity="end"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="1"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:text="₹ 3,221"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+                                <ImageView
+                                    android:src="@drawable/motor_edit_icon"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp">
+
+                                </ImageView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/new_darker_gray"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:text="Own Damage Premium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/NetPremium"
+                                    android:gravity="end"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="2"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/new_darker_gray"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:text="Liability Premium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+
+                                <TextView
+                                    android:gravity="end"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="1"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:text="302012"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/new_darker_gray"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:text="Add-Ons"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+
+                                <TextView
+                                    android:gravity="end"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="1"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:text="₹ 800"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+                                <ImageView
+                                    android:src="@drawable/motor_edit_icon"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp">
+
+                                </ImageView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/new_darker_gray"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:text="NCB"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/NCBTxt"
+                                    android:gravity="end"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="1"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/new_darker_gray"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:text="GST (18%)"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/GSTTxt"
+                                    android:gravity="end"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="1"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+                            </LinearLayout>
+                            <View
+                                android:background="@color/darker_gray"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp">
+                            </View>
+                            <LinearLayout
+                                android:layout_marginBottom="@dimen/_20sdp"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/red_new"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:text="Final Premium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/FinalPremium"
+                                    android:gravity="end"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="2"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/new_red"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:button="@drawable/cb_selector"
+                            android:checked="true"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:id="@+id/checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </CheckBox>
+
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:textSize="14dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="Get Policy on WhatsApp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                        </TextView>
+
+                        <ImageView
+                            android:src="@drawable/whats_app"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </ImageView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:button="@drawable/cb_selector"
+                            android:checked="false"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </CheckBox>
+
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:textSize="14dp"
+                            android:textColor="@color/green"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="Go Green "
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/info_icon_motor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </ImageView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="Disclaimer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_marginStart="@dimen/_7sdp"
+                            android:layout_marginEnd="@dimen/_7sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:textColor="@color/new_darker_gray"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="1- Please ensure the Vehicle Details are correct before proceeding. "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <TextView
+                            android:layout_marginStart="@dimen/_7sdp"
+                            android:layout_marginEnd="@dimen/_7sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:textColor="@color/new_darker_gray"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="2- Please ensure your Vehicle Owner Details are correct before proceeding.  "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_30sdp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:id="@+id/CheckBoxTerm"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:button="@drawable/cb_selector"
+                            android:checked="false"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </CheckBox>
+
+                        <TextView
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:textColor="@color/new_darker_gray"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="I accept all the Terms &amp; Conditions related to my policy."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <View
+        android:layout_above="@+id/li"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </View>
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/li"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:text="Total Premium "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/TotalPremium"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:textSize="@dimen/_16sdp"
+                        android:textColor="@color/new_red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textSize="12dp"
+                        android:textColor="@color/blue"
+                        android:text="@string/ViewDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_6sdp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/red_btn_bg"
+                android:layout_weight="1.5"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp">
+                <TextView
+                    android:id="@+id/continue_button"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:text="Continue "
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

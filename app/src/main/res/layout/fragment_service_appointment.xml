@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_llayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/road_side_assistance"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include layout="@layout/rsa_cr_list_dialog" />
+
+    <include layout="@layout/rsa_have_rsa_dialog" />
+
+    <include layout="@layout/fragmnet_sp_list" />
+
+    <include layout="@layout/rsa_form_layout" />
+
+    <include layout="@layout/rsa_call_dialog" />
+
+    <include layout="@layout/list_header" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"/>
+
+
+    <RelativeLayout
+        android:id="@+id/grid_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/fragment_rsa" />
+
+        <include layout="@layout/fragment_accessories_grid" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/fragment_vendor_details"/>
+
+
+</LinearLayout>

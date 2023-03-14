@@ -1,0 +1,2385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".metaapp.health.fragment.buypolicy.aplusbuyjourney.APlusPlanType">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp">
+                <ImageView
+                    android:id="@+id/SummeryBack"
+                    android:layout_gravity="center"
+                    android:src="@drawable/back_motor_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/TxtViewVehicleType"
+                    android:text="Policy Type"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/red_new"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:background="#CBEFE2E2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp">
+
+        </View>
+
+
+        <ScrollView
+            android:layout_marginBottom="@dimen/_1sdp"
+            android:scrollbars="none"
+            android:padding="@dimen/_12sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/black"
+                        android:text="Select the policy type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                    <LinearLayout
+                        android:id="@+id/policyTypeSpinnerLiner"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/white_grey"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:paddingStart="@dimen/_15sdp"
+                            android:textSize="12dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/black"
+                            android:id="@+id/policyType_spinner"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:cursorVisible="false"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </EditText>
+                        <LinearLayout
+                            android:id="@+id/policyTypeDropDown"
+                            android:layout_gravity="center"
+                            android:layout_weight="4"
+                            android:gravity="end"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_marginEnd="@dimen/_15sdp"
+                                android:layout_gravity="end"
+                                android:src="@drawable/spinner_drop_down"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                app:tint="@color/black">
+                            </ImageView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="Family Type"
+                        android:visibility="gone"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp" />
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/LinerFamilyType"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/white_grey"
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:visibility="gone"
+                            android:id="@+id/IndividualTypeEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:hint="0"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:cursorVisible="false"
+                            android:paddingStart="14dp"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+                        <EditText
+                            android:paddingStart="@dimen/_15sdp"
+                            android:textSize="@dimen/_12sdp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/black"
+                            android:id="@+id/FamilyTypeSpinner"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:cursorVisible="false"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </EditText>
+                        <LinearLayout
+                            android:id="@+id/FamilyTypeDropDown"
+                            android:layout_gravity="center"
+                            android:layout_weight="4"
+                            android:gravity="end"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_marginEnd="@dimen/_15sdp"
+                                android:layout_gravity="end"
+                                android:src="@drawable/spinner_drop_down"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                app:tint="@color/black">
+                            </ImageView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/TextLiner"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:textSize="@dimen/_15sdp"
+                                android:textColor="@color/new_darker_gray"
+                                android:text="Who would you like to insure?"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <TextView
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/red_new"
+                                android:text="Note: You can select only six member at a time."
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                        </LinearLayout>
+
+<!--                        Self Start-->
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/FirstAdultLiner"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="horizontal"
+                            android:background="@drawable/new_grey_border"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp">
+
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <CheckBox
+                                    android:layout_marginStart="@dimen/_12sdp"
+                                    android:button="@drawable/check_box_selector"
+                                    android:checked="false"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:id="@+id/CheckBoxSelf"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </CheckBox>
+                                <TextView
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textColor="@color/new_darker_gray"
+                                    android:text="Self"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:background="@drawable/white_grey"
+                                android:id="@+id/SelfAgeLiner"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1.9"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_30sdp">
+
+                                <EditText
+                                    android:gravity="center"
+                                    android:layout_gravity="center"
+                                    android:id="@+id/SelfAgeEditText"
+                                    android:paddingStart="@dimen/_5sdp"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:textColor="@color/black"
+                                    android:background="@null"
+                                    android:hint="Select DOB"
+                                    android:clickable="false"
+                                    android:focusable="false"
+                                    android:cursorVisible="false"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                </EditText>
+
+
+                                <LinearLayout
+                                    android:visibility="gone"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="3"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/spinner_drop_down"
+                                        android:layout_width="@dimen/_25sdp"
+                                        android:layout_height="@dimen/_25sdp"
+                                        app:tint="@color/black">
+                                    </ImageView>
+                                </LinearLayout>
+
+
+
+
+                                <Spinner
+                                    android:visibility="gone"
+                                    android:scrollbars="none"
+                                    android:layout_weight="0.2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textSize="@dimen/_12sdp"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+<!--                        Self End-->
+
+<!--                        Spouse Start-->
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/FloaterLiner"
+                            android:orientation="vertical"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:background="@drawable/new_grey_border"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_50sdp">
+
+                                <LinearLayout
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <CheckBox
+                                        android:layout_marginStart="@dimen/_12sdp"
+                                        android:button="@drawable/check_box_selector"
+                                        android:checked="false"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:id="@+id/CheckBoxSpouse"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                    </CheckBox>
+                                    <TextView
+                                        android:paddingStart="@dimen/_10sdp"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_medium"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textColor="@color/new_darker_gray"
+                                        android:text="Spouse"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:visibility="gone"
+                                    android:background="@drawable/white_grey"
+                                    android:id="@+id/SpouseAgeLiner"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1.9"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp">
+
+                                    <EditText
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:id="@+id/SpouseAgeEditText"
+                                        android:paddingStart="@dimen/_5sdp"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:textColor="@color/black"
+                                        android:background="@null"
+                                        android:clickable="false"
+                                        android:focusable="false"
+                                        android:cursorVisible="false"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </EditText>
+
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="3"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <ImageView
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/spinner_drop_down"
+                                            android:layout_width="@dimen/_25sdp"
+                                            android:layout_height="@dimen/_25sdp"
+                                            app:tint="@color/black">
+                                        </ImageView>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/mainSonLiner"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:orientation="horizontal"
+                                android:background="@drawable/new_grey_border"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_50sdp">
+
+                                <LinearLayout
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <CheckBox
+                                        android:layout_marginStart="@dimen/_12sdp"
+                                        android:button="@drawable/check_box_selector"
+                                        android:checked="false"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:id="@+id/CheckBoxSon"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                    </CheckBox>
+                                    <TextView
+                                        android:paddingStart="@dimen/_10sdp"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_medium"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textColor="@color/new_darker_gray"
+                                        android:text="Child"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:id="@+id/SonLiner"
+                                    android:visibility="gone"
+                                    android:layout_marginEnd="@dimen/_10sdp"
+                                    android:gravity="end"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/rectangular_chi"
+                                        android:layout_width="@dimen/_95sdp"
+                                        android:layout_height="@dimen/_28sdp">
+
+                                        <Button
+                                            android:id="@+id/minusSonBtn"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/subtract_chi"
+                                            android:layout_width="@dimen/_28sdp"
+                                            android:layout_height="@dimen/_28sdp">
+                                        </Button>
+
+                                        <TextView
+                                            android:id="@+id/SonCounterText"
+                                            android:fontFamily="@font/montserrat_medium"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/red_new"
+                                            android:gravity="center"
+                                            android:layout_gravity="center"
+                                            android:text="0"
+                                            android:layout_width="@dimen/_38sdp"
+                                            android:layout_height="match_parent">
+                                        </TextView>
+                                        <Button
+                                            android:id="@+id/addSonBtn"
+                                            android:gravity="center"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/add_chi"
+                                            android:layout_width="@dimen/_28sdp"
+                                            android:layout_height="@dimen/_28sdp">
+                                        </Button>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:id="@+id/LinerSonFirst"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:paddingStart="@dimen/_12sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:textSize="@dimen/_13sdp"
+                                    android:textColor="@color/black"
+                                    android:text="First Child Age"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                                <LinearLayout
+                                    android:visibility="visible"
+                                    android:background="@drawable/white_grey"
+                                    android:id="@+id/FirstSonAgeLiner"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1.9"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp">
+
+                                    <EditText
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:id="@+id/FirstSonAgeEditText"
+                                        android:paddingStart="@dimen/_5sdp"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:textColor="@color/black"
+                                        android:background="@null"
+                                        android:clickable="false"
+                                        android:focusable="false"
+                                        android:cursorVisible="false"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </EditText>
+
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="3"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <ImageView
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/spinner_drop_down"
+                                            android:layout_width="@dimen/_25sdp"
+                                            android:layout_height="@dimen/_25sdp"
+                                            app:tint="@color/black">
+                                        </ImageView>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/LinerSecond"
+                                android:visibility="gone"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:paddingStart="@dimen/_12sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:textSize="@dimen/_13sdp"
+                                    android:textColor="@color/black"
+                                    android:text="Second Child Age"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                                <LinearLayout
+                                    android:visibility="visible"
+                                    android:background="@drawable/white_grey"
+                                    android:id="@+id/SecondSonAgeLiner"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1.9"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp">
+
+                                    <EditText
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:id="@+id/SecondSonAgeEditText"
+                                        android:paddingStart="@dimen/_5sdp"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:textColor="@color/black"
+                                        android:background="@null"
+                                        android:hint="Select Dob"
+                                        android:clickable="false"
+                                        android:focusable="false"
+                                        android:cursorVisible="false"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </EditText>
+
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="3"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <ImageView
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/spinner_drop_down"
+                                            android:layout_width="@dimen/_25sdp"
+                                            android:layout_height="@dimen/_25sdp"
+                                            app:tint="@color/black">
+                                        </ImageView>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:id="@+id/ThirdSonLiner"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:paddingStart="@dimen/_12sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:textSize="@dimen/_13sdp"
+                                    android:textColor="@color/black"
+                                    android:text="Third Child Age"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+                                <LinearLayout
+                                    android:visibility="visible"
+                                    android:background="@drawable/white_grey"
+                                    android:id="@+id/ThirdSonAgeLiner"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1.9"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp">
+
+                                    <EditText
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:id="@+id/ThirdSonAgeEditText"
+                                        android:paddingStart="@dimen/_5sdp"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:textColor="@color/black"
+                                        android:background="@null"
+                                        android:hint="Select Dob"
+                                        android:clickable="false"
+                                        android:focusable="false"
+                                        android:cursorVisible="false"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </EditText>
+
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="3"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <ImageView
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/spinner_drop_down"
+                                            android:layout_width="@dimen/_25sdp"
+                                            android:layout_height="@dimen/_25sdp"
+                                            app:tint="@color/black">
+                                        </ImageView>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:id="@+id/FourthLiner"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:paddingStart="@dimen/_12sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:textSize="@dimen/_13sdp"
+                                    android:textColor="@color/black"
+                                    android:text="Fourth Child Age"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+
+
+                                <LinearLayout
+                                    android:visibility="visible"
+                                    android:background="@drawable/white_grey"
+                                    android:id="@+id/FourSonAgeLiner"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1.9"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp">
+
+                                    <EditText
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:id="@+id/FourSonAgeEditText"
+                                        android:paddingStart="@dimen/_5sdp"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:textColor="@color/black"
+                                        android:background="@null"
+                                        android:clickable="false"
+                                        android:focusable="false"
+                                        android:cursorVisible="false"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </EditText>
+
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="3"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <ImageView
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/spinner_drop_down"
+                                            android:layout_width="@dimen/_25sdp"
+                                            android:layout_height="@dimen/_25sdp"
+                                            app:tint="@color/black">
+                                        </ImageView>
+                                    </LinearLayout>
+
+
+
+
+                                    <Spinner
+                                        android:visibility="gone"
+                                        android:scrollbars="none"
+                                        android:layout_weight="0.2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:textSize="@dimen/_12sdp"
+                                        />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:id="@+id/mainDaughterLiner"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:orientation="horizontal"
+                                android:background="@drawable/new_grey_border"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_50sdp">
+
+                                <LinearLayout
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <CheckBox
+                                        android:layout_marginStart="@dimen/_12sdp"
+                                        android:button="@drawable/check_box_selector"
+                                        android:checked="false"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:id="@+id/CheckBoxDaughter"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                    </CheckBox>
+                                    <TextView
+                                        android:paddingStart="@dimen/_10sdp"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_medium"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textColor="@color/new_darker_gray"
+                                        android:text="Daughter"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:visibility="gone"
+                                    android:id="@+id/DaughterLiner"
+                                    android:layout_marginEnd="@dimen/_10sdp"
+                                    android:gravity="end"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/rectangular_chi"
+                                        android:layout_width="@dimen/_95sdp"
+                                        android:layout_height="@dimen/_28sdp">
+
+                                        <Button
+                                            android:id="@+id/minusDaughterBtn"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/subtract_chi"
+                                            android:layout_width="@dimen/_28sdp"
+                                            android:layout_height="@dimen/_28sdp">
+                                        </Button>
+
+                                        <TextView
+                                            android:id="@+id/DaughterTextCounter"
+                                            android:fontFamily="@font/montserrat_medium"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/red_new"
+                                            android:gravity="center"
+                                            android:layout_gravity="center"
+                                            android:text="0"
+                                            android:layout_width="@dimen/_38sdp"
+                                            android:layout_height="match_parent">
+                                        </TextView>
+                                        <Button
+                                            android:id="@+id/addDaughterBtn"
+                                            android:gravity="center"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/add_chi"
+                                            android:layout_width="@dimen/_28sdp"
+                                            android:layout_height="@dimen/_28sdp">
+                                        </Button>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:id="@+id/LinerFirstDaughter"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:paddingStart="@dimen/_12sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:textSize="@dimen/_13sdp"
+                                    android:textColor="@color/black"
+                                    android:text="First Daughter Age"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+
+
+                                <LinearLayout
+                                    android:visibility="visible"
+                                    android:background="@drawable/white_grey"
+                                    android:id="@+id/FirstDaughterAgeLiner"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1.9"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp">
+
+                                    <EditText
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:id="@+id/FirstDaughterAgeEditText"
+                                        android:paddingStart="@dimen/_5sdp"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:textColor="@color/black"
+                                        android:background="@null"
+                                        android:clickable="false"
+                                        android:hint="Select Dob"
+                                        android:focusable="false"
+                                        android:cursorVisible="false"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </EditText>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:id="@+id/LinerSecondDaughter"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:paddingStart="@dimen/_12sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:textSize="@dimen/_13sdp"
+                                    android:textColor="@color/black"
+                                    android:text="Second Daughter Age"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+
+
+
+                                <LinearLayout
+                                    android:visibility="visible"
+                                    android:background="@drawable/white_grey"
+                                    android:id="@+id/SecondDaughterAgeLiner"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1.9"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp">
+
+                                    <EditText
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:id="@+id/SecondDaughterAgeEditText"
+                                        android:paddingStart="@dimen/_5sdp"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:textColor="@color/black"
+                                        android:background="@null"
+                                        android:clickable="false"
+                                        android:hint="select Dob"
+                                        android:focusable="false"
+                                        android:cursorVisible="false"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </EditText>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/LinerThirdDaughter"
+                                android:visibility="gone"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:paddingStart="@dimen/_12sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:textSize="@dimen/_13sdp"
+                                    android:textColor="@color/black"
+                                    android:text="Third Daughter Age"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+
+
+
+                                <LinearLayout
+                                    android:visibility="visible"
+                                    android:background="@drawable/white_grey"
+                                    android:id="@+id/ThirdDaughterAgeLiner"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1.9"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp">
+
+                                    <EditText
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:id="@+id/ThirdDaughterAgeEditText"
+                                        android:paddingStart="@dimen/_5sdp"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:textColor="@color/black"
+                                        android:background="@null"
+                                        android:clickable="false"
+                                        android:focusable="false"
+                                        android:hint="select Dob"
+                                        android:cursorVisible="false"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </EditText>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:id="@+id/LinerFourthDaughter"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:paddingStart="@dimen/_12sdp"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:textSize="@dimen/_13sdp"
+                                    android:textColor="@color/black"
+                                    android:text="Fourth Daughter Age"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                </TextView>
+
+
+
+                                <LinearLayout
+                                    android:visibility="visible"
+                                    android:background="@drawable/white_grey"
+                                    android:id="@+id/FourDaughterAgeLiner"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1.9"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp">
+
+                                    <EditText
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:id="@+id/FourDaughterAgeEditText"
+                                        android:paddingStart="@dimen/_5sdp"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:textColor="@color/black"
+                                        android:background="@null"
+                                        android:clickable="false"
+                                        android:focusable="false"
+                                        android:cursorVisible="false"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </EditText>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/mainMotherLiner"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:orientation="horizontal"
+                                android:background="@drawable/new_grey_border"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_50sdp">
+
+                                <LinearLayout
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <CheckBox
+                                        android:layout_marginStart="@dimen/_12sdp"
+                                        android:button="@drawable/check_box_selector"
+                                        android:checked="false"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:id="@+id/CheckBoxMother"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                    </CheckBox>
+                                    <TextView
+                                        android:paddingStart="@dimen/_10sdp"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_medium"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textColor="@color/new_darker_gray"
+                                        android:text="Mother"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:visibility="gone"
+                                    android:background="@drawable/white_grey"
+                                    android:id="@+id/MotherAgeLiner"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1.9"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp">
+
+                                    <EditText
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:id="@+id/MotherAgeEditText"
+                                        android:paddingStart="@dimen/_5sdp"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:textColor="@color/black"
+                                        android:background="@null"
+                                        android:clickable="false"
+                                        android:focusable="false"
+                                        android:cursorVisible="false"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </EditText>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/mainFatherLiner"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:orientation="horizontal"
+                                android:background="@drawable/new_grey_border"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_50sdp">
+
+                                <LinearLayout
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <CheckBox
+                                        android:layout_marginStart="@dimen/_12sdp"
+                                        android:button="@drawable/check_box_selector"
+                                        android:checked="false"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:id="@+id/CheckBoxFather"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                    </CheckBox>
+                                    <TextView
+                                        android:paddingStart="@dimen/_10sdp"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_medium"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textColor="@color/new_darker_gray"
+                                        android:text="Father"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:visibility="gone"
+                                    android:background="@drawable/white_grey"
+                                    android:id="@+id/FatherAgeLiner"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1.9"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp">
+
+                                    <EditText
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:id="@+id/FatherAgeEditText"
+                                        android:paddingStart="@dimen/_5sdp"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:textColor="@color/black"
+                                        android:background="@null"
+                                        android:clickable="false"
+                                        android:focusable="false"
+                                        android:cursorVisible="false"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </EditText>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/mainMotherInLawLiner"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:orientation="horizontal"
+                                android:background="@drawable/new_grey_border"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_50sdp">
+
+                                <LinearLayout
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <CheckBox
+                                        android:layout_marginStart="@dimen/_12sdp"
+                                        android:button="@drawable/check_box_selector"
+                                        android:checked="false"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:id="@+id/CheckBoxMotherLaw"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                    </CheckBox>
+                                    <TextView
+                                        android:paddingStart="@dimen/_10sdp"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_medium"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textColor="@color/new_darker_gray"
+                                        android:text="Mother-in-law"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:visibility="gone"
+                                    android:background="@drawable/white_grey"
+                                    android:id="@+id/MotherLawAgeLiner"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1.9"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp">
+
+                                    <EditText
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:id="@+id/MotherLawAgeEditText"
+                                        android:paddingStart="@dimen/_5sdp"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:textColor="@color/black"
+                                        android:background="@null"
+                                        android:clickable="false"
+                                        android:focusable="false"
+                                        android:cursorVisible="false"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </EditText>
+                                </LinearLayout>
+                            </LinearLayout>
+<!--                            father-->
+                            <LinearLayout
+                                android:id="@+id/mainFatherInLaw"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:orientation="horizontal"
+                                android:background="@drawable/new_grey_border"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_50sdp">
+
+                                <LinearLayout
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <CheckBox
+                                        android:layout_marginStart="@dimen/_12sdp"
+                                        android:button="@drawable/check_box_selector"
+                                        android:checked="false"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:id="@+id/CheckBoxFatherLaw"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                    </CheckBox>
+                                    <TextView
+                                        android:paddingStart="@dimen/_10sdp"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/montserrat_medium"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textColor="@color/new_darker_gray"
+                                        android:text="Father-in-law"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:visibility="gone"
+                                    android:background="@drawable/white_grey"
+                                    android:id="@+id/FatherLawAgeLiner"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1.9"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp">
+
+                                    <EditText
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:id="@+id/FatherLawAgeEditText"
+                                        android:paddingStart="@dimen/_5sdp"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:fontFamily="@font/montserrat_bold"
+                                        android:textColor="@color/black"
+                                        android:background="@null"
+                                        android:clickable="false"
+                                        android:focusable="false"
+                                        android:cursorVisible="false"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                    </EditText>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:visibility="visible"
+                                android:id="@+id/GrandLiner"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <!--  GrandMother-->
+                                <LinearLayout
+                                    android:id="@+id/mainGrandMother"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:orientation="horizontal"
+                                    android:background="@drawable/new_grey_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp">
+
+                                    <LinearLayout
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <CheckBox
+                                            android:layout_marginStart="@dimen/_12sdp"
+                                            android:button="@drawable/check_box_selector"
+                                            android:checked="false"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:id="@+id/CheckBoxGrandMother"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </CheckBox>
+                                        <TextView
+                                            android:paddingStart="@dimen/_10sdp"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/montserrat_medium"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/new_darker_gray"
+                                            android:text="GrandMother"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:background="@drawable/white_grey"
+                                        android:id="@+id/GrandMotherAgeLiner"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1.9"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_30sdp">
+
+                                        <EditText
+                                            android:gravity="center"
+                                            android:layout_gravity="center"
+                                            android:id="@+id/GrandMotherAgeEditText"
+                                            android:paddingStart="@dimen/_5sdp"
+                                            android:textSize="@dimen/_10sdp"
+                                            android:fontFamily="@font/montserrat_bold"
+                                            android:textColor="@color/black"
+                                            android:background="@null"
+                                            android:clickable="false"
+                                            android:focusable="false"
+                                            android:cursorVisible="false"
+                                            android:layout_weight="1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                        </EditText>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <!-- GrandFather-->
+                                <LinearLayout
+                                    android:id="@+id/mainGrandFather"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:orientation="horizontal"
+                                    android:background="@drawable/new_grey_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp">
+
+                                    <LinearLayout
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <CheckBox
+                                            android:layout_marginStart="@dimen/_12sdp"
+                                            android:button="@drawable/check_box_selector"
+                                            android:checked="false"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:id="@+id/CheckBoxGrandFather"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </CheckBox>
+                                        <TextView
+                                            android:paddingStart="@dimen/_10sdp"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/montserrat_medium"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/new_darker_gray"
+                                            android:text="GrandFather"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:background="@drawable/white_grey"
+                                        android:id="@+id/GrandFatherAgeLiner"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1.9"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_30sdp">
+
+                                        <EditText
+                                            android:gravity="center"
+                                            android:layout_gravity="center"
+                                            android:id="@+id/GrandFatherAgeEditText"
+                                            android:paddingStart="@dimen/_5sdp"
+                                            android:textSize="@dimen/_10sdp"
+                                            android:fontFamily="@font/montserrat_bold"
+                                            android:textColor="@color/black"
+                                            android:background="@null"
+                                            android:clickable="false"
+                                            android:focusable="false"
+                                            android:cursorVisible="false"
+                                            android:layout_weight="1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                        </EditText>
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <!--GrandSon-->
+                                <LinearLayout
+                                    android:id="@+id/mainGrandSon"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:orientation="horizontal"
+                                    android:background="@drawable/new_grey_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp">
+
+                                    <LinearLayout
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <CheckBox
+                                            android:layout_marginStart="@dimen/_12sdp"
+                                            android:button="@drawable/check_box_selector"
+                                            android:checked="false"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:id="@+id/CheckBoxGrandSon"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </CheckBox>
+                                        <TextView
+                                            android:paddingStart="@dimen/_10sdp"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/montserrat_medium"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/new_darker_gray"
+                                            android:text="Grandson"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:background="@drawable/white_grey"
+                                        android:id="@+id/GrandSonAgeLiner"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1.9"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_30sdp">
+
+                                        <EditText
+                                            android:gravity="center"
+                                            android:layout_gravity="center"
+                                            android:id="@+id/GrandSonAgeEditText"
+                                            android:paddingStart="@dimen/_5sdp"
+                                            android:textSize="@dimen/_10sdp"
+                                            android:fontFamily="@font/montserrat_bold"
+                                            android:textColor="@color/black"
+                                            android:background="@null"
+                                            android:clickable="false"
+                                            android:focusable="false"
+                                            android:cursorVisible="false"
+                                            android:layout_weight="1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                        </EditText>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <!-- GrandDaughter-->
+                                <LinearLayout
+                                    android:id="@+id/mainGrandDaughter"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:orientation="horizontal"
+                                    android:background="@drawable/new_grey_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp">
+
+                                    <LinearLayout
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <CheckBox
+                                            android:layout_marginStart="@dimen/_12sdp"
+                                            android:button="@drawable/check_box_selector"
+                                            android:checked="false"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:id="@+id/CheckBoxGrandDaughter"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </CheckBox>
+                                        <TextView
+                                            android:paddingStart="@dimen/_10sdp"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/montserrat_medium"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/new_darker_gray"
+                                            android:text="GrandDaughter"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:background="@drawable/white_grey"
+                                        android:id="@+id/GrandDaughterAgeLiner"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1.9"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_30sdp">
+
+                                        <EditText
+                                            android:gravity="center"
+                                            android:layout_gravity="center"
+                                            android:id="@+id/GrandDaughterAgeEditText"
+                                            android:paddingStart="@dimen/_5sdp"
+                                            android:textSize="@dimen/_10sdp"
+                                            android:fontFamily="@font/montserrat_bold"
+                                            android:textColor="@color/black"
+                                            android:background="@null"
+                                            android:clickable="false"
+                                            android:focusable="false"
+                                            android:cursorVisible="false"
+                                            android:layout_weight="1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                        </EditText>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+                                <!--Son-In-Law-->
+                                <LinearLayout
+                                    android:id="@+id/mainSonInLaw"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:orientation="horizontal"
+                                    android:background="@drawable/new_grey_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp">
+
+                                    <LinearLayout
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <CheckBox
+                                            android:layout_marginStart="@dimen/_12sdp"
+                                            android:button="@drawable/check_box_selector"
+                                            android:checked="false"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:id="@+id/CheckBoxSonInLaw"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </CheckBox>
+                                        <TextView
+                                            android:paddingStart="@dimen/_10sdp"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/montserrat_medium"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/new_darker_gray"
+                                            android:text="Son-in-law"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:background="@drawable/white_grey"
+                                        android:id="@+id/SonInLawAgeLiner"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1.9"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_30sdp">
+
+                                        <EditText
+                                            android:gravity="center"
+                                            android:layout_gravity="center"
+                                            android:id="@+id/SonInLawAgeEditText"
+                                            android:paddingStart="@dimen/_5sdp"
+                                            android:textSize="@dimen/_10sdp"
+                                            android:fontFamily="@font/montserrat_bold"
+                                            android:textColor="@color/black"
+                                            android:background="@null"
+                                            android:clickable="false"
+                                            android:focusable="false"
+                                            android:cursorVisible="false"
+                                            android:layout_weight="1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                        </EditText>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <!--Daughter-In-Law- -->
+                                <LinearLayout
+                                    android:id="@+id/mainDaughterInLaw"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:orientation="horizontal"
+                                    android:background="@drawable/new_grey_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp">
+
+                                    <LinearLayout
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <CheckBox
+                                            android:layout_marginStart="@dimen/_12sdp"
+                                            android:button="@drawable/check_box_selector"
+                                            android:checked="false"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:id="@+id/CheckBoxDaughterInLaw"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </CheckBox>
+                                        <TextView
+                                            android:paddingStart="@dimen/_10sdp"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/montserrat_medium"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/new_darker_gray"
+                                            android:text="Daughter-in-law"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:background="@drawable/white_grey"
+                                        android:id="@+id/DaughterInLawAgeLiner"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1.9"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_30sdp">
+
+                                        <EditText
+                                            android:gravity="center"
+                                            android:layout_gravity="center"
+                                            android:id="@+id/DaughterInLawAgeEditText"
+                                            android:paddingStart="@dimen/_5sdp"
+                                            android:textSize="@dimen/_10sdp"
+                                            android:fontFamily="@font/montserrat_bold"
+                                            android:textColor="@color/black"
+                                            android:background="@null"
+                                            android:clickable="false"
+                                            android:focusable="false"
+                                            android:cursorVisible="false"
+                                            android:layout_weight="1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                        </EditText>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+                                <!--Brother-In-Law-->
+                                <LinearLayout
+                                    android:id="@+id/mainBrotherInLaw"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:orientation="horizontal"
+                                    android:background="@drawable/new_grey_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp">
+
+                                    <LinearLayout
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <CheckBox
+                                            android:layout_marginStart="@dimen/_12sdp"
+                                            android:button="@drawable/check_box_selector"
+                                            android:checked="false"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:id="@+id/CheckBoxBrotherInLaw"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </CheckBox>
+                                        <TextView
+                                            android:paddingStart="@dimen/_10sdp"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/montserrat_medium"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/new_darker_gray"
+                                            android:text="Brother-in-law"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:background="@drawable/white_grey"
+                                        android:id="@+id/BrotherInLawAgeLiner"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1.9"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_30sdp">
+
+                                        <EditText
+                                            android:gravity="center"
+                                            android:layout_gravity="center"
+                                            android:id="@+id/BrotherInLawAgeEditText"
+                                            android:paddingStart="@dimen/_5sdp"
+                                            android:textSize="@dimen/_10sdp"
+                                            android:fontFamily="@font/montserrat_bold"
+                                            android:textColor="@color/black"
+                                            android:background="@null"
+                                            android:clickable="false"
+                                            android:focusable="false"
+                                            android:cursorVisible="false"
+                                            android:layout_weight="1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                        </EditText>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+                                <!--  Sister-In-Law- -->
+                                <LinearLayout
+                                    android:id="@+id/mainSisterInLaw"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:orientation="horizontal"
+                                    android:background="@drawable/new_grey_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp">
+
+                                    <LinearLayout
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <CheckBox
+                                            android:layout_marginStart="@dimen/_12sdp"
+                                            android:button="@drawable/check_box_selector"
+                                            android:checked="false"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:id="@+id/CheckBoxSisterInLaw"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </CheckBox>
+                                        <TextView
+                                            android:paddingStart="@dimen/_10sdp"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/montserrat_medium"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/new_darker_gray"
+                                            android:text="Sister-in-law"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:background="@drawable/white_grey"
+                                        android:id="@+id/SisterInLawAgeLiner"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1.9"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_30sdp">
+
+                                        <EditText
+                                            android:gravity="center"
+                                            android:layout_gravity="center"
+                                            android:id="@+id/SisterInLawAgeEditText"
+                                            android:paddingStart="@dimen/_5sdp"
+                                            android:textSize="@dimen/_10sdp"
+                                            android:fontFamily="@font/montserrat_bold"
+                                            android:textColor="@color/black"
+                                            android:background="@null"
+                                            android:clickable="false"
+                                            android:focusable="false"
+                                            android:cursorVisible="false"
+                                            android:layout_weight="1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                        </EditText>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <!-- Son-->
+
+                                <LinearLayout
+                                    android:id="@+id/mainSon"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:orientation="horizontal"
+                                    android:background="@drawable/new_grey_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp">
+
+                                    <LinearLayout
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <CheckBox
+                                            android:layout_marginStart="@dimen/_12sdp"
+                                            android:button="@drawable/check_box_selector"
+                                            android:checked="false"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:id="@+id/CheckBox_Son"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </CheckBox>
+                                        <TextView
+                                            android:paddingStart="@dimen/_10sdp"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/montserrat_medium"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/new_darker_gray"
+                                            android:text="Son"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:background="@drawable/white_grey"
+                                        android:id="@+id/SonAgeLiner"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1.9"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_30sdp">
+
+                                        <EditText
+                                            android:gravity="center"
+                                            android:layout_gravity="center"
+                                            android:id="@+id/SonAgeEditText"
+                                            android:paddingStart="@dimen/_5sdp"
+                                            android:textSize="@dimen/_10sdp"
+                                            android:fontFamily="@font/montserrat_bold"
+                                            android:textColor="@color/black"
+                                            android:background="@null"
+                                            android:clickable="false"
+                                            android:focusable="false"
+                                            android:cursorVisible="false"
+                                            android:layout_weight="1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                        </EditText>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+<!--                                Son End-->
+
+<!--                                Daughter-->
+                                <LinearLayout
+                                    android:id="@+id/mainDaughter"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:orientation="horizontal"
+                                    android:background="@drawable/new_grey_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp">
+
+                                    <LinearLayout
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <CheckBox
+                                            android:layout_marginStart="@dimen/_12sdp"
+                                            android:button="@drawable/check_box_selector"
+                                            android:checked="false"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:id="@+id/CheckBox_Daughter"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </CheckBox>
+                                        <TextView
+                                            android:paddingStart="@dimen/_10sdp"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/montserrat_medium"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/new_darker_gray"
+                                            android:text="Daughter"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:background="@drawable/white_grey"
+                                        android:id="@+id/DaughterAgeLiner"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1.9"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_30sdp">
+
+                                        <EditText
+                                            android:gravity="center"
+                                            android:layout_gravity="center"
+                                            android:id="@+id/DaughterAgeEditText"
+                                            android:paddingStart="@dimen/_5sdp"
+                                            android:textSize="@dimen/_10sdp"
+                                            android:fontFamily="@font/montserrat_bold"
+                                            android:textColor="@color/black"
+                                            android:background="@null"
+                                            android:clickable="false"
+                                            android:focusable="false"
+                                            android:cursorVisible="false"
+                                            android:layout_weight="1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                        </EditText>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+<!--                                Daughter End-->
+
+                            <!--Brother -->
+                                <LinearLayout
+                                    android:id="@+id/mainBrother"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:orientation="horizontal"
+                                    android:background="@drawable/new_grey_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp">
+
+                                    <LinearLayout
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <CheckBox
+                                            android:layout_marginStart="@dimen/_12sdp"
+                                            android:button="@drawable/check_box_selector"
+                                            android:checked="false"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:id="@+id/CheckBox_Brother"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </CheckBox>
+                                        <TextView
+                                            android:paddingStart="@dimen/_10sdp"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/montserrat_medium"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/new_darker_gray"
+                                            android:text="Brother"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:background="@drawable/white_grey"
+                                        android:id="@+id/BrotherAgeLiner"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1.9"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_30sdp">
+
+                                        <EditText
+                                            android:gravity="center"
+                                            android:layout_gravity="center"
+                                            android:id="@+id/BrotherAgeEditText"
+                                            android:paddingStart="@dimen/_5sdp"
+                                            android:textSize="@dimen/_10sdp"
+                                            android:fontFamily="@font/montserrat_bold"
+                                            android:textColor="@color/black"
+                                            android:background="@null"
+                                            android:clickable="false"
+                                            android:focusable="false"
+                                            android:cursorVisible="false"
+                                            android:layout_weight="1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                        </EditText>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+<!--                                Brother End-->
+
+<!--                                Sister-->
+                                <LinearLayout
+                                    android:id="@+id/mainSister"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:orientation="horizontal"
+                                    android:background="@drawable/new_grey_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp">
+
+                                    <LinearLayout
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <CheckBox
+                                            android:layout_marginStart="@dimen/_12sdp"
+                                            android:button="@drawable/check_box_selector"
+                                            android:checked="false"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:id="@+id/CheckBox_Sister"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </CheckBox>
+                                        <TextView
+                                            android:paddingStart="@dimen/_10sdp"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/montserrat_medium"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/new_darker_gray"
+                                            android:text="Sister"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:background="@drawable/white_grey"
+                                        android:id="@+id/SisterAgeLiner"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1.9"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_30sdp">
+
+                                        <EditText
+                                            android:gravity="center"
+                                            android:layout_gravity="center"
+                                            android:id="@+id/SisterAgeEditText"
+                                            android:paddingStart="@dimen/_5sdp"
+                                            android:textSize="@dimen/_10sdp"
+                                            android:fontFamily="@font/montserrat_bold"
+                                            android:textColor="@color/black"
+                                            android:background="@null"
+                                            android:clickable="false"
+                                            android:focusable="false"
+                                            android:cursorVisible="false"
+                                            android:layout_weight="1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                        </EditText>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+<!--                                Sister End-->
+
+<!--                                Nephew -->
+                                <LinearLayout
+                                    android:id="@+id/mainNephew"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:orientation="horizontal"
+                                    android:background="@drawable/new_grey_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp">
+
+                                    <LinearLayout
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <CheckBox
+                                            android:layout_marginStart="@dimen/_12sdp"
+                                            android:button="@drawable/check_box_selector"
+                                            android:checked="false"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:id="@+id/CheckBox_Nephew"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </CheckBox>
+                                        <TextView
+                                            android:paddingStart="@dimen/_10sdp"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/montserrat_medium"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/new_darker_gray"
+                                            android:text="Nephew"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:background="@drawable/white_grey"
+                                        android:id="@+id/NephewAgeLiner"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1.9"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_30sdp">
+
+                                        <EditText
+                                            android:gravity="center"
+                                            android:layout_gravity="center"
+                                            android:id="@+id/NephewAgeEditText"
+                                            android:paddingStart="@dimen/_5sdp"
+                                            android:textSize="@dimen/_10sdp"
+                                            android:fontFamily="@font/montserrat_bold"
+                                            android:textColor="@color/black"
+                                            android:background="@null"
+                                            android:clickable="false"
+                                            android:focusable="false"
+                                            android:cursorVisible="false"
+                                            android:layout_weight="1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                        </EditText>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+<!--                                Nephew End-->
+
+<!--                                Niece-->
+                                <LinearLayout
+                                    android:id="@+id/mainNiece"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:orientation="horizontal"
+                                    android:background="@drawable/new_grey_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_50sdp">
+
+                                    <LinearLayout
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <CheckBox
+                                            android:layout_marginStart="@dimen/_12sdp"
+                                            android:button="@drawable/check_box_selector"
+                                            android:checked="false"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:id="@+id/CheckBox_Niece"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </CheckBox>
+                                        <TextView
+                                            android:paddingStart="@dimen/_10sdp"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/montserrat_medium"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/new_darker_gray"
+                                            android:text="Niece"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:background="@drawable/white_grey"
+                                        android:id="@+id/NieceAgeLiner"
+                                        android:layout_marginEnd="@dimen/_5sdp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1.9"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_30sdp">
+
+                                        <EditText
+                                            android:gravity="center"
+                                            android:layout_gravity="center"
+                                            android:id="@+id/NieceAgeEditText"
+                                            android:paddingStart="@dimen/_5sdp"
+                                            android:textSize="@dimen/_10sdp"
+                                            android:fontFamily="@font/montserrat_bold"
+                                            android:textColor="@color/black"
+                                            android:background="@null"
+                                            android:clickable="false"
+                                            android:focusable="false"
+                                            android:cursorVisible="false"
+                                            android:layout_weight="1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                        </EditText>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+<!--                                Niece End-->
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:layout_marginBottom="@dimen/_35sdp"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_140sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:orientation="vertical">
+                            <Button
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:id="@+id/btnNext"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:background="@drawable/red_btn_bg"
+                                android:text="Next"
+                                android:textAllCaps="false"
+                                android:textColor="@color/txt_color"
+                                android:textSize="@dimen/_15sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

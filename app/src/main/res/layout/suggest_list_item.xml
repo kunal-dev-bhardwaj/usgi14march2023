@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingBottom="@dimen/_4sdp">
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:background="@drawable/radio_button_layout"
+        android:button="@android:color/transparent"
+        android:gravity="center|start"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="@drawable/radio_button_text"
+        android:textSize="@dimen/_14sdp" />
+
+</LinearLayout>

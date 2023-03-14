@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="match_parent"
+    android:background="#c8000000">
+
+    <LinearLayout
+        android:id="@+id/locator_physiotherapist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:paddingStart="@dimen/_63sdp">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:padding="@dimen/_11sdp"
+            android:background="@drawable/rounded_white_background2">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:tint="@color/dialog_locator_benefit_icon"
+                android:src="@drawable/physiotherapy"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Physiotherapist"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/locator_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/locator_physiotherapist"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:paddingStart="@dimen/_35sdp">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/rounded_white_background2">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:tint="@color/dialog_locator_benefit_icon"
+                android:src="@drawable/doctor"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Doctor"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/locator_dentist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/locator_doctor"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:paddingStart="@dimen/_14sdp">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:padding="@dimen/_11sdp"
+            android:background="@drawable/rounded_white_background2">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:tint="@color/dialog_locator_benefit_icon"
+                android:src="@drawable/dentist"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Dentist"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:typeface="serif" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/locator_hospital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/locator_dentist"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:gravity="left"
+        android:paddingStart="@dimen/_14sdp">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:padding="@dimen/_12sdp"
+            android:background="@drawable/rounded_white_background2">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:tint="@color/dialog_locator_benefit_icon"
+                android:src="@drawable/hospital"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Hospital"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/locator_pharmacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/locator_hospital"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:paddingStart="@dimen/_35sdp">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:padding="@dimen/_12sdp"
+            android:background="@drawable/rounded_white_background2">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:tint="@color/dialog_locator_benefit_icon"
+                android:src="@drawable/chemist"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Pharmacy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:typeface="serif" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/locator_pharmacy"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:paddingStart="@dimen/_63sdp">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:padding="@dimen/_12sdp"
+            android:background="@drawable/rounded_white_background2">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:tint="@color/dialog_locator_benefit_icon"
+                android:src="@drawable/fitness"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Fitness Center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:typeface="serif" />
+    </LinearLayout>
+
+</RelativeLayout>

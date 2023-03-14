@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/month_year_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:textSize="@dimen/_12sdp"
+                android:typeface="serif"
+                android:textColor="@color/lightblack"/>
+
+            <devs.mulham.horizontalcalendar.HorizontalCalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:sizeTopText="@dimen/_10sdp"
+                app:sizeBottomText="@dimen/_10sdp"
+                app:sizeMiddleText="@dimen/_14sdp"
+                app:textColorNormal="@color/black"
+                app:colorBottomTextSelected="@color/colorPrimaryDark"
+                app:colorMiddleTextSelected="@color/colorPrimaryDark"
+                app:colorTopTextSelected="@color/colorPrimaryDark"
+                app:textColorSelected="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:background="@color/white" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:orientation="horizontal"
+                android:weightSum="5">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="1"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.35"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/early_breakfast_background"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:orientation="vertical"
+                            android:background="@drawable/circle_reminder"
+                            android:gravity="center">
+                            <ImageView
+                                android:id="@+id/early_breakfast"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:src="@drawable/early_breakfast_icon"
+                                app:tint="@color/white" />
+                            <ImageView
+                                android:id="@+id/early_breakfast1"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:visibility="gone"
+                                android:src="@drawable/early_breakfast_icon"
+                                app:tint="@color/lightblack" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.65"
+                        android:gravity="center|top"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Early Morning"
+                            android:gravity="center|top"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:layout_marginEnd="@dimen/_3sdp"
+                            android:textColor="@color/lightblack"
+                            android:typeface="serif"
+                            android:textSize="@dimen/_8sdp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="1"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.35"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/breakfast_background"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:orientation="vertical"
+                            android:background="@drawable/circle_reminder_not_set"
+                            android:gravity="center">
+                            <ImageView
+                                android:id="@+id/breakfast"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:src="@drawable/breakfast_icon"
+                                app:tint="@color/lightblack" />
+                            <ImageView
+                                android:id="@+id/breakfast1"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:visibility="gone"
+                                android:src="@drawable/breakfast_icon"
+                                app:tint="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.65"
+                        android:gravity="center|top"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Breakfast"
+                            android:gravity="center|top"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:layout_marginEnd="@dimen/_3sdp"
+                            android:textColor="@color/lightblack"
+                            android:typeface="serif"
+                            android:textSize="@dimen/_8sdp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="1"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.35"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/lunch_background"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:orientation="vertical"
+                            android:background="@drawable/circle_reminder_not_set"
+                            android:gravity="center">
+                            <ImageView
+                                android:id="@+id/lunch"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:src="@drawable/lunch_icon"
+                                app:tint="@color/lightblack" />
+                            <ImageView
+                                android:id="@+id/lunch1"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:visibility="gone"
+                                android:src="@drawable/lunch_icon"
+                                app:tint="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.65"
+                        android:gravity="center|top"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lunch"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:layout_marginEnd="@dimen/_3sdp"
+                            android:gravity="center"
+                            android:textColor="@color/lightblack"
+                            android:typeface="serif"
+                            android:textSize="@dimen/_8sdp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="1"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.35"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/evening_snack_background"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:orientation="vertical"
+                            android:background="@drawable/circle_reminder_not_set"
+                            android:gravity="center">
+                            <ImageView
+                                android:id="@+id/evening_snack"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:src="@drawable/evening_snack_icon"
+                                app:tint="@color/lightblack" />
+                            <ImageView
+                                android:id="@+id/evening_snack1"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:visibility="gone"
+                                android:src="@drawable/evening_snack_icon"
+                                app:tint="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.65"
+                        android:gravity="center|top"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Evening Snacks"
+                            android:gravity="center"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:layout_marginEnd="@dimen/_3sdp"
+                            android:textColor="@color/lightblack"
+                            android:typeface="serif"
+                            android:textSize="@dimen/_8sdp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="1"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.35"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/dinner_background"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:orientation="vertical"
+                            android:background="@drawable/circle_reminder_not_set"
+                            android:gravity="center">
+                            <ImageView
+                                android:id="@+id/dinner"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:src="@drawable/dinner_icon"
+                                app:tint="@color/lightblack" />
+                            <ImageView
+                                android:id="@+id/dinner1"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:visibility="gone"
+                                android:src="@drawable/dinner_icon"
+                                app:tint="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.65"
+                        android:gravity="center|top"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dinner"
+                            android:gravity="center"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:layout_marginEnd="@dimen/_3sdp"
+                            android:textColor="@color/lightblack"
+                            android:typeface="serif"
+                            android:textSize="@dimen/_8sdp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!-- List of food items -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/early_breakfast_linear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/early_breakfast_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                            <include layout="@layout/diet_no_data_found" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/breakfast_linear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/breakfast_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                            <include layout="@layout/diet_no_data_found1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lunch_linear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/lunch_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                            <include layout="@layout/diet_no_data_found2" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/evening_snack_linear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/evening_snack_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                            <include layout="@layout/diet_no_data_found3" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/dinner_linear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/dinner_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                            <include layout="@layout/diet_no_data_found4" />
+                        </LinearLayout>
+
+                        <!--<include layout="@layout/no_data_found_1"/>-->
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:visibility="visible"
+                        android:background="@color/grey" />
+
+                    <!-- Add button and total cal -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="0.5">
+                            <LinearLayout
+                                android:id="@+id/add_food"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:gravity="center"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:background="@drawable/rounded_counded_with_filled_colorprimary">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Add Food"
+                                    android:typeface="serif"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/white"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center|right"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:layout_weight="0.5">
+                            <TextView
+                                android:id="@+id/total_cal_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="visible"
+                                android:textStyle="bold"
+                                android:padding="@dimen/_5sdp"
+                                android:textSize="@dimen/_12sdp"
+                                android:typeface="serif"
+                                android:textColor="@color/lightblack"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Popular food item text -->
+                    <TextView
+                        android:id="@+id/most_popular_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Most Popular Items"
+                        android:visibility="gone"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:typeface="serif"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <!-- Popular food item list -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/early_breakfast_popular_linear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/early_breakfast_popular_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/breakfast_popular_linear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/breakfast_popular_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lunch_popular_linear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/lunch_popular_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/evening_snack_popular_linear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/evening_snack_popular_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/dinner_popular_linear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/dinner_popular_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

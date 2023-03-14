@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.felipecsl.quickreturn:library:1.5.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5fd404007294d3632122e465c794f2c4/library-1.5.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5fd404007294d3632122e465c794f2c4/library-1.5.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5fd404007294d3632122e465c794f2c4/library-1.5.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.felipecsl.quickreturn/library/1.5.1/1d6e197d68312101b3b024cfaa83e20452264c78/library-1.5.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.felipecsl.quickreturn/library/1.5.1/f69e378f991129cca238a8e49bdb3dffa7d41c7e/library-1.5.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

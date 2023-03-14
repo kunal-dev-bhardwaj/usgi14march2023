@@ -1,0 +1,227 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_280sdp"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/rounded_corner_white_sos"
+            android:paddingBottom="@dimen/_12sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_45sdp"
+                android:padding="@dimen/_5sdp">
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:weightSum="1">
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.40"
+                    android:gravity="bottom"
+                    android:text="Service Provider :"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_9sdp"
+                    android:typeface="serif" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_weight="0.60"
+                    android:background="@drawable/profile_editbox_bg"
+                    android:gravity="bottom"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:paddingStart="@dimen/_2sdp"
+                    android:maxLines="1"
+                    android:hint="Enter provider name"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_9sdp"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:weightSum="1">
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.40"
+                    android:gravity="bottom"
+                    android:text="RSA Number :"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_9sdp"
+                    android:typeface="serif" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_weight="0.70"
+                    android:background="@drawable/profile_editbox_bg"
+                    android:gravity="bottom"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:paddingStart="@dimen/_2sdp"
+                    android:hint="Enter RSA no."
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_9sdp"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.40"
+                    android:gravity="bottom"
+                    android:text="Helpline Number :"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_9sdp"
+                    android:typeface="serif" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_weight="0.60"
+                    android:background="@drawable/profile_editbox_bg"
+                    android:gravity="bottom"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:paddingStart="@dimen/_2sdp"
+                    android:hint="Enter helpline no."
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_9sdp"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:weightSum="1">
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.40"
+                    android:gravity="bottom"
+                    android:text="Expiry Date :"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_9sdp"
+                    android:typeface="serif" />
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_weight="0.60"
+                    android:background="@drawable/profile_editbox_bg"
+                    android:gravity="bottom"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:paddingStart="@dimen/_2sdp"
+                    android:hint="Enter expiry date"
+                    android:inputType="date"
+                    android:textColor="@color/lightblack"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_9sdp"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_6sdp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@drawable/rounded_corner_motor_profile"
+                        android:alpha="0.7"></LinearLayout>
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="@dimen/_13sdp"
+                        android:typeface="serif"
+                        android:text="Submit"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:gravity="center"
+            android:background="@drawable/circle_profile"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:padding="@dimen/_6sdp"
+                android:src="@drawable/form_line_icon"
+                android:tint="@color/white"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+

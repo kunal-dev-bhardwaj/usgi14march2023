@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:paddingStart="@dimen/_6sdp"
+        android:paddingEnd="@dimen/_6sdp"
+        android:paddingTop="@dimen/_5sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <LinearLayout
+                android:id="@+id/accedent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/linear_rounded_left_claim_tab_dark"
+                android:orientation="vertical">
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:id="@+id/accedent1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accident"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:typeface="serif"
+                    android:textSize="@dimen/_11sdp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/theft"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@color/claim_tab_light"
+                android:orientation="vertical">
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:id="@+id/theft1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Theft"
+                    android:textColor="@color/lightblack"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:typeface="serif"
+                    android:textSize="@dimen/_11sdp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/third_party"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/linear_rounded_right_claim_tab_light"
+                android:orientation="vertical">
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:id="@+id/third_party1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Third Party"
+                    android:textColor="@color/lightblack"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:typeface="serif"
+                    android:textSize="@dimen/_11sdp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager2"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/_4sdp" />
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.universalsompo.meta.metaapp.utilities.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40sdp"
+    android:textSize="@dimen/_16sdp"
+    android:paddingBottom="@dimen/_2sdp"
+    android:textStyle="bold"
+    android:paddingStart="@dimen/_7sdp"
+    android:textColor="@color/white"
+    android:gravity="center_vertical"
+    android:typeface="serif" />

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_15sdp"
+    android:elevation="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_15sdp"
+    android:layout_height="wrap_content">
+
+      <LinearLayout
+          android:layout_marginBottom="@dimen/_15sdp"
+          android:layout_marginTop="@dimen/_10sdp"
+          android:gravity="center"
+          android:layout_gravity="center"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                  <ImageView
+                      android:id="@+id/cutImg"
+                      android:layout_width="@dimen/_55sdp"
+                      android:layout_height="@dimen/_55sdp"
+                      android:layout_alignParentEnd="true"
+                      android:layout_gravity="end"
+                      android:layout_marginEnd="@dimen/_5sdp"
+                      android:src="@drawable/cross_motor_icon">
+
+                  </ImageView>
+
+
+                  <ImageView
+                      android:layout_width="@dimen/_50sdp"
+                      android:layout_height="@dimen/_50sdp"
+                      android:layout_centerHorizontal="true"
+                      android:layout_gravity="center"
+                      android:layout_marginTop="@dimen/_15sdp"
+                      android:layout_marginBottom="@dimen/_15sdp"
+                      android:src="@drawable/disclaimer">
+
+                  </ImageView>
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textSize="@dimen/_15sdp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/black"
+                android:text="Please get your CKYC done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/darker_gray1"
+                android:text="You have not done your CKYC yet."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/darker_gray1"
+                android:text="Please click on the below link and complete your CKYC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextViewLink"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/sky_new_blue"
+                android:text="www.universalsompockyc.com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+
+
+
+      </LinearLayout>
+
+  </androidx.cardview.widget.CardView>

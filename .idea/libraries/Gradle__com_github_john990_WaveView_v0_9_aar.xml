@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.john990:WaveView:v0.9@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a84cfb78d78660f2e706910f3376fb05/WaveView-v0.9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a84cfb78d78660f2e706910f3376fb05/WaveView-v0.9/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a84cfb78d78660f2e706910f3376fb05/WaveView-v0.9/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.john990/WaveView/v0.9/8b42e4ce8f508a3b7b060c1714c1f697ab0c2583/WaveView-v0.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

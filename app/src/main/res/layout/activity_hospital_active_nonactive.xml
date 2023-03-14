@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".metaapp.health.activities.Hospital_active_nonactive">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/cross_icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_4sdp">
+
+            <TextView
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/font_awesome_back"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+            <!--<ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/back_arrow" />-->
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textColor="@color/black"
+            android:text="Hospital List"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp">
+
+        </TextView>
+    </LinearLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/buy_tab"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="@dimen/_35sdp"
+        app:tabBackground="@drawable/tab_color_selector"
+        app:tabIndicatorColor="@color/light_grey"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicator="@null"
+        app:tabTextColor="@color/black"
+        app:tabTextAppearance="@style/TabLayoutStyle"
+        />
+    <androidx.viewpager.widget.ViewPager
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/OrderItemsPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/OrderItemsLayout"
+        android:layout_centerInParent="true"
+        tools:layout_editor_absoluteX="8dp" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.universalsompo.meta.metaapp.utilities.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:textSize="@dimen/_20sdp"
+    android:text="No Data Found"
+    android:gravity="center"
+    android:id="@+id/no_data"
+    android:typeface="serif"
+    android:visibility="gone"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+</com.universalsompo.meta.metaapp.utilities.CustomTextView>

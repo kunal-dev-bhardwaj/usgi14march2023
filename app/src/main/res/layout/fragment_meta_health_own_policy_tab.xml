@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_6sdp"
+        android:paddingEnd="@dimen/_6sdp"
+        android:paddingTop="@dimen/_8sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/btnpolicy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/linear_rounded_left_policy_tab_dark"
+                android:orientation="vertical">
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                    android:id="@+id/btnpolicy1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Policy"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:typeface="serif"
+                    android:textSize="@dimen/_11sdp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btncoverages"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@color/my_policy_tab_light"
+                android:orientation="vertical">
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                    android:id="@+id/btncoverages1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Members"
+                    android:textColor="@color/lightblack"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:typeface="serif"
+                    android:textSize="@dimen/_11sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btncontact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/linear_rounded_right_policy_tab_light"
+                android:orientation="vertical">
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                    android:id="@+id/btncontact1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact"
+                    android:textColor="@color/lightblack"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:typeface="serif"
+                    android:textSize="@dimen/_11sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/no_data_found"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/_8sdp"/>
+
+</LinearLayout>
+
+

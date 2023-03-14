@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_15sdp"
+    android:elevation="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_15sdp"
+    android:layout_height="wrap_content">
+
+      <LinearLayout
+          android:layout_marginBottom="@dimen/_15sdp"
+          android:layout_marginTop="@dimen/_10sdp"
+          android:gravity="center"
+          android:layout_gravity="center"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                  <ImageView
+                      android:id="@+id/cutImg"
+                      android:layout_width="@dimen/_55sdp"
+                      android:layout_height="@dimen/_55sdp"
+                      android:layout_alignParentEnd="true"
+                      android:layout_gravity="end"
+                      android:layout_marginEnd="@dimen/_5sdp"
+                      android:src="@drawable/cross_motor_icon">
+
+                  </ImageView>
+
+
+                  <ImageView
+                      android:layout_width="@dimen/_50sdp"
+                      android:layout_height="@dimen/_50sdp"
+                      android:layout_centerHorizontal="true"
+                      android:layout_gravity="center"
+                      android:layout_marginTop="@dimen/_15sdp"
+                      android:layout_marginBottom="@dimen/_25sdp"
+                      android:src="@drawable/cash_img_chi">
+
+                  </ImageView>
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textSize="@dimen/_18sdp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/black"
+                android:text="Maternity Benefit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/black"
+                android:text="Because your age is above 45 years."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/black"
+                android:text="You are not eligible for Maternity Benefit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/continueButtonMaterntiy"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/red_btn_bg"
+                android:orientation="vertical"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_35sdp">
+                  <TextView
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:fontFamily="@font/montserrat_bold"
+                      android:textSize="16dp"
+                      android:textColor="@color/white"
+                      android:text="Okay, Got it "
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+                  </TextView>
+            </LinearLayout>
+
+      </LinearLayout>
+
+  </androidx.cardview.widget.CardView>

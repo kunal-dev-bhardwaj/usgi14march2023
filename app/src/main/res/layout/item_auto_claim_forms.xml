@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="@dimen/_30sdp"
+    android:gravity="center|start"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/_12sdp"
+    android:weightSum="3">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="3">
+        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14sdp"
+            android:typeface="serif" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/download1"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_cashless_linearlayout"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:tint="#ffbc00"
+            android:src="@drawable/download_claim_form_line_icon"
+            android:contentDescription="@string/download_image" />
+    </LinearLayout>
+    <View
+        android:layout_width="2dp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:background="@color/grey" />
+    <LinearLayout
+        android:id="@+id/email1"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_cashless_linearlayout"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:tint="#ffbc00"
+            android:src="@drawable/email_claim_form_line_icon"
+            android:contentDescription="@string/email_image" />
+    </LinearLayout>
+</LinearLayout>

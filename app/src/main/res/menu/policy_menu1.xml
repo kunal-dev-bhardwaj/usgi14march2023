@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/motor_menu_changer"
+        android:orderInCategory="100"
+        android:title="notify"
+        app:actionLayout="@layout/motor_insurance_changer"
+        app:showAsAction="always" />
+
+    <!--<item
+        android:id="@+id/noitify_menu1"
+        android:orderInCategory="100"
+        android:title="notify"
+        app:actionLayout="@layout/notification_menu"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/tips_menu1"
+        android:menuCategory="secondary"
+        android:orderInCategory="1"
+        android:title="Tips"
+        app:actionLayout="@layout/bulb_menu"
+        app:showAsAction="always" />-->
+
+</menu>

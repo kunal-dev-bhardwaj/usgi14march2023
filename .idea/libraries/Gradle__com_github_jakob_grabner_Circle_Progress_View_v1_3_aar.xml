@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.jakob-grabner:Circle-Progress-View:v1.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9fcc8dd59869ea93e64fc3ad18323b30/jetified-Circle-Progress-View-v1.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9fcc8dd59869ea93e64fc3ad18323b30/jetified-Circle-Progress-View-v1.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9fcc8dd59869ea93e64fc3ad18323b30/jetified-Circle-Progress-View-v1.3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e4487f132b1b062619180052da710fd3/jetified-Circle-Progress-View-v1.3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e4487f132b1b062619180052da710fd3/jetified-Circle-Progress-View-v1.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e4487f132b1b062619180052da710fd3/jetified-Circle-Progress-View-v1.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8cdbc2396125cb9e1a8fdbb4b3c89fb7/jetified-Circle-Progress-View-v1.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8cdbc2396125cb9e1a8fdbb4b3c89fb7/jetified-Circle-Progress-View-v1.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8cdbc2396125cb9e1a8fdbb4b3c89fb7/jetified-Circle-Progress-View-v1.3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.jakob-grabner/Circle-Progress-View/v1.3/b51806caff7c046309c6307378b01bacae007e9e/Circle-Progress-View-v1.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.jakob-grabner/Circle-Progress-View/v1.3/8e1bb1558c5ecee010489c17333925334fa59b81/Circle-Progress-View-v1.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

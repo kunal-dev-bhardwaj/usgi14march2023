@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_25sdp"
+        android:gravity="center|top">
+
+        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood sugar (also called blood glucose) needs to be tightly controlled in the human body to minimise the risk of complications developing."
+            android:textSize="@dimen/_16sdp"
+            android:typeface="serif"
+            android:textColor="@color/lightblack"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:orientation="vertical">
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.40"
+                        android:text="Sugar Fasting"
+                        android:gravity="center"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_12sdp"
+                        android:typeface="serif" />
+                </LinearLayout>
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:orientation="vertical">
+                    <EditText
+                        android:id="@+id/sugar_fasting"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/linknew_edittext_bg"
+                        android:gravity="bottom"
+                        android:inputType="number"
+                        android:hint="mg/dl"
+                        android:maxLength="3"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_12sdp"
+                        android:typeface="serif" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/grey"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:orientation="vertical">
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.40"
+                        android:text="Sugar PP"
+                        android:gravity="center"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_12sdp"
+                        android:typeface="serif" />
+                </LinearLayout>
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:orientation="vertical">
+                    <EditText
+                        android:id="@+id/sugar_pp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/linknew_edittext_bg"
+                        android:gravity="bottom"
+                        android:inputType="number"
+                        android:hint="mg/dl"
+                        android:maxLength="3"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_12sdp"
+                        android:typeface="serif" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/clear_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="CLEAR"
+                    android:typeface="serif"
+                    android:textStyle="bold"
+                    android:background="@color/lightish_grey"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/lightblack"
+                    android:layout_gravity="right"
+                    android:visibility="visible" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/calculate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="CALCULATE"
+                    android:textSize="@dimen/_12sdp"
+                    android:typeface="serif"
+                    android:textStyle="bold"
+                    android:background="@color/my_policy_tab_dark"
+                    android:textColor="@color/white"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:visibility="gone"
+            android:gravity="center|top"
+            android:orientation="vertical">
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Result"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_16sdp"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:id="@+id/ll_result_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="@dimen/_50sdp">
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:id="@+id/tv_result_value_green"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="@color/color_green"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:id="@+id/tv_result_type_green"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="(Normal)"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_11sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_result_orange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/ll_reult_red"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:visibility="invisible">
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:id="@+id/tv_result_value_orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.87"
+                        android:textColor="@color/color_orange"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:id="@+id/tv_result_type_orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="(pre-diabetic)"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_11sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_reult_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:visibility="invisible">
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:id="@+id/tv_result_value_red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.87"
+                        android:textColor="@color/color_red"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:id="@+id/tv_result_type_red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(Diabetic)"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_11sdp" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:weightSum="3.6">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6" />
+
+                <ImageView
+                    android:id="@+id/img_drop_low_risk"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_weight="1"
+
+                    android:src="@drawable/green_drop_down" />
+
+                <ImageView
+                    android:id="@+id/img_drop_medium_risk"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_weight="1"
+                    android:src="@drawable/orange_drop_down"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/img_drop_high_risk"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_weight="1"
+                    android:src="@drawable/red_drop_down"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3.6">
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_weight=".6"
+                    android:text="Fasting "
+                    android:textColor="@color/lightblack" />
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/color_green" />
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/color_orange" />
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/color_red" />
+            </LinearLayout>
+            <!--.........................................pp.................................-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:id="@+id/ll_result_green_pp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_55sdp">
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:id="@+id/tv_result_value_green_pp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="@color/color_green"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:id="@+id/tv_result_type_green_pp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="(Normal)"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_11sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_result_orange_pp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/ll_reult_red_pp"
+                    android:visibility="invisible">
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:id="@+id/tv_result_value_orange_pp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.87"
+                        android:textColor="@color/color_orange"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:id="@+id/tv_result_type_orange_pp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="(pre-diabetic)"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_11sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_reult_red_pp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:visibility="invisible">
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:id="@+id/tv_result_value_red_pp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.87"
+                        android:textColor="@color/color_red"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:id="@+id/tv_result_type_red_pp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(Diabetic)"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_11sdp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_weight=".2"
+                    android:src="@drawable/orange_drop_down"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/img_drop_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_weight=".6"
+                    android:src="@drawable/green_drop_down" />
+
+                <ImageView
+                    android:id="@+id/img_drop_pre_diabatic"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_weight=".6"
+                    android:src="@drawable/orange_drop_down"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/img_drop_diabtic"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_weight=".6"
+                    android:src="@drawable/red_drop_down"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_weight=".2"
+                    android:text="PP    "
+                    android:textColor="@color/lightblack" />
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:background="@color/color_green" />
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:background="@color/color_orange" />
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:background="@color/color_red" />
+            </LinearLayout>
+
+            <!--.............................................................-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@color/white">
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*">
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:padding="@dimen/_5sdp">
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/lightblack"
+                            android:text="Normal" />
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/lightblack"
+                            android:text="Less than 110" />
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/lightblack"
+                            android:text="Less than 140" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:padding="@dimen/_5sdp">
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/lightblack"
+                            android:text="Pre-diabetic" />
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/lightblack"
+                            android:text="110 to 126" />
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/lightblack"
+                            android:text="140 to 199" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:padding="@dimen/_5sdp">
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/lightblack"
+                            android:text="Diabetic" />
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/lightblack"
+                            android:text="Above 126" />
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/lightblack"
+                            android:text="Above 199" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textStyle="bold"
+                android:text="Source: American Diabetes Association"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_10sdp"
+                android:typeface="serif" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_margin="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:background="@color/white">
+
+        <!--<LinearLayout
+            android:id="@+id/class_vehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:gravity="center|left"
+            android:padding="@dimen/_5sdp">
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle class"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:typeface="serif" />
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:id="@+id/edt_booked_vehicle_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_11sdp"
+                android:typeface="serif" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/grey" />
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:gravity="center|left"
+                android:padding="@dimen/_5sdp">
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registration No."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:typeface="serif" />
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:id="@+id/edt_booked_reg_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_11sdp"
+                    android:typeface="serif" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/grey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/manufacturing_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:visibility="gone"
+                android:gravity="center|left"
+                android:padding="@dimen/_5sdp">
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manufacturing Year"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:typeface="serif" />
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:id="@+id/edt_manufacturing_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_11sdp"
+                    android:typeface="serif" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/grey" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:gravity="center|left"
+                android:padding="@dimen/_5sdp">
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:typeface="serif" />
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:id="@+id/edt_booked_make"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_11sdp"
+                    android:typeface="serif" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/grey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:gravity="center|left"
+                android:padding="@dimen/_5sdp">
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Model"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:typeface="serif" />
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:id="@+id/edt_booked_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_11sdp"
+                    android:typeface="serif" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/grey" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:id="@+id/variant1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center|left"
+            android:visibility="gone"
+            android:padding="@dimen/_5sdp">
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Varient"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:typeface="serif" />
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:id="@+id/edt_booked_varient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_11sdp"
+                android:typeface="serif" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/grey" />
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:gravity="center|left"
+                android:padding="@dimen/_5sdp">
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Engine No"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:typeface="serif" />
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:id="@+id/edt_booked_engine_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_11sdp"
+                    android:typeface="serif" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/grey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:gravity="center|left"
+                android:padding="@dimen/_5sdp">
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chassis No"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:typeface="serif" />
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:id="@+id/edt_booked_chassis_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_11sdp"
+                    android:typeface="serif" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/grey" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

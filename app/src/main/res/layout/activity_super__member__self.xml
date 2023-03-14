@@ -1,0 +1,3399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginRight="@dimen/_15sdp"
+    android:layout_marginLeft="@dimen/_15sdp"
+    tools:context=".metaapp.health.fragment.buypolicy.super_healthcare.Super_Member_Self">
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/llHeadRoundImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/universal_logo" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical">
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_18sdp"
+                android:text="Universal Sompo" />
+
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_14sdp"
+                android:text="General Insurance Co. Ltd." />
+
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_14sdp"
+                android:text="Suraksha, Hamesha Aapke Saath" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15sdp"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:text="Quotation Of Super Healthcare Insurance"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:textColor="@color/colorPrimary"/>
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="Policy Type"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/light_grey_"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:paddingStart="@dimen/_15sdp"
+                        android:textSize="@dimen/_12sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/black"
+                        android:id="@+id/policyType_spinner"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:cursorVisible="false"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </EditText>
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_weight="3.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/black">
+
+                    </ImageView>
+                </LinearLayout>
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Family Type"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp" />
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/light_grey_"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:paddingStart="@dimen/_15sdp"
+                        android:textSize="@dimen/_12sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/black"
+                        android:id="@+id/familyTypeEdit"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:cursorVisible="false"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </EditText>
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_weight="3.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/black">
+
+                    </ImageView>
+                </LinearLayout>
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="Sum Insured"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_weight="0.1"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/light_grey_"
+                        android:orientation="horizontal">
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="₹"
+                            android:paddingEnd="@dimen/_5sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/light_grey_"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:paddingStart="@dimen/_15sdp"
+                            android:textSize="@dimen/_12sdp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/black"
+                            android:id="@+id/sumInsuredEdit"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:cursorVisible="false"
+                            android:layout_weight="1.3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </EditText>
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_drop_down"
+                            android:layout_weight="3.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/black">
+
+                        </ImageView>
+                    </LinearLayout>
+                </LinearLayout>
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="Deductible"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_weight="0.1"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/light_grey_"
+                        android:orientation="horizontal">
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="₹"
+                            android:paddingEnd="@dimen/_5sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/light_grey_"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:paddingStart="@dimen/_15sdp"
+                            android:textSize="@dimen/_12sdp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/black"
+                            android:id="@+id/Deductible_spinner"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:cursorVisible="false"
+                            android:layout_weight="1.3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </EditText>
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_drop_down"
+                            android:layout_weight="3.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/black">
+
+                        </ImageView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="Policy tenure"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/light_grey_"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:paddingStart="@dimen/_15sdp"
+                        android:textSize="@dimen/_12sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/black"
+                        android:id="@+id/policyTenureEdit"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:cursorVisible="false"
+                        android:layout_weight="1.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </EditText>
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_weight="3.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/black">
+
+                    </ImageView>
+                </LinearLayout>
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="Total Premium:"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_weight="0.1"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/light_grey_"
+                        android:orientation="horizontal">
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="₹"
+                            android:paddingEnd="@dimen/_5sdp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/light_grey_"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/totalPremiumAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:hint="0"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:cursorVisible="false"
+                            android:paddingStart="14dp"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="Quotation ID:"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/light_grey_"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/QuotationID"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:cursorVisible="false"
+                            android:paddingStart="14dp"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_16sdp"
+                    android:layout_gravity="start"
+                    android:text="@string/ShowBreakup"
+                    android:id="@+id/show_Breakup"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+            </LinearLayout>
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_18sdp"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:text="Insured Information"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textColor="@color/black"/>
+
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone"
+                android:text=" Is the Insured same as the Proposer?"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/white_grey"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/proposer_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/proposer_liner"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/white_grey"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:visibility="gone"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:paddingStart="4dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+                        <Spinner
+                            android:id="@+id/selfProposerSpinner"
+                            android:scrollbars="none"
+                            android:layout_weight="0.2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableRight="@drawable/dropdown_icon"
+                            android:textSize="@dimen/_12sdp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/white_grey"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/new_person_24"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            app:tint="@color/darker_gray">
+
+                        </ImageView>
+
+
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:background="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:hint="Name"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:inputType="text"
+                            android:paddingStart="4dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/white_grey"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/calendar"
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/darker_gray">
+
+                        </ImageView>
+
+
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:background="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+
+                        <EditText
+                            android:id="@+id/selfProposerDob"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:hint="Date Of Birth"
+                            android:paddingStart="4dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/white_grey"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:visibility="gone"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:paddingStart="4dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+
+                        <EditText
+                            android:visibility="visible"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:clickable="true"
+                            android:layout_weight="1.2"
+                            android:id="@+id/selfProposerGender"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:paddingStart="4dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_drop_down"
+                            android:layout_weight="3.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/black">
+
+                        </ImageView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/white_grey"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/occupation"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            app:tint="@color/darker_gray">
+
+                        </ImageView>
+
+
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:background="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp">
+                            <EditText
+                                android:visibility="gone"
+                                android:cursorVisible="false"
+                                android:focusable="false"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:paddingStart="4dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textColor="@color/lightblack"
+                                android:textColorHint="@color/lightblack"
+                                android:textSize="@dimen/txt_size" />
+
+                            <EditText
+                                android:visibility="visible"
+                                android:cursorVisible="false"
+                                android:focusable="false"
+                                android:clickable="true"
+                                android:layout_weight="1.2"
+                                android:id="@+id/selfProposerOccupation"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:paddingStart="4dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textColor="@color/lightblack"
+                                android:textColorHint="@color/lightblack"
+                                android:textSize="@dimen/txt_size" />
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:src="@drawable/spinner_drop_down"
+                                android:layout_weight="3.5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:tint="@color/black">
+
+                            </ImageView>
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13sdp"
+                        android:text="Relation"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:textColor="@color/black"/>
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/white_grey"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:visibility="gone"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:paddingStart="4dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+
+                        <EditText
+                            android:visibility="visible"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:clickable="true"
+                            android:layout_weight="1.2"
+                            android:id="@+id/selfProposerRelation"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:paddingStart="15dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_drop_down"
+                            android:layout_weight="3.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/black">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/white_grey"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/height_ft"
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            app:tint="@color/darker_gray">
+
+                        </ImageView>
+
+
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:background="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:visibility="gone"
+                                android:cursorVisible="false"
+                                android:focusable="false"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:paddingStart="4dp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textColor="@color/lightblack"
+                                android:textColorHint="@color/lightblack"
+                                android:textSize="@dimen/txt_size" />
+
+                            <Spinner
+                                android:id="@+id/SelfProposerMarital"
+                                android:scrollIndicators="none"
+                                android:layout_weight="0.3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:drawableRight="@drawable/dropdown_icon"
+                                android:textSize="@dimen/_12sdp"
+                                />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:text="Member's Information"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:visibility="visible"
+                android:orientation="vertical"
+                android:id="@+id/adultLiner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_gravity="center"
+                    android:text="1st Adult Details"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textColor="@color/black"/>
+
+                <View
+                    android:visibility="gone"
+                    android:background="@color/lightblack"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+                </View>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/new_person_24"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        app:tint="@color/darker_gray">
+
+                    </ImageView>
+
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <EditText
+                        android:id="@+id/edt_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Name"
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:inputType="text"
+                        android:paddingStart="4dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/calendar"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/darker_gray">
+
+                    </ImageView>
+
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <EditText
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:id="@+id/edit_dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Date Of Birth"
+                        android:paddingStart="4dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/gender_liner"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:visibility="visible"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:layout_weight="1"
+                        android:id="@+id/edit_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:paddingStart="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_weight="3.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/black">
+
+                    </ImageView>
+                    <Spinner
+                        android:visibility="gone"
+                        android:scrollbars="none"
+                        android:layout_weight="0.2"
+                        android:id="@+id/gender_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@drawable/dropdown_icon"
+                        android:textSize="@dimen/_12sdp"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/occupation"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        app:tint="@color/darker_gray">
+
+                    </ImageView>
+
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@+id/linerOccupation"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp">
+                        <EditText
+                            android:layout_weight="1.2"
+                            android:visibility="visible"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:clickable="true"
+                            android:id="@+id/edit_occupation"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:paddingStart="6dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_drop_down"
+                            android:layout_weight="3.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/black">
+
+                        </ImageView>
+                        <Spinner
+                            android:visibility="gone"
+                            android:fadeScrollbars="false"
+                            android:scrollIndicators="none"
+                            android:scrollbars="none"
+                            android:layout_weight="0.3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableRight="@drawable/dropdown_icon"
+                            android:textSize="@dimen/_12sdp"
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/height_ft"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        app:tint="@color/darker_gray">
+
+                    </ImageView>
+
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <LinearLayout
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:id="@+id/ftLiner"
+                        android:orientation="horizontal"
+                        android:layout_weight="1.2"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <EditText
+                            android:layout_weight="1"
+                            android:visibility="visible"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:id="@+id/edit_ft"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:paddingStart="4dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_drop_down"
+                            android:layout_weight="4.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/black">
+
+                        </ImageView>
+                        <Spinner
+                            android:visibility="gone"
+                            android:scrollIndicators="none"
+                            android:layout_weight="0.3"
+                            android:id="@+id/ft_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableRight="@drawable/dropdown_icon"
+                            android:textSize="@dimen/_12sdp"
+                            />
+
+                    </LinearLayout>
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_height="match_parent"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+                    <LinearLayout
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:id="@+id/LinerInches"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <EditText
+                            android:layout_weight="2.6"
+                            android:visibility="visible"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:id="@+id/edit_inches"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:paddingStart="8dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_drop_down"
+                            android:layout_weight="4.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/black">
+
+                        </ImageView>
+                        <Spinner
+                            android:visibility="gone"
+                            android:scrollIndicators="none"
+                            android:layout_weight="0.3"
+                            android:id="@+id/inches_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableRight="@drawable/dropdown_icon"
+                            android:textSize="@dimen/_12sdp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_weight="0.3"
+                        android:id="@+id/weight_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Weight In Kg"
+                        android:inputType="phone"
+                        android:paddingStart="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:cursorVisible="false"
+                        android:clickable="false"
+                        android:editable="false"
+                        android:layout_weight="0.3"
+                        android:id="@+id/BMIEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="BMI"
+                        android:inputType="phone"
+                        android:paddingStart="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="Relation"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:paddingStart="@dimen/_15sdp"
+                        android:textSize="@dimen/_12sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/black"
+                        android:id="@+id/RelationEdit"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:hint="Relation"
+                        android:focusable="false"
+                        android:cursorVisible="false"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </EditText>
+
+                    <ImageView
+
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_weight="3.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/black">
+
+                    </ImageView>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/spouseLiner"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:text="2nd Adult Details"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textColor="@color/black"/>
+
+                <View
+                    android:visibility="gone"
+                    android:background="@color/lightblack"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+                </View>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/new_person_24"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        app:tint="@color/darker_gray">
+
+                    </ImageView>
+
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <EditText
+                        android:id="@+id/edt_Spouse_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Name"
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:inputType="text"
+                        android:paddingStart="4dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/calendar"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/darker_gray">
+
+                    </ImageView>
+
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+                    <EditText
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:id="@+id/spouse_edit_dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Date Of Birth"
+                        android:inputType="phone"
+                        android:paddingStart="4dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/spouseGender"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:visibility="visible"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:layout_weight="1.2"
+                        android:id="@+id/spouse_gender_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:paddingStart="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_weight="3.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/black">
+
+                    </ImageView>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/spouseOccupation"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/occupation"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        app:tint="@color/darker_gray">
+
+                    </ImageView>
+
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <EditText
+                        android:layout_weight="1.2"
+                        android:visibility="visible"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:clickable="true"
+                        android:id="@+id/spouse_occupation_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:paddingStart="6dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_weight="2.2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/black">
+
+                    </ImageView>
+                    <Spinner
+                        android:visibility="gone"
+                        android:scrollIndicators="none"
+                        android:layout_weight="0.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@drawable/dropdown_icon"
+                        android:textSize="@dimen/_12sdp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/height_ft"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        app:tint="@color/darker_gray">
+
+                    </ImageView>
+
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <LinearLayout
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:id="@+id/spouseFt"
+                        android:orientation="horizontal"
+                        android:layout_weight="1.2"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <Spinner
+                            android:visibility="gone"
+                            android:scrollIndicators="none"
+                            android:layout_weight="0.3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableRight="@drawable/dropdown_icon"
+                            android:textSize="@dimen/_12sdp"
+                            />
+                        <EditText
+                            android:layout_weight="1"
+                            android:visibility="visible"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:id="@+id/spouse_ft_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:paddingStart="4dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_drop_down"
+                            android:layout_weight="4.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/black">
+
+                        </ImageView>
+                    </LinearLayout>
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_height="match_parent"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+                    <LinearLayout
+                        android:id="@+id/spouseInches"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <EditText
+                            android:layout_weight="2.6"
+                            android:visibility="visible"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:id="@+id/spouse_inches_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:paddingStart="8dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+
+                        <ImageView
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_drop_down"
+                            android:layout_weight="4.2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/black">
+
+                        </ImageView>
+
+                        <Spinner
+                            android:visibility="gone"
+                            android:scrollIndicators="none"
+                            android:layout_weight="0.3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableRight="@drawable/dropdown_icon"
+                            android:textSize="@dimen/_12sdp"
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/spouse_weight_edit"
+                        android:layout_weight="0.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Weight In Kg"
+                        android:inputType="phone"
+                        android:paddingStart="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_weight="0.3"
+                        android:id="@+id/BMIAdultOneEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="BMI"
+                        android:inputType="phone"
+                        android:paddingStart="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="Relation"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:id="@+id/spouseRelationLiner"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:paddingStart="@dimen/_15sdp"
+                        android:textSize="@dimen/_12sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/black"
+                        android:id="@+id/RelationAdultOneEdit"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:hint="Relation"
+                        android:focusable="false"
+                        android:cursorVisible="false"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </EditText>
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_weight="3.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/black">
+
+                    </ImageView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/oneChildLiner"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:text="1st Child Details"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textColor="@color/black"/>
+
+                <View
+                    android:visibility="gone"
+                    android:background="@color/lightblack"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+                </View>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/new_person_24"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        app:tint="@color/darker_gray">
+
+                    </ImageView>
+
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Name"
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:inputType="text"
+                        android:id="@+id/OneEditName"
+                        android:paddingStart="4dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/calendar"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/darker_gray">
+
+                    </ImageView>
+
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+                    <EditText
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Date Of Birth"
+                        android:inputType="phone"
+                        android:id="@+id/OneChildDob"
+                        android:paddingStart="4dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ChildOneGender"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:visibility="visible"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:layout_weight="1.2"
+                        android:id="@+id/oneGenderSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:paddingStart="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_weight="3.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/black">
+
+                    </ImageView>
+                    <Spinner
+                        android:visibility="gone"
+                        android:scrollIndicators="none"
+                        android:layout_weight="0.2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@drawable/dropdown_icon"
+                        android:textSize="@dimen/_12sdp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/occupation"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        app:tint="@color/darker_gray">
+
+                    </ImageView>
+
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Occupation"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:inputType="text"
+                        android:focusable="false"
+                        android:layout_weight="1.5"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:id="@+id/oneOccupationSpinner"
+                        android:paddingStart="6dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_weight="3.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/black">
+
+                    </ImageView>
+
+                    <Spinner
+                        android:visibility="gone"
+                        android:scrollIndicators="none"
+                        android:layout_weight="0.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@drawable/dropdown_icon"
+                        android:textSize="@dimen/_12sdp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/height_ft"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        app:tint="@color/darker_gray">
+
+                    </ImageView>
+
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <LinearLayout
+                        android:id="@+id/LinerFtChildOne"
+                        android:layout_weight="1.2"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <EditText
+                            android:layout_weight="1"
+                            android:visibility="visible"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:id="@+id/oneFtSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:paddingStart="4dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_drop_down"
+                            android:layout_weight="4.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/black">
+
+                        </ImageView>
+                        <Spinner
+                            android:visibility="gone"
+                            android:scrollIndicators="none"
+                            android:layout_weight="0.3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableRight="@drawable/dropdown_icon"
+                            android:textSize="@dimen/_12sdp"
+                            />
+
+                    </LinearLayout>
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_height="match_parent"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <LinearLayout
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:id="@+id/LinerInchesChildOne"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:layout_weight="2.6"
+                            android:visibility="visible"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:id="@+id/oneInchesSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:paddingStart="8dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+
+                        <ImageView
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_drop_down"
+                            android:layout_weight="4.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/black">
+
+                        </ImageView>
+
+                        <Spinner
+                            android:visibility="gone"
+                            android:scrollIndicators="none"
+                            android:layout_weight="0.3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableRight="@drawable/dropdown_icon"
+                            android:textSize="@dimen/_12sdp"
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_weight="0.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Weight In Kg"
+                        android:inputType="phone"
+                        android:paddingStart="10dp"
+                        android:id="@+id/oneWeightEdit"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:cursorVisible="false"
+                        android:clickable="false"
+                        android:editable="false"
+                        android:layout_weight="0.3"
+                        android:id="@+id/BMIChildEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="BMI"
+                        android:inputType="phone"
+                        android:paddingStart="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="Relation"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:id="@+id/ChildOneLinerRelation"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:paddingStart="@dimen/_15sdp"
+                        android:textSize="@dimen/_12sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/black"
+                        android:id="@+id/RelationChildEdit"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:hint="Relation"
+                        android:focusable="false"
+                        android:cursorVisible="false"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </EditText>
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_weight="3.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/black">
+
+                    </ImageView>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/twoChildLiner"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:text="2nd Child Details"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textColor="@color/black"/>
+
+                <View
+                    android:visibility="gone"
+                    android:background="@color/lightblack"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+                </View>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/new_person_24"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        app:tint="@color/darker_gray">
+
+                    </ImageView>
+
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <EditText
+                        android:id="@+id/twoChildEditName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Name"
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:inputType="text"
+                        android:paddingStart="4dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/calendar"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/darker_gray">
+
+                    </ImageView>
+
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+                    <EditText
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:id="@+id/twoDob"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Date Of Birth"
+                        android:inputType="phone"
+                        android:paddingStart="4dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/childTwoGenderLiner"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:visibility="visible"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:layout_weight="1.2"
+                        android:id="@+id/twoGenderSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:paddingStart="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_weight="3.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/black">
+
+                    </ImageView>
+                    <Spinner
+                        android:visibility="gone"
+                        android:scrollIndicators="none"
+                        android:layout_weight="0.2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@drawable/dropdown_icon"
+                        android:textSize="@dimen/_12sdp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/occupation"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        app:tint="@color/darker_gray">
+
+                    </ImageView>
+
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Occupation"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:inputType="text"
+                        android:focusable="false"
+                        android:clickable="false"
+                        android:editable="false"
+                        android:layout_weight="1.5"
+                        android:id="@+id/twoOccupationSpinner"
+                        android:paddingStart="8dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_weight="3.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/black">
+
+                    </ImageView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/height_ft"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        app:tint="@color/darker_gray">
+
+                    </ImageView>
+
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <LinearLayout
+                        android:id="@+id/LinerChildTwoFt"
+                        android:layout_weight="1.2"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:layout_weight="1"
+                            android:visibility="visible"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:id="@+id/twoFtSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:paddingStart="4dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_drop_down"
+                            android:layout_weight="4.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/black">
+
+                        </ImageView>
+
+                        <Spinner
+                            android:visibility="gone"
+                            android:scrollIndicators="none"
+                            android:layout_weight="0.3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableRight="@drawable/dropdown_icon"
+                            android:textSize="@dimen/_12sdp"
+                            />
+
+                    </LinearLayout>
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_height="match_parent"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+                    <LinearLayout
+                        android:id="@+id/LinerChildTwoInches"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:layout_weight="2.6"
+                            android:visibility="visible"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:id="@+id/twoInchesSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:paddingStart="8dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+                        <ImageView
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_drop_down"
+                            android:layout_weight="4.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/black">
+
+                        </ImageView>
+
+                        <Spinner
+                            android:visibility="gone"
+                            android:scrollIndicators="none"
+                            android:layout_weight="0.3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableRight="@drawable/dropdown_icon"
+                            android:textSize="@dimen/_12sdp"
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_weight="0.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Weight In Kg"
+                        android:inputType="phone"
+                        android:id="@+id/twoWeightEdit"
+                        android:paddingStart="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:cursorVisible="false"
+                        android:clickable="false"
+                        android:editable="false"
+                        android:layout_weight="0.3"
+                        android:id="@+id/BMIChildTwoEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="BMI"
+                        android:inputType="phone"
+                        android:paddingStart="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="Relation"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:id="@+id/ChildTwoRelationLiner"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:paddingStart="@dimen/_15sdp"
+                        android:textSize="@dimen/_12sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/black"
+                        android:id="@+id/RelationChildTwoEdit"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:hint="Relation"
+                        android:focusable="false"
+                        android:cursorVisible="false"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </EditText>
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_weight="3.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/black">
+
+                    </ImageView>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/threeChildLiner"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:text="3rd Child Details"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textColor="@color/black"/>
+
+                <View
+                    android:visibility="gone"
+                    android:background="@color/lightblack"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+                </View>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/new_person_24"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        app:tint="@color/darker_gray">
+
+                    </ImageView>
+
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Name"
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:inputType="text"
+                        android:id="@+id/thirdNameEdit"
+                        android:paddingStart="4dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/calendar"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/darker_gray">
+
+                    </ImageView>
+
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+                    <EditText
+                        android:id="@+id/thirdDob"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Date Of Birth"
+                        android:inputType="phone"
+                        android:paddingStart="4dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/thirdLinerGender"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:visibility="visible"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:layout_weight="1.2"
+                        android:id="@+id/thirdGenderSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:paddingStart="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_weight="3.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/black">
+
+                    </ImageView>
+                    <Spinner
+                        android:visibility="gone"
+                        android:scrollIndicators="none"
+                        android:layout_weight="0.2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@drawable/dropdown_icon"
+                        android:textSize="@dimen/_12sdp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/occupation"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        app:tint="@color/darker_gray">
+
+                    </ImageView>
+
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Occupation"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:inputType="text"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:layout_weight="1.5"
+                        android:id="@+id/thirdOccupationSpinner"
+                        android:paddingStart="8dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_weight="3.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/black">
+
+                    </ImageView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/height_ft"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        app:tint="@color/darker_gray">
+
+                    </ImageView>
+
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <LinearLayout
+                        android:id="@+id/LinerFtThird"
+                        android:orientation="horizontal"
+                        android:layout_weight="1.2"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:visibility="visible"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:clickable="true"
+                            android:layout_weight="1.2"
+                            android:id="@+id/thirdFtSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:paddingStart="4dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_drop_down"
+                            android:layout_weight="3.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/black">
+
+                        </ImageView>
+
+                        <Spinner
+                            android:visibility="gone"
+                            android:scrollIndicators="none"
+                            android:layout_weight="0.3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableRight="@drawable/dropdown_icon"
+                            android:textSize="@dimen/_12sdp"
+                            />
+
+                    </LinearLayout>
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_height="match_parent"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <LinearLayout
+                        android:id="@+id/thirdInchesLiner"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <EditText
+                            android:visibility="visible"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:clickable="true"
+                            android:layout_weight="2.6"
+                            android:id="@+id/thirdInchesSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:paddingStart="8dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_drop_down"
+                            android:layout_weight="3.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/black">
+
+                        </ImageView>
+
+                        <Spinner
+                            android:visibility="gone"
+                            android:scrollIndicators="none"
+                            android:layout_weight="0.3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableRight="@drawable/dropdown_icon"
+                            android:textSize="@dimen/_12sdp"
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_weight="0.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Weight In Kg"
+                        android:id="@+id/thirdWeightEdit"
+                        android:inputType="phone"
+                        android:paddingStart="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:cursorVisible="false"
+                        android:clickable="false"
+                        android:editable="false"
+                        android:layout_weight="0.3"
+                        android:id="@+id/BMIEChildThreeEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="BMI"
+                        android:inputType="phone"
+                        android:paddingStart="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="Relation"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:id="@+id/RelationThirdLiner"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:paddingStart="@dimen/_15sdp"
+                        android:textSize="@dimen/_12sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/black"
+                        android:id="@+id/RelationChildThreeEdit"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:hint="Relation"
+                        android:focusable="false"
+                        android:cursorVisible="false"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </EditText>
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_weight="3.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/black">
+
+                    </ImageView>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/fourChildLiner"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:text="4th Child Details"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textColor="@color/black"/>
+
+                <View
+                    android:visibility="gone"
+                    android:background="@color/lightblack"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+                </View>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/new_person_24"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        app:tint="@color/darker_gray">
+
+                    </ImageView>
+
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Name"
+                        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:inputType="text"
+                        android:id="@+id/fourNameEdit"
+                        android:paddingStart="4dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/calendar"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/darker_gray">
+
+                    </ImageView>
+
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+                    <EditText
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:id="@+id/fourDob"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Date Of Birth"
+                        android:inputType="phone"
+                        android:paddingStart="4dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/LinerGenderFour"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:visibility="visible"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:layout_weight="1.2"
+                        android:id="@+id/fourGenderSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:paddingStart="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_weight="3.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/black">
+
+                    </ImageView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/occupation"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        app:tint="@color/darker_gray">
+
+                    </ImageView>
+
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Occupation"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:inputType="text"
+                        android:focusable="false"
+                        android:clickable="false"
+                        android:layout_weight="1.5"
+                        android:editable="false"
+                        android:id="@+id/fourOccupationSpinner"
+                        android:paddingStart="8dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_weight="3.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/black">
+
+                    </ImageView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/height_ft"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        app:tint="@color/darker_gray">
+
+                    </ImageView>
+
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                    <LinearLayout
+                        android:id="@+id/LinerFtFour"
+                        android:layout_weight="1.2"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <EditText
+                            android:visibility="visible"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:clickable="true"
+                            android:layout_weight="1.2"
+                            android:id="@+id/fourFtSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:paddingStart="4dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_drop_down"
+                            android:layout_weight="3.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/black">
+
+                        </ImageView>
+
+
+                    </LinearLayout>
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_height="match_parent"
+                        android:background="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+                    <LinearLayout
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:id="@+id/LinerInchesFour"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:visibility="visible"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:clickable="true"
+                            android:layout_weight="2.6"
+                            android:id="@+id/fourInchesSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:paddingStart="8dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/spinner_drop_down"
+                            android:layout_weight="3.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tint="@color/black">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_weight="0.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Weight In Kg"
+                        android:inputType="phone"
+                        android:id="@+id/FourWeightEdit"
+                        android:paddingStart="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:cursorVisible="false"
+                        android:clickable="false"
+                        android:editable="false"
+                        android:layout_weight="0.3"
+                        android:id="@+id/BMIFourChildEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="BMI"
+                        android:inputType="phone"
+                        android:paddingStart="10dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="Relation"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:id="@+id/LinerRelationFour"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:paddingStart="@dimen/_15sdp"
+                        android:textSize="@dimen/_12sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/black"
+                        android:id="@+id/RelationFourChildEdit"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:hint="Relation"
+                        android:focusable="false"
+                        android:cursorVisible="false"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </EditText>
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/spinner_drop_down"
+                        android:layout_weight="3.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/black">
+
+                    </ImageView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:orientation="vertical">
+                <Button
+                    android:paddingEnd="@dimen/_20sdp"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:id="@+id/btn_continue"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/red_btn_bg"
+                    android:text="Continue"
+                    android:textAllCaps="false"
+                    android:textColor="@color/txt_color"
+                    android:textSize="@dimen/txt_size"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

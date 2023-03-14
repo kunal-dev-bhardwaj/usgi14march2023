@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:clickable="true"
+    android:layout_height="match_parent"
+    android:background="#c8000000">
+
+    <LinearLayout
+        android:id="@+id/bmrcalc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:paddingEnd="@dimen/_63sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Body Mass Ratio"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:typeface="serif" />
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:padding="@dimen/_12sdp"
+            android:background="@drawable/rounded_white_background2">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:tint="@color/dialog_locator_benefit_icon"
+                android:src="@drawable/bmr_icon"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/whrcalc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bmrcalc"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:paddingEnd="@dimen/_30sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="WHR Calculator"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:typeface="serif" />
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:padding="@dimen/_12sdp"
+            android:background="@drawable/rounded_white_background2">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:tint="@color/dialog_locator_benefit_icon"
+                android:src="@drawable/waist_hip_icon"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/smokecalc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/whrcalc"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:gravity="right"
+        android:paddingEnd="@dimen/_30sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Smoke Calculator"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:typeface="serif" />
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:padding="@dimen/_12sdp"
+            android:background="@drawable/rounded_white_background2">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:tint="@color/dialog_locator_benefit_icon"
+                android:src="@drawable/smoke"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/smokecalc"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:paddingEnd="@dimen/_63sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="BMI Calculator"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:typeface="serif" />
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:padding="@dimen/_12sdp"
+            android:background="@drawable/rounded_white_background2">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:tint="@color/dialog_locator_benefit_icon"
+                android:src="@drawable/bmi_icon"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

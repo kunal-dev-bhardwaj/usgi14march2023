@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/_8sdp"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:scrollbars="none">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_25sdp"
+        android:layout_height="match_parent">
+
+        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Basal metabolic rate is calories needed to perform your body's most basic (Basal) functions, like breathing, circulation and cell production."
+            android:textSize="@dimen/_16sdp"
+            android:typeface="serif"
+            android:textColor="@color/lightblack"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:orientation="vertical">
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.40"
+                        android:text="Weight"
+                        android:gravity="center"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_12sdp"
+                        android:typeface="serif" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:orientation="vertical">
+                        <EditText
+                            android:id="@+id/weight"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/linknew_edittext_bg"
+                            android:gravity="bottom"
+                            android:inputType="numberDecimal"
+                            android:hint="kg"
+                            android:maxLength="5"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/lightblack"
+                            android:textSize="@dimen/_12sdp"
+                            android:typeface="serif" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/grey"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:orientation="vertical">
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.40"
+                        android:text="Height"
+                        android:gravity="center"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_12sdp"
+                        android:typeface="serif" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:visibility="visible"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:layout_marginEnd="@dimen/_2sdp"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/height_feet"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/linknew_edittext_bg"
+                                android:gravity="bottom"
+                                android:inputType="number"
+                                android:hint="feet"
+                                android:maxLength="1"
+                                android:paddingBottom="@dimen/_2sdp"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textColor="@color/lightblack"
+                                android:textSize="@dimen/_12sdp"
+                                android:typeface="serif" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/height_inche"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/linknew_edittext_bg"
+                                android:gravity="bottom"
+                                android:inputType="number"
+                                android:hint="inches"
+                                android:maxLength="2"
+                                android:paddingBottom="@dimen/_2sdp"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textColor="@color/lightblack"
+                                android:textSize="@dimen/_12sdp"
+                                android:typeface="serif" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/grey"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:orientation="vertical">
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.40"
+                        android:text="Age"
+                        android:gravity="center"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_12sdp"
+                        android:typeface="serif" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/age"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/linknew_edittext_bg"
+                        android:gravity="bottom"
+                        android:inputType="number"
+                        android:hint="Years"
+                        android:maxLength="2"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_12sdp"
+                        android:typeface="serif" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:layout_marginEnd="@dimen/_4sdp"
+                        android:orientation="vertical">
+                        <Button
+                            android:id="@+id/clear_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="CLEAR"
+                            android:typeface="serif"
+                            android:textStyle="bold"
+                            android:background="@color/lightish_grey"
+                            android:textSize="@dimen/_12sdp"
+                            android:textColor="@color/lightblack"
+                            android:layout_gravity="right"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:orientation="vertical">
+                        <Button
+                            android:id="@+id/calculate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="CALCULATE"
+                            android:textSize="@dimen/_12sdp"
+                            android:typeface="serif"
+                            android:textStyle="bold"
+                            android:background="@color/my_policy_tab_dark"
+                            android:textColor="@color/white"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Result"
+                        android:textColor="@color/lightblack"
+                        android:textSize="@dimen/_16sdp"
+                        android:typeface="serif" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/circle_reminder"
+                        android:padding="@dimen/_5sdp">
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:src="@drawable/bmr_result_icon"/>
+                    </LinearLayout>
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:id="@+id/result_txt_bmr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/lightblack"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:text="12"
+                        android:textSize="@dimen/_16sdp"
+                        android:typeface="serif" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TDEE : "
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_16sdp"
+                    android:typeface="serif" />
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                    android:id="@+id/result_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/lightblack"
+                    android:text="12"
+                    android:textSize="@dimen/_16sdp"
+                    android:typeface="serif" />
+            </LinearLayout>
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textStyle="bold"
+                android:text="Source: World Health Organization"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_10sdp"
+                android:typeface="serif" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

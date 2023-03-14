@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="match_parent"
+    android:background="#c8000000">
+
+    <LinearLayout
+        android:id="@+id/bottom11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:paddingStart="@dimen/_63sdp">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:padding="@dimen/_11sdp"
+            android:background="@drawable/rounded_white_background2">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/claim_garage_line_icon"/>
+        </RelativeLayout>
+
+        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Authorized Workshop"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom11"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:paddingStart="@dimen/_35sdp">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/rounded_white_background2">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/car_parking_line_icon"/>
+        </RelativeLayout>
+
+        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Parking"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom31"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom21"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:paddingStart="@dimen/_14sdp">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/rounded_white_background2">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/car_mechanic_line_icon"/>
+        </RelativeLayout>
+
+        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Mechanic"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:typeface="serif" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom41"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom31"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:gravity="left"
+        android:paddingStart="@dimen/_35sdp">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:padding="@dimen/_9sdp"
+            android:background="@drawable/rounded_white_background2">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/car_pollution_line_icon"/>
+        </RelativeLayout>
+
+        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Pollution Center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom51"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom41"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:paddingStart="@dimen/_63sdp">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:padding="@dimen/_12sdp"
+            android:background="@drawable/rounded_white_background2">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/petrol_pump_line_icon"/>
+        </RelativeLayout>
+
+        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Petrol Pump"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:typeface="serif" />
+    </LinearLayout>
+
+</RelativeLayout>

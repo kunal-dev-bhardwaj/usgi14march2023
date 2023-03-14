@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/claim_tab_dark"/>
+    <corners android:bottomRightRadius="0dp" android:bottomLeftRadius="@dimen/_200sdp"
+        android:topLeftRadius="@dimen/_200sdp" android:topRightRadius="0dp"/>
+</shape>

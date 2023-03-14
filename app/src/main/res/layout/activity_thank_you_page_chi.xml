@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:svgimageview="http://schemas.android.com/apk/res-auto"
+    tools:context=".metaapp.health.fragment.buypolicy.complete_health.ThankYouPageCHI">
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/llHeadRoundImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/universal_logo" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical">
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_18sdp"
+                android:text="Universal Sompo" />
+
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_14sdp"
+                android:text="General Insurance Co. Ltd." />
+
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_14sdp"
+                android:text="Suraksha, Hamesha Aapke Saath" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/payment_image"
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+            </LinearLayout>
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/black_new"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:text="Your Payment has been successfully processed and your policy will be sent to your registered email address within 30 minutes."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/black"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:text="Your Policy Number is USGI/WEBAH/0021135/00/000."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+
+            <LinearLayout
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:background="@drawable/edttxt_bg_1"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@android:color/transparent"
+                    android:text="Thank you for choosing us!"
+                    android:id="@+id/totalAmount"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:cursorVisible="false"
+                    android:paddingStart="4dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="#AC1931"
+                    android:textColorHint="@color/red"
+                    android:textSize="@dimen/_14sdp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:text="@string/callTollFree"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/ClickHereTxt"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:gravity="start"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_8sdp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/text6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </LinearLayout>
+
+       <LinearLayout
+           android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+           <TextView
+               android:gravity="center"
+               android:layout_marginTop="@dimen/_15sdp"
+               android:textSize="@dimen/_12sdp"
+               android:fontFamily="@font/montserrat_semibold"
+               android:textColor="#AC1931"
+               android:layout_marginEnd="@dimen/_15sdp"
+               android:layout_marginStart="@dimen/_15sdp"
+               android:text="Your feedback is important to us"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+           </TextView>
+           <View
+               android:layout_marginEnd="@dimen/_15sdp"
+               android:layout_marginStart="@dimen/_15sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:background="#F2C144"
+               android:layout_width="match_parent"
+               android:layout_height="1dp">
+
+           </View>
+           <TextView
+               android:layout_marginTop="@dimen/_5sdp"
+               android:textSize="@dimen/_10sdp"
+               android:fontFamily="@font/montserrat_semibold"
+               android:textColor="@color/black"
+               android:layout_marginEnd="@dimen/_15sdp"
+               android:layout_marginStart="@dimen/_15sdp"
+               android:text="How convenient was it to complete the transaction ?"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+           </TextView>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="@dimen/_10sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginEnd="@dimen/_10sdp"
+               android:orientation="horizontal">
+
+
+               <ImageView
+                   android:layout_width="@dimen/_30sdp"
+                   android:layout_height="@dimen/_30sdp"
+                   android:layout_marginEnd="@dimen/_5sdp"
+                   android:background="@drawable/happysmile">
+
+               </ImageView>
+
+               <ImageView
+                   android:layout_width="@dimen/_30sdp"
+                   android:layout_height="@dimen/_30sdp"
+                   android:layout_marginStart="@dimen/_5sdp"
+                   android:layout_marginEnd="@dimen/_5sdp"
+                   android:background="@drawable/smile">
+
+               </ImageView>
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/_5sdp"
+                   android:layout_marginEnd="@dimen/_5sdp"
+                   android:background="@drawable/wow_smile">
+
+               </ImageView>
+
+               <ImageView
+
+                   android:layout_width="@dimen/_30sdp"
+                   android:layout_height="@dimen/_30sdp"
+                   android:layout_marginStart="@dimen/_5sdp"
+                   android:layout_marginEnd="@dimen/_5sdp"
+                   android:background="@drawable/sad_smile">
+
+               </ImageView>
+               <ImageView
+                   android:layout_marginEnd="@dimen/_5sdp"
+                   android:layout_marginStart="@dimen/_5sdp"
+                   android:background="@drawable/new_hot"
+                   android:layout_width="@dimen/_30sdp"
+                   android:layout_height="@dimen/_30sdp">
+
+               </ImageView>
+
+
+           </LinearLayout>
+
+           <TextView
+               android:layout_marginTop="@dimen/_10sdp"
+               android:textSize="@dimen/_10sdp"
+               android:fontFamily="@font/montserrat_semibold"
+               android:textColor="@color/black"
+               android:layout_marginEnd="@dimen/_15sdp"
+               android:layout_marginStart="@dimen/_15sdp"
+               android:text="How would you rate your overall Experience?"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+           </TextView>
+           <LinearLayout
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginEnd="@dimen/_10sdp"
+               android:layout_marginStart="@dimen/_10sdp"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+
+               <ImageView
+                   android:layout_marginEnd="@dimen/_5sdp"
+                   android:background="@drawable/happysmile"
+                   android:layout_width="@dimen/_30sdp"
+                   android:layout_height="@dimen/_30sdp">
+
+               </ImageView>
+               <ImageView
+                   android:layout_marginEnd="@dimen/_5sdp"
+                   android:layout_marginStart="@dimen/_5sdp"
+                   android:background="@drawable/smile"
+                   android:layout_width="@dimen/_30sdp"
+                   android:layout_height="@dimen/_30sdp">
+
+               </ImageView>
+               <ImageView
+                   android:layout_marginEnd="@dimen/_5sdp"
+                   android:layout_marginStart="@dimen/_5sdp"
+                   android:background="@drawable/wow_smile"
+                   android:layout_width="@dimen/_30sdp"
+                   android:layout_height="@dimen/_30sdp">
+
+               </ImageView>
+               <ImageView
+
+                   android:layout_marginEnd="@dimen/_5sdp"
+                   android:layout_marginStart="@dimen/_5sdp"
+                   android:background="@drawable/sad_smile"
+                   android:layout_width="@dimen/_30sdp"
+                   android:layout_height="@dimen/_30sdp">
+
+               </ImageView>
+               <ImageView
+                   android:layout_marginEnd="@dimen/_5sdp"
+                   android:layout_marginStart="@dimen/_5sdp"
+                   android:background="@drawable/new_hot"
+                   android:layout_width="@dimen/_30sdp"
+                   android:layout_height="@dimen/_30sdp">
+
+               </ImageView>
+
+           </LinearLayout>
+      </LinearLayout>
+
+
+
+            <Button
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:paddingEnd="@dimen/_50sdp"
+                android:paddingStart="@dimen/_50sdp"
+                android:id="@+id/btn_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/red_btn_bg"
+                android:text="Back to Home"
+                android:textAllCaps="false"
+                android:textColor="@color/txt_color"
+                android:textSize="@dimen/txt_size"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_60sdp"
+    android:background="#ffffff"
+    android:padding="@dimen/_5sdp"
+    android:id="@+id/news"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.75"
+        android:padding="@dimen/_5sdp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:id="@+id/image1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.25"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:orientation="vertical">
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:lines="2"
+                android:id="@+id/itemTitle1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"
+                android:gravity="center|left|top"
+                android:typeface="serif"
+                android:text="Dummy Title "
+                android:textColor="#646464"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.65"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="vertical">
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:id="@+id/itemPostedDate1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/_9sdp"
+                android:typeface="serif"
+                android:text="28/Dec/2017"
+                android:textColor="@color/lightblack"
+                android:gravity="center|right|bottom"/>
+        </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp">
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_arrow_back"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_25sdp">
+        </ImageView>
+
+        <TextView
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            android:text="Buy Policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+            app:cardElevation="@dimen/_5sdp"
+            android:layout_below="@+id/toolbar1"
+            android:id="@+id/linertxt"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_15sdp"
+            app:cardMaxElevation="@dimen/_8sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp">
+            <LinearLayout
+                android:layout_margin="-5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:background="@drawable/healthbanner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ImageView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_below="@+id/linertxt"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+<!--        <com.google.android.material.tabs.TabLayout-->
+<!--            android:id="@+id/buy_tab"-->
+<!--            android:layout_marginTop="@dimen/_10sdp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/_40sdp"-->
+<!--            app:tabMode="fixed"-->
+<!--            android:paddingTop="@dimen/_1sdp"-->
+<!--            android:paddingBottom="@dimen/_1sdp"-->
+<!--            app:tabIndicator="@null"-->
+<!--            android:background="@drawable/grey_tab_bg"-->
+<!--            app:tabGravity="fill"-->
+<!--            app:tabBackground="@drawable/tab_color_selector"-->
+<!--            app:tabSelectedTextColor="@color/new_red"-->
+<!--            app:tabTextColor="@color/darker_gray"-->
+<!--            app:tabTextAppearance="@style/TabLayoutStyle"-->
+<!--            />-->
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/buy_tab"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="scrollable"
+            app:tabIndicator="@null"
+            app:tabGravity="fill"
+            app:tabBackground="@drawable/tab_color_selector"
+            app:tabSelectedTextColor="@color/new_red"
+            app:tabTextColor="@color/lightblack"
+            app:tabTextAppearance="@style/TabLayoutStyle"
+            />
+
+<HorizontalScrollView
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/linerHealthCare"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/new_tab_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/healthIcon"
+                android:src="@drawable/heart_icon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp">
+            </ImageView>
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/txtHealthCare"
+                android:paddingStart="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/red_new"
+                android:text="Complete Healthcare Insurance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linerAPlusHealth"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/grey_tab_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/aplus"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_20sdp">
+            </ImageView>
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/txtAPlusHealth"
+                android:paddingStart="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/lightblack"
+                android:text="A+ Healthcare Insurance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linerSuperHealth"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/grey_tab_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/diet_goal"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp">
+            </ImageView>
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/txtSuperHealth"
+                android:paddingStart="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/lightblack"
+                android:text="Super Healthcare Insurance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linerArogya"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/grey_tab_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/diet_goal"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp">
+            </ImageView>
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/txtArogya"
+                android:paddingStart="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/lightblack"
+                android:text="Arogya Sanjeevani Insurance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</HorizontalScrollView>
+        <FrameLayout
+            android:id="@+id/policy_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tab_layer"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+        </FrameLayout>
+
+
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/OrderItemsPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/OrderItemsLayout"
+            android:layout_centerInParent="true"
+          />
+    </LinearLayout>
+
+
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/parentShimmerLayout"
+        shimmer:duration="700">
+        <LinearLayout
+            android:id="@+id/shimmerIncludeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+   <RelativeLayout
+    android:visibility="gone"
+   android:layout_above="@+id/health_liner"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:layout_above="@+id/loan_liner"
+        android:id="@+id/buy_policy_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="@dimen/_2sdp"
+        android:overScrollMode="never"
+        android:divider="@null"
+        android:scrollbars="none"/>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/loan_liner"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:padding="@dimen/_8sdp"
+        android:background="@drawable/cardview_shadow">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center|start"
+            android:orientation="vertical">
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12sdp"
+                android:text="Loan Secure Insurance Policy"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_3sdp" />
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                android:id="@+id/product_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loan Secure Insurance Policy is a unique Policy that helps you transfer the burden of your loan in the event of an unforeseen contingency"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:gravity="center"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btn_complete_health"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:text="Buy Now"
+                android:background="@drawable/rounded_corner_buy_button"
+                android:textColor="@color/grey"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_8sdp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/no_data_found" />
+</RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/health_liner"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:padding="@dimen/_8sdp">
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/liner_txt"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:orientation="vertical"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@drawable/btn_bg">
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:id="@+id/renewal_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="@dimen/_13sdp"
+                android:typeface="serif"
+                android:text="Health Insurance Renewal Policy"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

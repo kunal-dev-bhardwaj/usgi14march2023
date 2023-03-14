@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    tools:context=".metaapp.health.fragment.calculator.CalculatorFragment">
+
+    <LinearLayout
+        android:id="@+id/tab_layer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:elevation="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/white"
+        card_view:contentPadding="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.5"
+            android:weightSum="1">
+
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:id="@+id/btn_own_policy"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="BMI"
+                android:alpha="0.7"
+                android:textColor="@color/tab_text"
+                android:textSize="@dimen/_12sdp"
+                android:typeface="serif" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2sdp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/tab_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.5"
+            android:weightSum="1">
+
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:id="@+id/btn_other_policy"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Premium Calculator"
+                android:alpha="0.7"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_12sdp"
+                android:typeface="serif" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2sdp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/grey" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/policy_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layer"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+    </FrameLayout>
+
+</RelativeLayout>

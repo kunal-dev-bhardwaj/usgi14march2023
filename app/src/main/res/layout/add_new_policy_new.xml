@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_above="@+id/buy_policy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingStart="@dimen/_30sdp"
+            android:orientation="vertical"
+
+            android:paddingEnd="@dimen/_30sdp">
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:layout_marginTop="@dimen/_45sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Policy No."
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/txt_size"
+                android:id="@+id/policy_no_new_policy" />
+            <EditText
+                android:background="@drawable/border_grey"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/policy_no_new"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:maxLines="1"
+                android:padding="@dimen/_5sdp"
+                android:hint="Enter policy no"
+                android:paddingStart="@dimen/_4sdp"
+                android:imeOptions="actionDone"
+                android:textColor="@color/lightblack"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/txt_size" />
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Engine No./Chassis No."
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/txt_size"
+                android:id="@+id/engine_no_new_policy" />
+            <EditText
+                android:background="@drawable/border_grey"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/engine_no_new"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:maxLines="1"
+                android:padding="@dimen/_5sdp"
+                android:hint="Enter chassis no or engine no"
+                android:paddingStart="4dp"
+                android:textColor="@color/lightblack"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/txt_size" />
+            <Button
+                android:id="@+id/btn_add_policy_new"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/btn_bg"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:text="Buy Policy"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_bg"
+        android:id="@+id/buy_policy"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/montserrat_semibold" />
+</RelativeLayout>

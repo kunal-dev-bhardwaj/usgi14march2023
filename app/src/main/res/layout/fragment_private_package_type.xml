@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginRight="@dimen/_15sdp"
+    android:layout_marginLeft="@dimen/_15sdp"
+    tools:context=".metaapp.motor.activities.motor_policies.privatetype.Private_package_type">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_18sdp"
+                android:layout_gravity="start"
+                android:text="Insured Declared Value (IDV)"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textColor="@color/black"/>
+
+            <View
+                android:visibility="gone"
+                android:background="@color/lightblack"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+            </View>
+
+
+                <LinearLayout
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13sdp"
+                            android:text="Ex-showroom Price"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:textColor="@color/black"/>
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13sdp"
+                            android:text="*"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:textColor="@color/red"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/white_grey"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edt_ex_showroom_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:hint="Ex-showroom Price"
+                            android:inputType="text"
+                            android:maxLength="13"
+                            android:paddingStart="15dp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/lightblack"
+                            android:textSize="@dimen/txt_size" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13sdp"
+                        android:text="IDV"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:textColor="@color/black"/>
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13sdp"
+                        android:text="*"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:textColor="@color/red"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Insured Declared Value"
+                        android:inputType="text"
+                        android:id="@+id/declared_Value"
+                        android:paddingStart="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_gravity="start"
+                android:text="Add On Covers Details"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textColor="@color/black"/>
+
+            <View
+                android:visibility="gone"
+                android:background="@color/lightblack"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+            </View>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:focusable="false"
+                        android:cursorVisible="false"
+                        android:clickable="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="PA Owner Driver"
+                        android:inputType="text"
+                        android:paddingStart="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/yes_pa_owner"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/black"
+                        android:text="Yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </RadioButton>
+                    <RadioButton
+                        android:id="@+id/no_pa_owner"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/black"
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </RadioButton>
+                </LinearLayout>
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_11sdp"
+                    android:id="@+id/text_pa_owner"
+                    android:visibility="gone"
+                    android:text="Having a personal accident cover is mandatory by law. This provides coverage for bodily injury or death of the owner-driver in case of an unfortunate accident.\nBy not selecting this, you agree that you either a) already have a PA cover of 15 Lakhs or b) Do not have a valid driving license."
+                    android:fontFamily="@font/montserrat_regular"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textColor="@color/lightblack"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:focusable="false"
+                        android:cursorVisible="false"
+                        android:clickable="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Legal Liabilty To Paid Driver"
+                        android:inputType="text"
+                        android:paddingStart="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/yes_legal"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/black"
+                        android:text="Yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </RadioButton>
+                    <RadioButton
+                        android:id="@+id/no_legal"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/black"
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </RadioButton>
+                </LinearLayout>
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_11sdp"
+                    android:id="@+id/text_legal"
+                    android:visibility="gone"
+                    android:text="Cover provided to the driver (Under Workmen’s Compensation Act) for death or disability while driving the insured's vehicle."
+                    android:fontFamily="@font/montserrat_regular"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textColor="@color/lightblack"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:focusable="false"
+                        android:cursorVisible="false"
+                        android:clickable="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Key Replacement"
+                        android:inputType="text"
+                        android:paddingStart="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/yes_key_replacement"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/black"
+                        android:text="Yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </RadioButton>
+                    <RadioButton
+                        android:id="@+id/no_key_replacement"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/black"
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </RadioButton>
+                </LinearLayout>
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_11sdp"
+                    android:id="@+id/text_key_replacement"
+                    android:visibility="gone"
+                    android:text="his add-on reimburses you for the cost incurred due to the replacement of lost or stolen car lock or key. It holds validity up to 2 claims during a policy period."
+                    android:fontFamily="@font/montserrat_regular"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textColor="@color/lightblack"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:focusable="false"
+                        android:cursorVisible="false"
+                        android:clickable="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Accidental Hospitalization Cover"
+                        android:inputType="text"
+                        android:paddingStart="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/yes_accidental"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/black"
+                        android:text="Yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </RadioButton>
+                    <RadioButton
+                        android:id="@+id/no_accidental"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/black"
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </RadioButton>
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:id="@+id/text_accidental"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:background="@drawable/white_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.15"
+
+                            android:orientation="vertical">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:drawableRight="@drawable/dropdown_icon"
+                                android:hint="Document Type"
+                                android:prompt="@string/document_type_head"
+                                android:textSize="@dimen/_12sdp"
+                                android:background="@null" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.85"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="@dimen/_12sdp"
+                                android:layout_height="@dimen/_12sdp"
+                                android:src="@drawable/dropdown_icon"
+                                app:tint="@color/lightblack" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_11sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:text="With this, the insurer provides certain emergency services like refuelling, towing, change of flat tyre, mechanic’s services and so on in case the car breaks down."
+                        android:fontFamily="@font/montserrat_regular"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:textColor="@color/lightblack"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:focusable="false"
+                        android:cursorVisible="false"
+                        android:clickable="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Return to Invoice"
+                        android:inputType="text"
+                        android:paddingStart="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/yes_return_invoice"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/black"
+                        android:text="Yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </RadioButton>
+                    <RadioButton
+                        android:id="@+id/no_return_invoice"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/black"
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </RadioButton>
+                </LinearLayout>
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_11sdp"
+                    android:id="@+id/text_return_invoice"
+                    android:visibility="gone"
+                    android:text="When you make a claim, it is settled against the depreciated value of the car. However, this Add-On Coverenables you to get the invoice value as well as registration fees, road tax and insurance."
+                    android:fontFamily="@font/montserrat_regular"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textColor="@color/lightblack"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/non_electrical_liner"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:focusable="false"
+                        android:cursorVisible="false"
+                        android:clickable="false"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Electrical/Non Electrical Accessory"
+                        android:inputType="text"
+                        android:paddingStart="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/accessory_electrical_liner"
+                    android:visibility="gone"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_13sdp"
+                                android:text="Electrical Accessory"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:textColor="@color/black"/>
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_13sdp"
+                                android:text="*"
+                                android:layout_marginLeft="@dimen/_2sdp"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:textColor="@color/red"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/white_grey"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/electrical_accessories"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:hint="Enter Electrical Accessories Value"
+                                android:inputType="text"
+                                android:paddingStart="15dp"
+                                android:focusable="false"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textColor="@color/lightblack"
+                                android:textColorHint="@color/lightblack"
+                                android:textSize="@dimen/txt_size" />
+
+                        </LinearLayout>
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_11sdp"
+                            android:text="Cover your car's extra fitted electrical accessories like stereo, fog lamps, buzzers etc."
+                            android:fontFamily="@font/montserrat_regular"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:textColor="@color/lightblack"/>
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_13sdp"
+                                android:text="Non Electrical Accessory"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:textColor="@color/black"/>
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_13sdp"
+                                android:text="*"
+                                android:layout_marginLeft="@dimen/_2sdp"
+                                android:fontFamily="@font/montserrat_semibold"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:textColor="@color/red"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/white_grey"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/non_electrical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:hint="Enter Non Electrical Accessories Value"
+                                android:inputType="text"
+                                android:paddingStart="15dp"
+                                android:focusable="false"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textColor="@color/lightblack"
+                                android:textColorHint="@color/lightblack"
+                                android:textSize="@dimen/txt_size" />
+
+                        </LinearLayout>
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_11sdp"
+                            android:text="Cover your car's extra fitted non-electrical accessories like roof rack, wheel cover, etc."
+                            android:fontFamily="@font/montserrat_regular"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:textColor="@color/lightblack"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/engine_liner"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/white_grey"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:focusable="false"
+                        android:cursorVisible="false"
+                        android:clickable="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Engine Protector"
+                        android:inputType="text"
+                        android:paddingStart="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/lightblack"
+                        android:textColorHint="@color/lightblack"
+                        android:textSize="@dimen/txt_size" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/liner_engine_protector"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@drawable/white_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+                        <Spinner
+                            android:scrollbars="none"
+                            android:layout_weight="0.2"
+                            android:id="@+id/engine_protector_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:drawableRight="@drawable/dropdown_icon"
+                            android:textSize="@dimen/_12sdp"
+                            />
+                    </LinearLayout>
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_11sdp"
+                        android:text="Damage to the engine due to leakage of lubricating oil (in an accident) or when the car is submerged in a waterlogged area and damage to the gear box will be covered."
+                        android:fontFamily="@font/montserrat_regular"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:textColor="@color/lightblack"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_marginBottom="@dimen/_5sdp"
+
+                    android:layout_weight="1"
+                    android:id="@+id/btn_previous"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/red_btn_bg"
+                    android:text="@string/previous"
+                    android:textAllCaps="false"
+                    android:textColor="@color/txt_color"
+                    android:textSize="@dimen/txt_size"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+                <Button
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:id="@+id/btn_next"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/red_btn_bg"
+                    android:text="@string/next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/txt_color"
+                    android:textSize="@dimen/txt_size"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

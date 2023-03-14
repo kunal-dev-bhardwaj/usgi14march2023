@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_220sdp"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/rounded_corner_white_sos"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_12sdp">
+        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:layout_marginEnd="@dimen/_1sdp"
+            android:gravity="center_horizontal"
+            android:id="@+id/error"
+            android:text="RTI Add On is not available for this model"
+            android:textColor="@color/red_new"
+            android:textSize="12dp"
+            android:typeface="serif" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/KnowMoreText"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:gravity="end"
+            android:text="@string/KnowMore"
+            android:textColor="#02203C"
+            android:textSize="12dp"
+            android:typeface="serif" />
+
+        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+            android:visibility="gone"
+            android:id="@+id/alert_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_1sdp"
+            android:gravity="start"
+            android:text="Your application has been forwarded to our underwriting department for further evaluation, our customer service representative will call you shortly. You can also get in touch with us at 1800 22 4030 / 1800 200 4030 Thank you for your interest in our Complete Healthcare Insurance policy’"
+            android:textColor="@color/lightblack"
+            android:textSize="10dp"
+            android:typeface="serif" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/red_btn_bg"
+                    android:orientation="vertical">
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:id="@+id/ok_dialog"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Proceed"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_13sdp"
+                        android:typeface="serif" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:gravity="center"
+        android:background="@drawable/red_btn_bg"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/alert_dialog_line_icon"
+            app:tint="@color/white" />
+    </RelativeLayout>
+</RelativeLayout>

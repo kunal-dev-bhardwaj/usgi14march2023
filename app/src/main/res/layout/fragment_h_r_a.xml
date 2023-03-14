@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/policy_layout"
+        android:paddingBottom="10dp"
+        android:paddingTop="@dimen/_50sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@drawable/border_grey"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Spinner
+            android:id="@+id/select_policy_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+        </Spinner>
+
+        </LinearLayout>
+
+    </LinearLayout>
+<LinearLayout
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/no_policy"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="No Policy no. available"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+</LinearLayout>
+
+
+
+</RelativeLayout>

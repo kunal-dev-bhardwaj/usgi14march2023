@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:weightSum="1"
+    android:padding="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+
+    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+        android:id="@+id/txt_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.30"
+        android:gravity="center_horizontal|bottom"
+        android:text="2 Dec 2016"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11sdp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#1A000000" />
+
+    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+        android:id="@+id/txt_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.70"
+        android:paddingStart="@dimen/_4sdp"
+        android:paddingEnd="@dimen/_4sdp"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/_10sdp"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"/>
+
+</LinearLayout>

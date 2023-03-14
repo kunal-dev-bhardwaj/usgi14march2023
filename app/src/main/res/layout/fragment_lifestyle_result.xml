@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:orientation="vertical">
+
+            <at.grabner.circleprogress.CircleProgressView
+                android:id="@+id/circleViewlsresult"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:focusableInTouchMode="false"
+                CircleProgressView:cpv_autoTextSize="true"
+                CircleProgressView:cpv_barColor="@color/colorPrimary"
+                CircleProgressView:cpv_barWidth="@dimen/_8sdp"
+                CircleProgressView:cpv_innerContourSize="0dp"
+                CircleProgressView:cpv_maxValue="100"
+                CircleProgressView:cpv_outerContourSize="0dp"
+                CircleProgressView:cpv_rimColor="@color/white"
+                CircleProgressView:cpv_rimWidth="@dimen/_8sdp"
+                CircleProgressView:cpv_seekMode="false"
+                CircleProgressView:cpv_spinColor="@color/colorPrimary"
+                CircleProgressView:cpv_textColor="@color/lightblack"
+                CircleProgressView:cpv_textScale="1"
+                CircleProgressView:cpv_value="0"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/_14sdp"
+                android:gravity="center"
+                android:typeface="serif"
+                android:text="Wellness Score"
+                android:textColor="@color/lightblack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_130sdp"
+                        android:layout_toRightOf="@+id/lll" />
+
+                    <LinearLayout
+                        android:id="@+id/lll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Very High"
+                            android:visibility="gone"
+                            android:textColor="@color/lightblack"
+                            android:typeface="serif"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="High Risk"
+                            android:textColor="@color/lightblack"
+                            android:typeface="serif"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="Moderate Risk"
+                            android:textColor="@color/lightblack"
+                            android:typeface="serif"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="Low Risk"
+                            android:textColor="@color/lightblack"
+                            android:typeface="serif"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="No Risk"
+                            android:textColor="@color/lightblack"
+                            android:typeface="serif"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_65sdp"
+                    android:orientation="horizontal">
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_58sdp"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:rotation="-75"
+                        android:text="Heart Risk"
+                        android:textAllCaps="false"
+                        android:textColor="@color/lightblack"
+                        android:typeface="serif"
+                        android:textSize="@dimen/_7sdp" />
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:rotation="-75"
+                        android:text="Diabetes Risk"
+                        android:textAllCaps="false"
+                        android:textColor="@color/lightblack"
+                        android:typeface="serif"
+                        android:textSize="@dimen/_7sdp" />
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_9sdp"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:rotation="-75"
+                        android:text="Stroke Risk"
+                        android:textAllCaps="false"
+                        android:textColor="@color/lightblack"
+                        android:typeface="serif"
+                        android:textSize="@dimen/_7sdp" />
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_11sdp"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:rotation="-75"
+                        android:text="Job Risk"
+                        android:textAllCaps="false"
+                        android:textColor="@color/lightblack"
+                        android:typeface="serif"
+                        android:textSize="@dimen/_7sdp" />
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:rotation="-75"
+                        android:text="Emotional Risk"
+                        android:textAllCaps="false"
+                        android:textColor="@color/lightblack"
+                        android:typeface="serif"
+                        android:textSize="@dimen/_7sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recommendations"
+                    android:typeface="serif"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_12sdp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+                    <LinearLayout
+                        android:id="@+id/book_consultation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:weightSum="1"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.35"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:src="@drawable/doctor_consultation_icon"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.65"
+                            android:orientation="vertical">
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Book Doctor Consultation"
+                                android:gravity="center"
+                                android:typeface="serif"
+                                android:textColor="@color/lightblack"
+                                android:textSize="@dimen/_10sdp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/book_lab_test"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:weightSum="1"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.35"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:src="@drawable/lab_test_icon_1"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.65"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Book Lab Test"
+                                android:gravity="center"
+                                android:typeface="serif"
+                                android:textColor="@color/lightblack"
+                                android:textSize="@dimen/_10sdp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/book_wellness_package"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:weightSum="1"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.35"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:src="@drawable/wellness_package_icon"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.65"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Wellness Center"
+                                android:gravity="center"
+                                android:typeface="serif"
+                                android:textColor="@color/lightblack"
+                                android:textSize="@dimen/_10sdp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/getreport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingEnd="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:background="@drawable/curved_rectangle"
+                    android:orientation="vertical">
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:typeface="serif"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/lightblack"
+                        android:text="@string/download_pdf_report"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/finish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingEnd="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:background="@drawable/curved_rectangle_filled_1"
+                    android:orientation="vertical">
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:typeface="serif"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/white"
+                        android:text="@string/finish"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

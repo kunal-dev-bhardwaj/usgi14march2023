@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/svClaimIntimationWholeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp"
+                android:text="Claim Intimation"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <!-- Details of insured -->
+            <include layout="@layout/intimation_part1" />
+
+            <!-- Description of accident/loss  -->
+            <include layout="@layout/intimation_part2" />
+
+            <!-- Claim details -->
+            <include layout="@layout/intimation_part2_claim_details" />
+
+            <!-- Documents -->
+            <include layout="@layout/intimation_part5" />
+
+            <!-- PUC details -->
+            <include layout="@layout/intimation_part_puc" />
+
+            <!-- Police notify -->
+            <include layout="@layout/intimation_part3" />
+
+            <!-- Driver details -->
+            <include layout="@layout/intimation_part4" />
+
+            <!-- Bank details -->
+            <include layout="@layout/intimation_part6" />
+
+            <!-- Declaration -->
+            <include layout="@layout/intimation_part7" />
+
+            <Button
+                android:id="@+id/send_intimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rounded_with_grey"
+                android:text="Submit"
+                android:textColor="@color/lightblack" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llClaimMadeTrack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Claim already initiated"
+            android:textSize="@dimen/_17sdp" />
+
+        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:padding="@dimen/_6sdp"
+            android:text="Click to track"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+</LinearLayout>

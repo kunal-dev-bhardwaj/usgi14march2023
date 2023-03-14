@@ -1,0 +1,2251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:background="@color/dashboard_back">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_15sdp">
+
+                <LinearLayout
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+                    <LinearLayout
+                        android:id="@+id/rl_buy_policy_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:weightSum="1"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.45"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_60sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/buy_policy_new_icons"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.55"
+                            android:gravity="center|top"
+                            android:paddingStart="@dimen/_2sdp"
+                            android:paddingEnd="@dimen/_4sdp"
+                            android:orientation="vertical">
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Policy"
+                                android:typeface="serif"
+                                android:textColor="@color/lightblack"
+                                android:textSize="@dimen/_11sdp"/>
+
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:visibility="gone"
+                                android:text="Buy health insurance online"
+                                android:typeface="serif"
+                                android:textSize="@dimen/_10sdp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/insurance_wallet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:weightSum="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.45"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_60sdp"
+                                android:src="@drawable/ic_insurance_vault_icons"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.55"
+                            android:gravity="center|top"
+                            android:paddingStart="@dimen/_4sdp"
+                            android:paddingEnd="@dimen/_2sdp"
+                            android:orientation="vertical">
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Vault"
+                                android:typeface="serif"
+                                android:textColor="@color/lightblack"
+                                android:textSize="@dimen/_11sdp"/>
+
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Find network hospitals, file claims etc"
+                                android:typeface="serif"
+                                android:visibility="gone"
+                                android:gravity="center"
+                                android:textSize="@dimen/_10sdp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/renew_health"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:weightSum="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.45"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_60sdp"
+                                android:src="@drawable/ic_renew_privacy_policy"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.55"
+                            android:paddingStart="@dimen/_4sdp"
+                            android:paddingEnd="@dimen/_2sdp"
+                            android:gravity="center|top"
+                            android:orientation="vertical">
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Renewal"
+                                android:typeface="serif"
+                                android:textColor="@color/lightblack"
+                                android:textSize="@dimen/_11sdp"/>
+
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:visibility="gone"
+                                android:text="Health Insurance Renewal"
+                                android:typeface="serif"
+                                android:textSize="@dimen/_10sdp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+                <!-- Daily tracker -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/edttxt_bg1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/rl_activity_chart"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:gravity="center|start"
+                            android:paddingTop="@dimen/_8sdp"
+                            android:orientation="vertical">
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:id="@+id/exercise_goal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|start"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/lightblack"
+                                android:text="Exercise Goal - Burn 660 Calories"/>
+
+                            <ProgressBar
+                                android:id="@+id/steps_progress"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_10sdp"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:layout_marginEnd="@dimen/_8sdp"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:progressTint="#4c9345"
+                                android:minHeight="@dimen/_10sdp"
+                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:gravity="center"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:layout_marginEnd="@dimen/_8sdp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:orientation="vertical">
+                                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                        android:id="@+id/steps_taken"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="#4c9345"
+                                        android:text="Burnt 0"
+                                        android:textSize="@dimen/_8sdp"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:gravity="end"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:id="@+id/tick_1"
+                                        android:layout_width="@dimen/_12sdp"
+                                        android:layout_height="@dimen/_12sdp"
+                                        android:src="@drawable/goal_achieved"
+                                        android:visibility="gone"
+                                        android:layout_marginEnd="@dimen/_4sdp"
+                                        app:tint="@color/green" />
+                                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                        android:id="@+id/steps_goal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Left 660"
+                                        android:textSize="@dimen/_8sdp"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/log_activity"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:gravity="center|start"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:background="@drawable/circle_reminder_not_set">
+                                <ImageView
+                                    android:layout_width="@dimen/_12sdp"
+                                    android:layout_height="@dimen/_12sdp"
+                                    android:src="@drawable/add_log"/>
+                            </LinearLayout>
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|start"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="LOG ACTIVITY"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.75"
+                        android:gravity="center"
+                        android:padding="@dimen/_12sdp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/exercise"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Diet Goal -->
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/rl_diet_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/edttxt_bg1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:weightSum="1"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:gravity="center|start"
+                            android:paddingTop="@dimen/_8sdp"
+                            android:orientation="vertical">
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:id="@+id/calorie_goal2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|start"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/lightblack"
+                                android:textStyle="bold"
+                                android:text="Diet Goal 3300 Calories"/>
+
+                            <ProgressBar
+                                android:id="@+id/simpleProgressBar"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_10sdp"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:layout_marginEnd="@dimen/_8sdp"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:progressTint="#ef5150"
+                                android:minHeight="@dimen/_10sdp"
+                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:gravity="center"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:layout_marginEnd="@dimen/_8sdp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:orientation="vertical">
+                                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                        android:id="@+id/total_diet_consumed"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="#ef5150"
+                                        android:textSize="@dimen/_8sdp"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:gravity="end"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:id="@+id/tick_2"
+                                        android:layout_width="@dimen/_12sdp"
+                                        android:layout_height="@dimen/_12sdp"
+                                        android:src="@drawable/goal_achieved"
+                                        android:visibility="gone"
+                                        android:layout_marginEnd="@dimen/_4sdp"
+                                        app:tint="@color/green" />
+                                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                        android:id="@+id/total_diet"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/_8sdp"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:gravity="center|start"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:background="@drawable/circle_reminder_not_set">
+                                <ImageView
+                                    android:layout_width="@dimen/_12sdp"
+                                    android:layout_height="@dimen/_12sdp"
+                                    android:src="@drawable/add_log"/>
+                            </LinearLayout>
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|start"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="LOG DIET"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.75"
+                        android:gravity="center"
+                        android:padding="@dimen/_12sdp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/diet_goal"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Water Goal -->
+                <LinearLayout
+                    android:id="@+id/rl_water_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/edttxt_bg1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:gravity="center|start"
+                            android:paddingTop="@dimen/_8sdp"
+                            android:orientation="vertical">
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:id="@+id/water_goal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|start"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:textSize="@dimen/_10sdp"
+                                android:textStyle="bold"
+                                android:textColor="@color/lightblack"
+                                android:text="Water Goal 2000 ml"/>
+
+                            <ProgressBar
+                                android:id="@+id/water_progress"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_10sdp"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:layout_marginEnd="@dimen/_8sdp"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:progressTint="#59d9ff"
+                                android:minHeight="@dimen/_10sdp"
+                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:gravity="center"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:layout_marginEnd="@dimen/_8sdp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:orientation="vertical">
+                                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                        android:id="@+id/total_water_consumed"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="#59d9ff"
+                                        android:textSize="@dimen/_8sdp"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:gravity="end"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:id="@+id/tick_3"
+                                        android:layout_width="@dimen/_12sdp"
+                                        android:layout_height="@dimen/_12sdp"
+                                        android:src="@drawable/goal_achieved"
+                                        android:visibility="gone"
+                                        android:layout_marginEnd="@dimen/_4sdp"
+                                        app:tint="@color/green" />
+                                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                        android:id="@+id/total_water"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/_8sdp"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:gravity="center|start"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:background="@drawable/circle_reminder_not_set">
+                                <ImageView
+                                    android:layout_width="@dimen/_12sdp"
+                                    android:layout_height="@dimen/_12sdp"
+                                    android:src="@drawable/add_log"/>
+                            </LinearLayout>
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|start"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="LOG WATER"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.75"
+                        android:gravity="center"
+                        android:padding="@dimen/_12sdp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/water_goal"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Weight Goal -->
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/rl_weight_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:weightSum="1"
+                    android:background="@drawable/edttxt_bg1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:weightSum="1"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:gravity="center|start"
+                            android:paddingTop="@dimen/_8sdp"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:orientation="horizontal">
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:id="@+id/weight_goal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center|start"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/lightblack"
+                                    android:text="Weight Goal 70kgs"/>
+                                <TextView
+                                    android:id="@+id/loss_gain_value"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start|bottom"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:textSize="@dimen/_8sdp"
+                                    android:textStyle="bold"
+                                    android:text="Lose 5kg"/>
+                            </LinearLayout>
+
+                            <ProgressBar
+                                android:id="@+id/weight_progress"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_10sdp"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:layout_marginEnd="@dimen/_8sdp"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:progressTint="#ffb20e"
+                                android:minHeight="@dimen/_10sdp"
+                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:gravity="center"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:layout_marginEnd="@dimen/_8sdp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:orientation="vertical">
+                                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                        android:id="@+id/weight_burn"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Lost 3Kg"
+                                        android:textColor="#ffb20e"
+                                        android:textSize="@dimen/_8sdp"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:gravity="end"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:id="@+id/tick_4"
+                                        android:layout_width="@dimen/_12sdp"
+                                        android:layout_height="@dimen/_12sdp"
+                                        android:src="@drawable/goal_achieved"
+                                        android:visibility="gone"
+                                        android:layout_marginEnd="@dimen/_4sdp"
+                                        app:tint="@color/green" />
+                                    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                        android:id="@+id/weight_left"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Left 2Kg"
+                                        android:textSize="@dimen/_8sdp"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:gravity="center|start"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:background="@drawable/circle_reminder_not_set">
+                                <ImageView
+                                    android:layout_width="@dimen/_12sdp"
+                                    android:layout_height="@dimen/_12sdp"
+                                    android:src="@drawable/add_log"/>
+                            </LinearLayout>
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|start"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:textSize="@dimen/_10sdp"
+                                android:text="SET GOAL"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.75"
+                        android:gravity="center"
+                        android:padding="@dimen/_12sdp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/weight"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- WYH Tile -->
+                <LinearLayout
+                    android:id="@+id/wyh_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:visibility="gone"
+                    android:background="@drawable/cardview_shadow"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center|start"
+                        android:layout_weight="0.3">
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:textColor="@color/black"
+                            android:text="Watch Your Health" />
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:textColor="@color/lightblack"
+                            android:text="A digital health &amp; benefits platform for policyholders" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/gradient_back"
+                        android:layout_weight="0.7">
+                        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:textSize="@dimen/_12sdp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:text="Click here"
+                            android:textAllCaps="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Covid 19 Tile -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:gravity="center"
+                    android:background="@color/white">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/covid_new_icon"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:contentDescription="@string/covid_image"
+                            app:tint="@color/pastel_purple" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:layout_marginEnd="@dimen/_12sdp"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="0.4">
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:text="COVID - 19"
+                                    android:gravity="start|center"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp" />
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Are you feeling sick?"
+                                    android:textColor="@color/lightblack"
+                                    android:layout_marginTop="@dimen/_4sdp"
+                                    android:visibility="gone"
+                                    android:textSize="@dimen/_10sdp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_weight="0.6">
+                                <LinearLayout
+                                    android:id="@+id/buy_covid_kavach"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:background="@drawable/willis_rounded_corner_button">
+                                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Arogya"
+                                        android:layout_marginTop="@dimen/_8sdp"
+                                        android:layout_marginStart="@dimen/_8sdp"
+                                        android:layout_marginEnd="@dimen/_8sdp"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:textColor="@color/white" />
+                                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Sanjeevani"
+                                        android:layout_marginStart="@dimen/_8sdp"
+                                        android:layout_marginEnd="@dimen/_8sdp"
+                                        android:layout_marginBottom="@dimen/_8sdp"
+                                        android:layout_marginTop="@dimen/_3sdp"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:id="@+id/covid_assessment"
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="@dimen/_120sdp"
+                                android:gravity="center"
+                                android:background="@drawable/cardview_shadow"
+                                android:orientation="vertical">
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Self Assessment"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:layout_marginStart="@dimen/_8sdp"
+                                    android:layout_marginEnd="@dimen/_8sdp"
+                                    android:gravity="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11sdp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:layout_marginBottom="@dimen/_8sdp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.3"
+                                        android:gravity="center|start"
+                                        android:orientation="vertical">
+                                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Take this self assessment based on WHO and MHFW- Govt. of India, guidelines"
+                                            android:layout_marginStart="@dimen/_8sdp"
+                                            android:layout_marginEnd="@dimen/_8sdp"
+                                            android:textColor="@color/lightblack"
+                                            android:textSize="@dimen/_7sdp" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.7"
+                                        android:weightSum="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:gravity="center"
+                                            android:layout_weight="0.25">
+                                            <ImageView
+                                                android:layout_width="@dimen/_20sdp"
+                                                android:layout_height="@dimen/_20sdp"
+                                                android:src="@drawable/self_assessment_new_icon"
+                                                android:contentDescription="@string/self_assessment_icon"
+                                                app:tint="@color/pastel_purple" />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:gravity="center"
+                                            android:layout_weight="0.75">
+                                            <ImageView
+                                                android:layout_width="@dimen/_15sdp"
+                                                android:layout_height="@dimen/_15sdp"
+                                                android:src="@drawable/right_arrow"
+                                                android:contentDescription="@string/right_arrow_image"
+                                                app:tint="@color/lightblack" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/btn_covid_call"
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="@dimen/_120sdp"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:background="@drawable/cardview_shadow"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/govt_helpline"
+                                    android:layout_marginStart="@dimen/_8sdp"
+                                    android:layout_marginEnd="@dimen/_8sdp"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:gravity="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11sdp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:layout_marginBottom="@dimen/_8sdp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.3"
+                                        android:gravity="center|start"
+                                        android:orientation="vertical">
+                                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="For any covid-19 related queries, call MHFW - Govt. of India 24X7 helpline"
+                                            android:layout_marginStart="@dimen/_8sdp"
+                                            android:layout_marginEnd="@dimen/_8sdp"
+                                            android:textColor="@color/lightblack"
+                                            android:textSize="@dimen/_7sdp" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.7"
+                                        android:weightSum="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:gravity="center"
+                                            android:layout_weight="0.25">
+                                            <ImageView
+                                                android:layout_width="@dimen/_20sdp"
+                                                android:layout_height="@dimen/_20sdp"
+                                                android:src="@drawable/central_helpline_new_icon"
+                                                android:contentDescription="@string/self_assessment_icon"
+                                                app:tint="@color/pastel_purple" />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:gravity="center"
+                                            android:layout_weight="0.75">
+                                            <ImageView
+                                                android:layout_width="@dimen/_15sdp"
+                                                android:layout_height="@dimen/_15sdp"
+                                                android:src="@drawable/right_arrow"
+                                                android:contentDescription="@string/right_arrow_image"
+                                                app:tint="@color/lightblack" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/btn_teleconsultation"
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="@dimen/_120sdp"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:background="@drawable/cardview_shadow"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/consult_a_doctor"
+                                    android:layout_marginStart="@dimen/_8sdp"
+                                    android:layout_marginEnd="@dimen/_8sdp"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:gravity="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11sdp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:layout_marginBottom="@dimen/_8sdp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.3"
+                                        android:gravity="center|start"
+                                        android:orientation="vertical">
+                                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Reach out to a doctor from the safety of your home for any COVID-19 related queries"
+                                            android:layout_marginStart="@dimen/_8sdp"
+                                            android:layout_marginEnd="@dimen/_8sdp"
+                                            android:textColor="@color/lightblack"
+                                            android:textSize="@dimen/_7sdp" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.7"
+                                        android:weightSum="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:gravity="center"
+                                            android:layout_weight="0.25">
+                                            <ImageView
+                                                android:layout_width="@dimen/_20sdp"
+                                                android:layout_height="@dimen/_20sdp"
+                                                android:src="@drawable/teleconsultation_new_icon"
+                                                android:contentDescription="@string/self_assessment_icon"
+                                                app:tint="@color/pastel_purple" />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:gravity="center"
+                                            android:layout_weight="0.75">
+                                            <ImageView
+                                                android:layout_width="@dimen/_15sdp"
+                                                android:layout_height="@dimen/_15sdp"
+                                                android:src="@drawable/right_arrow"
+                                                android:contentDescription="@string/right_arrow_image"
+                                                app:tint="@color/lightblack" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/btn_testing_labs"
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="@dimen/_120sdp"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:background="@drawable/cardview_shadow"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/nearby_testing_labs"
+                                    android:layout_marginStart="@dimen/_8sdp"
+                                    android:layout_marginEnd="@dimen/_8sdp"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:gravity="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11sdp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:layout_marginBottom="@dimen/_8sdp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.3"
+                                        android:gravity="center|start"
+                                        android:orientation="vertical">
+                                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="ICMR Recognised Covid-19 Testing Labs Near You"
+                                            android:layout_marginStart="@dimen/_8sdp"
+                                            android:layout_marginEnd="@dimen/_8sdp"
+                                            android:textColor="@color/lightblack"
+                                            android:textSize="@dimen/_7sdp" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.7"
+                                        android:weightSum="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:gravity="center"
+                                            android:layout_weight="0.25">
+
+                                            <ImageView
+                                                android:layout_width="@dimen/_20sdp"
+                                                android:layout_height="19dp"
+                                                android:contentDescription="@string/self_assessment_icon"
+                                                android:src="@drawable/testing_labs_new_icon"
+                                                app:tint="@color/pastel_purple" />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:gravity="center"
+                                            android:layout_weight="0.75">
+                                            <ImageView
+                                                android:layout_width="@dimen/_15sdp"
+                                                android:layout_height="@dimen/_15sdp"
+                                                android:src="@drawable/right_arrow"
+                                                android:contentDescription="@string/right_arrow_image"
+                                                app:tint="@color/lightblack" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/btn_mind_therapist"
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="@dimen/_120sdp"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:background="@drawable/cardview_shadow"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/mind_therapist"
+                                    android:layout_marginStart="@dimen/_8sdp"
+                                    android:layout_marginEnd="@dimen/_8sdp"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:gravity="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11sdp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:layout_marginBottom="@dimen/_8sdp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.3"
+                                        android:gravity="center|start"
+                                        android:orientation="vertical">
+                                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Feeling emotionally distressed in these COVID-19 times? Connect with our experts online"
+                                            android:layout_marginStart="@dimen/_8sdp"
+                                            android:layout_marginEnd="@dimen/_8sdp"
+                                            android:textColor="@color/lightblack"
+                                            android:textSize="@dimen/_7sdp" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.7"
+                                        android:weightSum="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:gravity="center"
+                                            android:layout_weight="0.25">
+                                            <ImageView
+                                                android:layout_width="@dimen/_20sdp"
+                                                android:layout_height="@dimen/_20sdp"
+                                                android:src="@drawable/mind_therapist_new_icon"
+                                                android:contentDescription="@string/self_assessment_icon"
+                                                app:tint="@color/pastel_purple" />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:gravity="center"
+                                            android:layout_weight="0.75">
+                                            <ImageView
+                                                android:layout_width="@dimen/_15sdp"
+                                                android:layout_height="@dimen/_15sdp"
+                                                android:src="@drawable/right_arrow"
+                                                android:contentDescription="@string/right_arrow_image"
+                                                app:tint="@color/lightblack" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/btn_pharmacy"
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="@dimen/_120sdp"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:background="@drawable/cardview_shadow"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/pharmacy"
+                                    android:layout_marginStart="@dimen/_8sdp"
+                                    android:layout_marginEnd="@dimen/_8sdp"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:gravity="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11sdp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:layout_marginBottom="@dimen/_8sdp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.3"
+                                        android:gravity="center|start"
+                                        android:orientation="vertical">
+                                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Order medicines from the safety of your home"
+                                            android:layout_marginStart="@dimen/_8sdp"
+                                            android:layout_marginEnd="@dimen/_8sdp"
+                                            android:textColor="@color/lightblack"
+                                            android:textSize="@dimen/_7sdp" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.7"
+                                        android:weightSum="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:gravity="center"
+                                            android:layout_weight="0.25">
+                                            <ImageView
+                                                android:layout_width="@dimen/_20sdp"
+                                                android:layout_height="@dimen/_20sdp"
+                                                android:src="@drawable/pharmacies_new_icon"
+                                                android:contentDescription="@string/pharmacies_icon"
+                                                app:tint="@color/pastel_purple" />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:gravity="center"
+                                            android:layout_weight="0.75">
+                                            <ImageView
+                                                android:layout_width="@dimen/_15sdp"
+                                                android:layout_height="@dimen/_15sdp"
+                                                android:src="@drawable/right_arrow"
+                                                android:contentDescription="@string/right_arrow_image"
+                                                app:tint="@color/lightblack" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/btn_home_remedies"
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="@dimen/_120sdp"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:layout_marginEnd="@dimen/_8sdp"
+                                android:background="@drawable/cardview_shadow"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/home_remedies1"
+                                    android:layout_marginStart="@dimen/_8sdp"
+                                    android:layout_marginEnd="@dimen/_8sdp"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:gravity="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_11sdp" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:layout_marginBottom="@dimen/_8sdp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.3"
+                                        android:gravity="center|start"
+                                        android:orientation="vertical">
+                                        <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Home remedies for boosting immunity"
+                                            android:layout_marginStart="@dimen/_8sdp"
+                                            android:layout_marginEnd="@dimen/_8sdp"
+                                            android:textColor="@color/lightblack"
+                                            android:textSize="@dimen/_7sdp" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.7"
+                                        android:weightSum="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:gravity="center"
+                                            android:layout_weight="0.25">
+                                            <ImageView
+                                                android:layout_width="@dimen/_20sdp"
+                                                android:layout_height="@dimen/_20sdp"
+                                                android:src="@drawable/home_remedy_new_icon"
+                                                android:contentDescription="@string/home_remedy_icon"
+                                                app:tint="@color/pastel_purple" />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            android:gravity="center"
+                                            android:layout_weight="0.75">
+                                            <ImageView
+                                                android:layout_width="@dimen/_15sdp"
+                                                android:layout_height="@dimen/_15sdp"
+                                                android:src="@drawable/right_arrow"
+                                                android:contentDescription="@string/right_arrow_image"
+                                                app:tint="@color/lightblack" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+                <!-- Buy Policy -->
+                <!--<androidx.cardview.widget.CardView
+                    android:id="@+id/rl_buy_policy_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:visibility="gone"
+                    card_view:cardUseCompatPadding="true"
+                    android:elevation="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_8sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/_18sdp"
+                            android:paddingBottom="@dimen/_18sdp"
+                            android:alpha="0.6"
+                            android:background="@color/pastel_blue"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:src="@drawable/buy_policy_icon"
+                                android:tint="@color/white" />
+
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text="Buy Policy"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12sdp"
+                                android:typeface="serif" />
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/pastel_blue"
+                                android:alpha="0.3"
+                                android:orientation="vertical" />
+
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:gravity="center|end"
+                                android:paddingBottom="@dimen/_18sdp"
+                                android:paddingStart="@dimen/_8sdp"
+                                android:paddingEnd="@dimen/_8sdp"
+                                android:paddingTop="@dimen/_18sdp"
+                                android:text="Buy health insurance online"
+                                android:textColor="@color/lightblack"
+                                android:textSize="@dimen/_12sdp"
+                                android:typeface="serif" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>-->
+
+                <!-- Services -->
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/services"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:orientation="horizontal"
+                        android:background="@color/white">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:weightSum="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.45"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:src="@drawable/insurancewallet"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.55"
+                                android:gravity="center|top"
+                                android:paddingStart="@dimen/_4sdp"
+                                android:paddingEnd="@dimen/_2sdp"
+                                android:orientation="vertical">
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Insurance Vault"
+                                    android:typeface="serif"
+                                    android:textColor="@color/lightblack"
+                                    android:textSize="@dimen/_11sdp"/>
+
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Find network hospitals, file claims etc"
+                                    android:typeface="serif"
+                                    android:gravity="center"
+                                    android:textSize="@dimen/_10sdp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/baby_caring_parenting"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:weightSum="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.45"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="@dimen/_50sdp"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:src="@drawable/baby_care_parenting"
+                                    app:tint="@color/baby_pink" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.55"
+                                android:paddingStart="@dimen/_4sdp"
+                                android:paddingEnd="@dimen/_2sdp"
+                                android:gravity="center|top"
+                                android:orientation="vertical">
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Baby Care"
+                                    android:typeface="serif"
+                                    android:textColor="@color/lightblack"
+                                    android:textSize="@dimen/_11sdp"/>
+
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Parenting and baby care"
+                                    android:typeface="serif"
+                                    android:textSize="@dimen/_10sdp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/rl_hra"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:visibility="gone"
+                            android:gravity="center"
+                            android:weightSum="1"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.45"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:src="@drawable/hraicon"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.55"
+                                android:gravity="center|top"
+                                android:paddingStart="@dimen/_2sdp"
+                                android:paddingEnd="@dimen/_4sdp"
+                                android:orientation="vertical">
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Health Assessment"
+                                    android:typeface="serif"
+                                    android:textColor="@color/lightblack"
+                                    android:textSize="@dimen/_11sdp"/>
+
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Find your potential health risks"
+                                    android:typeface="serif"
+                                    android:textSize="@dimen/_10sdp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:orientation="horizontal"
+                        android:background="@color/white">
+                        <LinearLayout
+                            android:id="@+id/wellness_package"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:weightSum="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.45"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:src="@drawable/wellness_package"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.55"
+                                android:paddingStart="@dimen/_4sdp"
+                                android:paddingEnd="@dimen/_2sdp"
+                                android:gravity="center|top"
+                                android:orientation="vertical">
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wellness Center"
+                                    android:typeface="serif"
+                                    android:textColor="@color/lightblack"
+                                    android:textSize="@dimen/_11sdp"/>
+
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Nearest Gym, Yoga studio, etc"
+                                    android:typeface="serif"
+                                    android:textSize="@dimen/_10sdp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/search_doctor"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:weightSum="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.45"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:src="@drawable/search_doctor"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.55"
+                                android:paddingStart="@dimen/_2sdp"
+                                android:paddingEnd="@dimen/_4sdp"
+                                android:gravity="center|top"
+                                android:orientation="vertical">
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Doctor Consultation"
+                                    android:typeface="serif"
+                                    android:textColor="@color/lightblack"
+                                    android:textSize="@dimen/_11sdp"/>
+
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Consult doctors online"
+                                    android:typeface="serif"
+                                    android:gravity="center"
+                                    android:textSize="@dimen/_10sdp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:orientation="horizontal"
+                        android:background="@color/white">
+                        <LinearLayout
+                            android:id="@+id/rl_medicine"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.45"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:src="@drawable/medicines"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.55"
+                                android:gravity="center|top"
+                                android:paddingStart="@dimen/_4sdp"
+                                android:paddingEnd="@dimen/_2sdp"
+                                android:orientation="vertical">
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Medicines"
+                                    android:typeface="serif"
+                                    android:textColor="@color/lightblack"
+                                    android:textSize="@dimen/_11sdp"/>
+
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Order allopathic, homeopathic, ayurvedic medicines"
+                                    android:typeface="serif"
+                                    android:textSize="@dimen/_10sdp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/r1_lab_test"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:weightSum="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.45"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:src="@drawable/lab_test_icon"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.55"
+                                android:paddingStart="@dimen/_2sdp"
+                                android:paddingEnd="@dimen/_4sdp"
+                                android:gravity="center|top"
+                                android:orientation="vertical">
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lab Test"
+                                    android:typeface="serif"
+                                    android:textColor="@color/lightblack"
+                                    android:textSize="@dimen/_11sdp"/>
+
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Book pathology and diagnostic tests"
+                                    android:gravity="center"
+                                    android:typeface="serif"
+                                    android:textSize="@dimen/_10sdp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:orientation="horizontal"
+                        android:background="@color/white">
+                        <LinearLayout
+                            android:id="@+id/homecare"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:weightSum="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.45"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="@dimen/_50sdp"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:src="@drawable/homecare_icon"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.55"
+                                android:paddingStart="@dimen/_4sdp"
+                                android:paddingEnd="@dimen/_2sdp"
+                                android:gravity="center|top"
+                                android:orientation="vertical">
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Home Care"
+                                    android:typeface="serif"
+                                    android:textColor="@color/lightblack"
+                                    android:textSize="@dimen/_11sdp"/>
+
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Elder care, mother and baby care"
+                                    android:typeface="serif"
+                                    android:textSize="@dimen/_10sdp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/health_packages"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.45"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="@dimen/_50sdp"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:src="@drawable/health_packages_icon" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.55"
+                                android:paddingStart="@dimen/_2sdp"
+                                android:paddingEnd="@dimen/_4sdp"
+                                android:gravity="center|top"
+                                android:orientation="vertical">
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:typeface="serif"
+                                    android:text="Wellness Packages"
+                                    android:textColor="@color/lightblack"
+                                    android:textSize="@dimen/_11sdp"/>
+
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:typeface="serif"
+                                    android:gravity="center"
+                                    android:text="Wellness packages online"
+                                    android:textSize="@dimen/_10sdp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:orientation="horizontal"
+                        android:background="@color/white">
+                        <LinearLayout
+                            android:id="@+id/emotional_wellness"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.45"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="@dimen/_50sdp"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:src="@drawable/emotionalwellness"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.55"
+                                android:paddingStart="@dimen/_4sdp"
+                                android:paddingEnd="@dimen/_2sdp"
+                                android:gravity="center|top"
+                                android:orientation="vertical">
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Emotional Wellness"
+                                    android:typeface="serif"
+                                    android:textColor="@color/lightblack"
+                                    android:textSize="@dimen/_11sdp"/>
+
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Depression, anxiety, etc"
+                                    android:typeface="serif"
+                                    android:textSize="@dimen/_10sdp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/spiritual_wellness"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:weightSum="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.45"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="@dimen/_50sdp"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:src="@drawable/spiritualwellness" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.55"
+                                android:paddingStart="@dimen/_2sdp"
+                                android:paddingEnd="@dimen/_4sdp"
+                                android:gravity="center|top"
+                                android:orientation="vertical">
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:typeface="serif"
+                                    android:text="Spiritual Wellness"
+                                    android:textColor="@color/lightblack"
+                                    android:textSize="@dimen/_11sdp"/>
+
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:typeface="serif"
+                                    android:text="Religious spiritual journey"
+                                    android:textSize="@dimen/_10sdp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:orientation="horizontal"
+                        android:background="@color/white">
+                        <LinearLayout
+                            android:id="@+id/healthy_living"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:weightSum="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.45"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="@dimen/_50sdp"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:src="@drawable/webmd"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.55"
+                                android:paddingStart="@dimen/_4sdp"
+                                android:paddingEnd="@dimen/_2sdp"
+                                android:gravity="center|top"
+                                android:orientation="vertical">
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Healthy Living"
+                                    android:typeface="serif"
+                                    android:textColor="@color/lightblack"
+                                    android:textSize="@dimen/_11sdp"/>
+
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Content related to health"
+                                    android:typeface="serif"
+                                    android:textSize="@dimen/_10sdp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/ayush_medicine"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:weightSum="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.45"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="@dimen/_50sdp"
+                                    android:layout_height="@dimen/_50sdp"
+                                    android:src="@drawable/ayush" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.55"
+                                android:paddingStart="@dimen/_2sdp"
+                                android:paddingEnd="@dimen/_4sdp"
+                                android:gravity="center|top"
+                                android:orientation="vertical">
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:typeface="serif"
+                                    android:text="Ayush Medicine"
+                                    android:textColor="@color/lightblack"
+                                    android:textSize="@dimen/_11sdp"/>
+
+                                <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:typeface="serif"
+                                    android:text="Ayurvedic medicines online"
+                                    android:textSize="@dimen/_10sdp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layout_content_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:weightSum="1">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center|start"
+                            android:layout_weight="0.3">
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/video_article"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/view_all_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center|end"
+                            android:layout_weight="0.7">
+                            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="View All >>"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/colorPrimaryDark" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_videos"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:orientation="vertical">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerview_videos"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:orientation="horizontal"
+                            android:scrollbars="none" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Blogs -->
+                <LinearLayout
+                    android:id="@+id/blog_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@color/white"
+                    android:visibility="gone"
+                    android:padding="@dimen/_8sdp"
+                    android:orientation="vertical">
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Health Blogs"
+                        android:textSize="@dimen/_11sdp"
+                        android:typeface="serif"
+                        android:textColor="@color/lightblack"
+                        android:textStyle="bold"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/blog_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:scrollbars="none" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/openTravelInsurance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_20sdp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/red_new"
+        android:src="@drawable/plane"
+        app:fabSize="normal" />
+</RelativeLayout>

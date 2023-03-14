@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_220sdp"
+    android:background="@drawable/rounded_corner_white_sos"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_12sdp">
+        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_1sdp"
+            android:gravity="center_horizontal"
+            android:id="@+id/error"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Insuring your health is Vital but unfortunately, We cannot cover you at the movement."
+            android:textColor="@color/darker_gray1"
+            android:textSize="10dp"
+             />
+
+        <TextView
+
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:gravity="center"
+            android:text="Our executives will get back to you shortly"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/red_border_line"
+                    android:orientation="vertical">
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:id="@+id/CancelDialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Cancel"
+                        android:textColor="@color/red_new"
+                        android:textSize="@dimen/_10sdp"
+                        android:typeface="serif" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/red_btn_bg"
+                    android:orientation="vertical">
+
+                    <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                        android:id="@+id/ok_dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Proceed"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp"
+                        android:typeface="serif" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:gravity="center"
+            android:text="Or"
+            android:textColor="@color/sky_new_blue"
+            android:textSize="12dp" />
+        <TextView
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:gravity="center"
+            android:text="Please Contact Us on 1800 986700"
+            android:textColor="@color/sky_new_blue"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cutImgNSTP"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:src="@drawable/ic_close_btn_dilog">
+
+    </ImageView>
+    <RelativeLayout
+        android:visibility="visible"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/circle_sos"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/alert_dialog_line_icon"
+            app:tint="@color/white" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

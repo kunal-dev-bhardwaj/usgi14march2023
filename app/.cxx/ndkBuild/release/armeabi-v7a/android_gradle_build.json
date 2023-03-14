@@ -1,0 +1,34 @@
+{
+  "buildFiles": [
+    "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\src\\main\\jni\\Android.mk",
+    "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\src\\main\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\Lenovo\\AppData\\Local\\Android\\Sdk\\ndk\\22.0.7026061\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dH:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dH:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\src\\main\\jni\\Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-23 NDK_OUT\u003dH:/inmortal/USGIGit/USGIGit/metainsuretech-workingusgiandroid-32faa70e70d8/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dH:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\build\\intermediates\\ndkBuild\\release\\lib clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\Lenovo\\AppData\\Local\\Android\\Sdk\\ndk\\22.0.7026061\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dH:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dH:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\src\\main\\jni\\Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-23 NDK_OUT\u003dH:/inmortal/USGIGit/USGIGit/metainsuretech-workingusgiandroid-32faa70e70d8/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dH:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\build\\intermediates\\ndkBuild\\release\\lib {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "keys-release-armeabi-v7a": {
+      "buildCommand": "C:\\Users\\Lenovo\\AppData\\Local\\Android\\Sdk\\ndk\\22.0.7026061\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dH:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dH:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\src\\main\\jni\\Application.mk APP_ABI\u003darmeabi-v7a NDK_ALL_ABIS\u003darmeabi-v7a NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-23 NDK_OUT\u003dH:/inmortal/USGIGit/USGIGit/metainsuretech-workingusgiandroid-32faa70e70d8/app/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dH:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\build\\intermediates\\ndkBuild\\release\\lib H:/inmortal/USGIGit/USGIGit/metainsuretech-workingusgiandroid-32faa70e70d8/app/build/intermediates/ndkBuild/release/obj/local/armeabi-v7a/libkeys.so",
+      "toolchain": "toolchain-armeabi-v7a",
+      "abi": "armeabi-v7a",
+      "artifactName": "keys",
+      "files": [
+        {
+          "src": "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\src\\main\\jni\\keys.c",
+          "flags": "-target armv7-none-linux-androideabi23 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot C:/Users/Lenovo/AppData/Local/Android/Sdk/ndk/22.0.7026061/build//../toolchains/llvm/prebuilt/windows-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -D_FORTIFY_SOURCE\u003d2 -fpic -march\u003darmv7-a -mthumb -Oz -DNDEBUG -IH:/inmortal/USGIGit/USGIGit/metainsuretech-workingusgiandroid-32faa70e70d8/app/src/main/jni -DANDROID -Wformat -Werror\u003dformat-security"
+        }
+      ],
+      "output": "H:\\inmortal\\USGIGit\\USGIGit\\metainsuretech-workingusgiandroid-32faa70e70d8\\app\\build\\intermediates\\ndkBuild\\release\\obj\\local\\armeabi-v7a\\libkeys.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-armeabi-v7a": {
+      "cCompilerExecutable": "C:\\Users\\Lenovo\\AppData\\Local\\Android\\Sdk\\ndk\\22.0.7026061\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

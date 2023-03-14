@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:paddingStart="@dimen/_8sdp"
+    android:paddingEnd="@dimen/_8sdp"
+    android:paddingTop="@dimen/_15sdp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/circle_reminder">
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/gift_discount"
+            android:tint="@color/white"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_16sdp"
+        android:text="Get discount"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:typeface="serif"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_14sdp"
+        android:gravity="center"
+        android:text="Please use the below code to avail the discount* on 1mg"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textColor="@color/lightblack"
+        android:typeface="serif"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center"
+        android:background="@drawable/discount_bg"
+        android:padding="@dimen/_8sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_22sdp"
+                android:gravity="center"
+                android:text="40%"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:textColor="@color/colorPrimary"
+                android:typeface="serif"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:gravity="center"
+                android:text="ON LAB TEST"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:textColor="@color/colorPrimary"
+                android:typeface="serif"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:gravity="center"
+                android:text="Your Coupon Code"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:textColor="@color/lightblack"
+                android:typeface="serif"/>
+            <TextView
+                android:id="@+id/coupon_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:gravity="center"
+                android:text="ZOI2040"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:typeface="serif"/>
+            <Button
+                android:id="@+id/copy_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="COPY CODE"
+                android:typeface="serif"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/rounded_white_background2"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12sdp"
+        android:gravity="center|left"
+        android:text="* NOT valid on OTC/Ayush products. Service is available to limited City/State."
+        android:layout_marginTop="@dimen/_18sdp"
+        android:textColor="@color/lightblack"
+        android:typeface="serif"/>
+</LinearLayout>

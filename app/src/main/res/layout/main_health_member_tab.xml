@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <include layout="@layout/no_data_found"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_memberlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_above="@+id/hint_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/set_reminder_weekly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp"
+            android:gravity="center"
+            android:layout_weight="0.4">
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/reminder_workout_walk_medicine"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center|left"
+            android:padding="@dimen/_8sdp"
+            android:layout_weight="0.22">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weekly Reminder"
+                android:typeface="serif"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/lightblack"/>
+            <TextView
+                android:id="@+id/reminder_set_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sun 09:00 AM"
+                android:typeface="serif"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:layout_weight="0.38">
+            <com.suke.widget.SwitchButton
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/grey" />
+
+    <LinearLayout
+        android:id="@+id/set_reminder_monthly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp"
+            android:gravity="center"
+            android:layout_weight="0.4">
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/reminder_workout_walk_medicine"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center|left"
+            android:padding="@dimen/_8sdp"
+            android:layout_weight="0.22">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly Reminder"
+                android:typeface="serif"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/lightblack"/>
+            <TextView
+                android:id="@+id/reminder_set_time_monthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25th of every month"
+                android:typeface="serif"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:layout_weight="0.38">
+            <com.suke.widget.SwitchButton
+                android:id="@+id/switch2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/grey" />
+
+
+</LinearLayout>

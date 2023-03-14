@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_220sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginStart="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/red_border_line"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Select The Right Sum Insured"
+                    android:textColor="@color/black"
+                    android:textSize="12dp">
+
+                </TextView>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/cutImg"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:src="@drawable/ic_close_btn_dilog">
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/_2sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Sum Insured:"
+                android:textColor="@color/black"
+                android:textSize="12dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/SumInsuredSelectPlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/black"
+                android:textSize="13dp">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:id="@+id/SumInsuredSpinnerLiner"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/white_grey"
+            android:orientation="horizontal">
+
+            <EditText
+                android:paddingStart="@dimen/_15sdp"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/black"
+                android:id="@+id/SumInsuredEditText"
+                android:background="@null"
+                android:clickable="false"
+                android:focusable="false"
+                android:cursorVisible="false"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </EditText>
+
+
+            <LinearLayout
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:id="@+id/SumInsuredDropDown"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_gravity="end"
+                    android:src="@drawable/spinner_drop_down"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    app:tint="@color/black">
+                </ImageView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:id="@+id/continueButton"
+            android:gravity="center"
+            android:layout_marginEnd="@dimen/_7sdp"
+            android:layout_gravity="end"
+            android:background="@drawable/red_btn_bg"
+            android:orientation="vertical"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_25sdp">
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="13dp"
+                android:textColor="@color/white"
+                android:text="Done "
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </TextView>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/BookNowLinerComprehensive"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/red_top_border_curve"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

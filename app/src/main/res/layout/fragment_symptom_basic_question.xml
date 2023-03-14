@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/infermedica_text"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                android:id="@+id/please_check"
+                android:text="Please check all the statements below that apply to you."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:typeface="serif"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_16sdp"/>
+
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+                android:id="@+id/select_one"
+                android:layout_below="@id/please_check"
+                android:text="Select one answer in each row."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:typeface="serif"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_16sdp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/basic_question_list"
+                android:layout_below="@+id/select_one"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_below="@+id/basic_question_list"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_alignParentBottom="true">
+                <LinearLayout
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/next"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="NEXT"
+                        android:textSize="@dimen/_14sdp"
+                        android:typeface="serif"
+                        android:textStyle="bold"
+                        android:background="@color/my_policy_tab_dark"
+                        android:textColor="@color/white"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/infermedica_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <com.universalsompo.meta.metaapp.utilities.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="serif"
+            android:text="Powered by Infermedica"
+            android:textColor="@color/lightblack"
+            android:textStyle="bold"
+            android:textSize="@dimen/_10sdp"/>
+    </LinearLayout>
+</RelativeLayout>

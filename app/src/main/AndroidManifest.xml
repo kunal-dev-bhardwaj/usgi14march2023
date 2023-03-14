@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.universalsompo.meta">
+
+    <permission android:name="android.permission.CALL_PRIVILEGED" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- <uses-feature android:name="android.hardware.camera" /> -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.location.network" />
+
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Step 1: Add the following permission to the app -->
+    <uses-permission
+        android:name="android.permission.USE_BIOMETRIC"
+        android:requiredFeature="false" />
+
+    <application
+        android:name=".metaapp.utilities.MyApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="false"
+        android:grantUriPermissions="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/usgi_logo_final"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:ignore="LockedOrientationActivity"
+        tools:targetApi="n">
+        <activity
+            android:name=".metaapp.motor.activities.motor_renewal.RenewalVehicleDetails"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.motor.activities.motor_renewal.RenewalAddOns"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.aplusbuyjourney.APlusSummary"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.aplusbuyjourney.APlusMedicalDetails"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.aplusbuyjourney.APlusPersonalInmofo"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.aplusbuyjourney.APlusAddOns"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.aplusbuyjourney.APlusPlanType"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.activities.renewalpayment.HealthRenewalSummary"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.motor.activities.TravelInsurance"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.newchi.CKYCWebPage"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.CalculatorPlanDetails"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.kotlinchat.ChatBot"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.offlinecalculator.OfflineCalculatorSummery"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.offlinecalculator.CalculatorPlanType"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.newchi.NewCHIAddOns"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.offlinecalculator.OfflineCHIAddOns"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.offlinecalculator.OfflineCalculator"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.newchi.MemberMedicalInfoCHI"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.newchi.ChiSummery"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.newchi.PersonalInformationCHI"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.newchi.PolicyTypeCHI"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.motor.activities.motor_policies.MotorPrivate"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.motor.activities.motor_policies.PostPaymentFailure"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.motor.activities.motor_policies.PostPaymentSuccess"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.motor.activities.motor_policies.OldMotorAddOns"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.earnburn.EarnBurnWebView"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.motor.activities.motor_renewal.RenewalPayementWebPage"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.motor.activities.paymentmotor.MotorPayemntWebURl"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.motor.activities.motor_renewal.Add_Details_Old_Vehicle"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.motor.activities.motor_renewal.RenewalFinalMotor"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.motor.activities.motor_renewal.Renewal_Motor"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.motor.activities.motor_policies.Motor_summery"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.motor.activities.motor_policies.Motor_vehicle_details"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".metaapp.motor.activities.motor_policies.Motor_AddOns"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.complete_health.ThankYouPageCHI"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.super_healthcare.SuperNomineeDetails"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.super_healthcare.SuperHealthMedicalHistory"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.super_healthcare.SuperAddressDetails"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.super_healthcare.SuperBuyPolicySuminsured"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.complete_health.MedicalAddOnsCompleteHealth"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.arogya.ArogyaAddressDetails"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.arogya.ArogyaNomineeOtherDetails"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.arogya.ArogyaPersonalHabbit"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.arogya.ArogyaMedicalHistory"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.arogya.BuyPolicySuminsuredArogya"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.complete_health.AddressCompleteHealth"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.complete_health.PlanCompleteHealthCare"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.activities.renewalpayment.UpgreadeRrenewalPlan"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.complete_health.NomineeOtherDetailsCompleteHealth"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.complete_health.PersonalHabbitCompleteHealthCare"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.complete_health.MedicalHistoryCompleteHealth"
+            android:exported="false" />
+        <activity
+            android:name=".metaapp.health.fragment.buypolicy.complete_health.BuyPolicySumInsured"
+            android:exported="false" />
+        <activity android:name=".metaapp.motor.activities.motorclaim.ClaimIntimateWeb" />
+        <activity android:name=".metaapp.health.activities.RenewalHealthStandard" />
+        <activity android:name=".metaapp.health.activities.renewalpayment.RenewalHealthPayment" />
+        <activity android:name=".metaapp.motor.activities.paymentmotor.PaymentMotorWeb" />
+        <activity android:name=".metaapp.health.fragment.buypolicy.paymentweb.PaymentWebUrl" />
+        <activity android:name=".metaapp.health.fragment.buypolicy.complete_health.Payment_Complete_healthCare" />
+        <activity android:name=".metaapp.health.fragment.buypolicy.complete_health.Medical_Complete_health" />
+        <activity android:name=".metaapp.health.fragment.buypolicy.arogya.Arogya_Payment" />
+        <activity android:name=".metaapp.health.fragment.buypolicy.arogya.Arogya_Medical_Discount" />
+        <activity android:name=".metaapp.health.fragment.buypolicy.arogya.Arogya_Member_info" />
+        <activity android:name=".metaapp.health.fragment.buypolicy.arogya.Arogya_product" />
+        <activity android:name=".metaapp.health.fragment.buypolicy.super_healthcare.Super_Health_Payment" />
+        <activity android:name=".metaapp.health.fragment.buypolicy.super_healthcare.Super_Medicle_details" />
+        <activity android:name=".metaapp.health.fragment.buypolicy.super_healthcare.Super_Member_Self" />
+        <activity android:name=".metaapp.health.fragment.buypolicy.super_healthcare.Super_Plan_details" />
+        <activity android:name=".metaapp.health.fragment.buypolicy.complete_health.Complete_health_member_info" />
+        <activity android:name=".metaapp.health.activities.Hospital_active_nonactive" />
+        <activity android:name=".metaapp.motor.activities.Renewal_motor_policies" />
+        <activity android:name=".metaapp.motor.activities.motor_policies.Private_tell_us_vehicle" />
+        <activity android:name=".metaapp.motor.activities.motor_policies.Private_Policy_Type" />
+        <activity android:name=".metaapp.motor.activities.motor_policies.Previous_Private_Policy_Details" />
+        <activity android:name=".metaapp.motor.activities.motor_policies.Private_car_vehicle_details" />
+        <activity android:name=".metaapp.motor.activities.motor_policies.Private_Car_Motor" />
+        <activity android:name=".metaapp.motor.activities.KYC_New_doc" />
+        <activity android:name=".metaapp.health.activities.HospitalListActivity" />
+        <activity
+            android:name=".metaapp.health.activities.Health_Insurance_Renewal"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".metaapp.health.activities.Web_Loan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".metaapp.motor.activities.Commercial_browser"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".metaapp.motor.activities.Policies_web_Browser"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".metaapp.health.activities.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".metaapp.motor.activities.SplashActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".metaapp.motor.activities.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".metaapp.motor.activities.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".metaapp.motor.activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".metaapp.health.activities.MainActivityHealth"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".metaapp.health.activities.TutorialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".metaapp.motor.activities.TutorialActivityMotor"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".metaapp.motor.activities.PolicyInBrowser"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".metaapp.motor.activities.YoutubeVideo"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".metaapp.motor.activities.FeedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".metaapp.motor.activities.TipsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".metaapp.motor.activities.RSSActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".metaapp.motor.activities.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".metaapp.motor.activities.DocumentZoomingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".metaapp.motor.activities.GoogleMapPlacesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDJX3hRXgN5eKMcDhL9OP3uZDghjHAvcnk" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".metaapp.motor.activities.GarageListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".metaapp.motor.activities.TipsDetailActivtiy"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".metaapp.motor.activities.BookDriver"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".metaapp.health.activities.SymptomConditionWebviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".metaapp.health.activities.AssetPDFActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name=".metaapp.health.alarmservices.AlarmReceiverUpdateTargets"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.wtw1.policydeal.UpdateTargets" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".metaapp.health.alarmservices.AlarmReceiverUpdateStepsGoogleFit"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.wtw1.policydeal.UpdateGoogleFit" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.food.AlarmReceiverEarlyMorning"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.wtw1.policydeal.EARLYMORNING" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.food.AlarmReceiverBreakfast"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.wtw1.policydeal.BREAKFAST" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.food.AlarmReceiverLunch"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.wtw1.policydeal.LUNCH" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.food.AlarmReceiverEveningSnacks"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.wtw1.policydeal.EVESNACK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.food.AlarmReceiverDinner"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.wtw1.policydeal.DINNER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.labtest.AlarmReceiverLabTest"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.wtw1.policydeal.LABTEST" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.consultation.AlarmReceiverConsultation"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.wtw1.policydeal.CONSULTATION" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.weight.AlarmReceiverMonthly"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.wtw1.policydeal.WEIGHTMONTHLY" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.weight.AlarmReceiverWeekly"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.wtw1.policydeal.WEIGHTWEEKLY" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.walk.AlarmWalkReceiver"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.wtw1.policydeal.WALK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.workout.AlarmWorkOutReceiver"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.wtw1.policydeal.WORKOUT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.medicine.AlarmMedicineReceiver"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.wtw1.policydeal.MEDICINE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.water.AlarmWaterReceiver"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.wtw1.policydeal.WATER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.water.AlarmWaterCancelReceiver"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.wtw1.policydeal.WATERCANCEL" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".metaapp.health.notificationReminder.ReminderBroadcastReceiver"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.wtw1.policydeal.ReminderNotification" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".metaapp.health.alarmservices.AlarmReceiverUpdateStepsFitBit"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.wtw1.policydeal.UpdateFitBit" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".metaapp.health.alarmservices.FitBitJobService"
+            android:exported="false" />
+        <service
+            android:name=".metaapp.intefaces.MyFirebaseMessagingService"
+            android:exported="false"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".metaapp.health.alarmservices.GoogleFitJobService"
+            android:exported="false" />
+        <service
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.walk.WalkJobService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.workout.WorkOutJobService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.water.WaterJobService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.water.WaterCancelJobService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.medicine.MedicineJobService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.consultation.ConsultaionJobIntentService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="03c2b2a2eb19c26bd7cf7aedf5058956ff89d9e9" /> <!-- <provider -->
+        <!-- android:name="androidx.core.content.FileProvider" -->
+        <!-- android:authorities="${applicationId}.provider" -->
+        <!-- android:exported="false" -->
+        <!-- android:grantUriPermissions="true"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.support.FILE_PROVIDER_PATHS" -->
+        <!-- android:resource="@xml/provider_paths" /> -->
+        <!-- </provider> -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.universalsompo.meta.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.food.EarlyMorningIntentService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.food.BreakFastIntentService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.food.LunchIntentService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.food.EveningSnacksIntentService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.food.DinnerIntentService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.labtest.LabTestIntentService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.weight.WeeklyIntentService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".metaapp.health.fragment.reminders.alarmservices1.weight.MonthlyIntentService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity
+            android:name=".metaapp.health.activities.AyushPDFActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

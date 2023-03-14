@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.universalsompo.meta.metaapp.utilities.CustomTextView1
+        android:id="@+id/basic_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:textColor="@color/lightblack"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_8sdp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:weightSum="3"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/present"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_layout"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@drawable/radio_button_text"
+            android:textSize="@dimen/_14sdp"
+            android:text="YES"/>
+        <RadioButton
+            android:id="@+id/absent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_layout"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@drawable/radio_button_text"
+            android:textSize="@dimen/_14sdp"
+            android:text="NO"/>
+        <RadioButton
+            android:id="@+id/unknown"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_layout"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@drawable/radio_button_text"
+            android:textSize="@dimen/_14sdp"
+            android:text="DON'T KNOW"/>
+    </RadioGroup>
+</LinearLayout>

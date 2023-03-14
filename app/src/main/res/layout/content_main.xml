@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/view_footer" />
+
+    <LinearLayout
+        android:id="@+id/locator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_42sdp"
+        android:background="#80000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/locator_dialog" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_42sdp"
+        android:background="#80000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/menu_dialog" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bebefits"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_42sdp"
+        android:background="#80000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/benefits_dialog" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tips_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_42sdp"
+        android:background="#80000000"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/tips_dialog1" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_above="@id/footer_cardview"
+        android:background="@color/grey" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/footer_cardview"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/_5sdp">
+        <LinearLayout
+            android:elevation="@dimen/_5sdp"
+            android:id="@+id/home_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/dashboard_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/iconhome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/font_awesome_home"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_20sdp" />
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:id="@+id/tvhome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/dashboard_location"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/iconlocator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/font_awesome_locator"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_20sdp" />
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:id="@+id/tvlocator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nearby"
+                    android:textColor="@color/lightblack"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <LinearLayout
+                    android:id="@+id/dashboard_menu"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/circle_with_shadow_blue">
+                    <TextView
+                        android:id="@+id/dashboard_menu1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/font_awesome_drawer"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_18sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dashboard_menu_cut"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:background="@drawable/circle_with_shadow_red">
+                    <TextView
+                        android:id="@+id/dashboard_menu_cut1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/font_awesome_cross"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_18sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/dashboard_benifit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/icongift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/font_awesome_gift"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_20sdp" />
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:id="@+id/tvgift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Benefits"
+                    android:textColor="@color/lightblack"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/dashboard_ambulance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/emergency1" />
+                <!--<TextView
+                    android:id="@+id/iconcall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/font_awesome_ambulance"
+                    android:textColor="@color/lightblack"
+                    android:textSize="@dimen/_20sdp" />-->
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:id="@+id/tvcall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SOS"
+                    android:textColor="@color/lightblack"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

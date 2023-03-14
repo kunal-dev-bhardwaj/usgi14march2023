@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_6sdp"
+        android:paddingEnd="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:paddingStart="@dimen/_8sdp"
+            android:layout_weight="0.15">
+            <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Non-payable items list"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/download_pdf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="0.85">
+            <ImageView
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:src="@drawable/pdf_download" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/lightish_grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:paddingStart="@dimen/_6sdp"
+        android:paddingEnd="@dimen/_6sdp"
+        android:paddingTop="@dimen/_5sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <LinearLayout
+                android:id="@+id/btncashless1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/linear_rounded_left_claim_tab_dark"
+                android:orientation="vertical">
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:id="@+id/btncashless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cashless"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:typeface="serif"
+                    android:textSize="@dimen/_11sdp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btnreimbursement1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/linear_rounded_right_claim_tab_light"
+                android:orientation="vertical">
+                <com.universalsompo.meta.metaapp.utilities.CustomTextView
+                    android:id="@+id/btnreimbursement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reimbursement"
+                    android:textColor="@color/lightblack"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:typeface="serif"
+                    android:textSize="@dimen/_11sdp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_8sdp">
+        <LinearLayout
+            android:id="@+id/cashless_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/_20sdp"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.75"
+                        android:gravity="center|top"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/curved_rectangle_orange">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Step"
+                                android:typeface="serif"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/step_orange"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:typeface="serif"
+                                android:textSize="@dimen/_14sdp"
+                                android:textColor="@color/step_orange"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="@dimen/_4sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@color/grey"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginBottom="@dimen/_8sdp" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/curved_rectangle_pink">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Step"
+                                android:typeface="serif"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/step_pink"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2"
+                                android:typeface="serif"
+                                android:textSize="@dimen/_14sdp"
+                                android:textColor="@color/step_pink"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="@dimen/_4sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@color/grey"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginBottom="@dimen/_8sdp" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/curved_rectangle_blue">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Step"
+                                android:typeface="serif"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/step_blue"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3"
+                                android:typeface="serif"
+                                android:textSize="@dimen/_14sdp"
+                                android:textColor="@color/step_blue"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Inform the Insurer"
+                            android:typeface="serif"
+                            android:textSize="@dimen/_12sdp"
+                            android:textColor="@color/step_orange"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unplanned Cashless: Inform the insurer with 24 hours of hospitalization."
+                            android:textColor="@color/lightblack"
+                            android:textSize="@dimen/_10sdp"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Planned: Inform the insurer 4 days prior to the hospitalization."
+                            android:typeface="serif"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/lightblack"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reach out to TPA desk"
+                            android:typeface="serif"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:textColor="@color/step_pink"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Visit your TPA desk with e-card, ID proof and duly filled pre-authorization form. The TPA sends these documents to the insurer for pre-approval."
+                            android:typeface="serif"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/lightblack"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Claim Settlement"
+                            android:typeface="serif"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:textColor="@color/step_blue"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="During discharge. on submission of final bills, insurer approves the final amount. Customer pays the difference of actual bill and approved amount."
+                            android:typeface="serif"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/lightblack"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/reimbursement_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/_20sdp"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.75"
+                        android:gravity="center|top"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/curved_rectangle_orange">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Step"
+                                android:typeface="serif"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/step_orange"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:typeface="serif"
+                                android:textSize="@dimen/_14sdp"
+                                android:textColor="@color/step_orange"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="@dimen/_4sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@color/grey"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginBottom="@dimen/_8sdp" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/curved_rectangle_pink">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Step"
+                                android:typeface="serif"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/step_pink"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2"
+                                android:typeface="serif"
+                                android:textSize="@dimen/_14sdp"
+                                android:textColor="@color/step_pink"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="@dimen/_4sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@color/grey"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginBottom="@dimen/_8sdp" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/curved_rectangle_blue">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Step"
+                                android:typeface="serif"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/step_blue"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="3"
+                                android:typeface="serif"
+                                android:textSize="@dimen/_14sdp"
+                                android:textColor="@color/step_blue"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="@dimen/_4sdp"
+                            android:layout_height="@dimen/_45sdp"
+                            android:background="@color/grey"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginBottom="@dimen/_8sdp" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/curved_rectangle_purple">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Step"
+                                android:typeface="serif"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/step_purple"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4"
+                                android:typeface="serif"
+                                android:textSize="@dimen/_14sdp"
+                                android:textColor="@color/step_purple"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Inform the Insurer"
+                            android:typeface="serif"
+                            android:textSize="@dimen/_12sdp"
+                            android:textColor="@color/step_orange"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Inform the insurer immediately after being hospitalized."
+                            android:typeface="serif"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/lightblack"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Treatment Completed"
+                            android:typeface="serif"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_40sdp"
+                            android:textColor="@color/step_pink"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="After the treatment is completed, all hospital bills have to be settled by the policyholder. You need to keep all the bills and reports."
+                            android:typeface="serif"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/lightblack"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Claim Settlement"
+                            android:typeface="serif"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_32sdp"
+                            android:textColor="@color/step_blue"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Submit the duly filled claim form along with all the required documents to the insurer for processing the reimbursement. The insurer reimburses the claim within a specified time period as long as all the information provided is given correctly."
+                            android:typeface="serif"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/lightblack"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Documents Required"
+                            android:typeface="serif"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:textColor="@color/step_purple"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1. Duly filled claim form."
+                            android:typeface="serif"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/lightblack"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2. Medical certificate/form filled by treating doctor."
+                            android:typeface="serif"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/lightblack"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3. Discharge summary."
+                            android:typeface="serif"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/lightblack"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4. All original hospitals bills, investigation reports and medicine bills."
+                            android:typeface="serif"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/lightblack"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5. In case of accidental cases, FIR or medicos legal certificate is required."
+                            android:typeface="serif"
+                            android:textSize="@dimen/_10sdp"
+                            android:textColor="@color/lightblack"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

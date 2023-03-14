@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_15sdp"
+    android:elevation="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_15sdp"
+    android:layout_height="wrap_content">
+
+      <LinearLayout
+          android:layout_marginBottom="@dimen/_15sdp"
+          android:layout_marginTop="@dimen/_10sdp"
+          android:gravity="center"
+          android:layout_gravity="center"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                  <ImageView
+                      android:id="@+id/cutImgPopup"
+                      android:layout_width="@dimen/_35sdp"
+                      android:layout_height="@dimen/_35sdp"
+                      android:layout_alignParentEnd="true"
+                      android:layout_gravity="end"
+                      android:layout_marginEnd="@dimen/_5sdp"
+                      android:src="@drawable/cross_motor_icon">
+
+                  </ImageView>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/black"
+                android:text="The premium shown in the plan card is basic - direct policy discount + inclusive of (18%) GST and 2nd and 3rd year premium shown in delete text (xxxxx) excluding 5% and 7.5% discount price."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+      </LinearLayout>
+
+  </androidx.cardview.widget.CardView>

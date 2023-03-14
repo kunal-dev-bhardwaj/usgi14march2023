@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_8sdp"
+        android:orientation="vertical">
+
+        <!-- Food reminder -->
+        <LinearLayout
+            android:id="@+id/set_food_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp"
+                android:gravity="center"
+                android:layout_weight="0.4">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/food_reminder"
+                    android:contentDescription="@string/food_reminder_icon" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|start"
+                android:padding="@dimen/_8sdp"
+                android:layout_weight="0.2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food Reminder"
+                    android:typeface="serif"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/lightblack"/>
+
+                <TextView
+                    android:id="@+id/food_reminder_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set food reminder"
+                    android:typeface="serif"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/darker_gray"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:layout_weight="0.4">
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/grey" />
+
+        <!-- Water reminder -->
+        <LinearLayout
+            android:id="@+id/set_water_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp"
+                android:gravity="center"
+                android:layout_weight="0.4">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/water_reminder"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|start"
+                android:padding="@dimen/_8sdp"
+                android:layout_weight="0.2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Water Reminder"
+                    android:typeface="serif"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/lightblack"/>
+
+                <TextView
+                    android:id="@+id/water_reminder_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set water reminder"
+                    android:typeface="serif"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/darker_gray"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:layout_weight="0.4">
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/switch2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/grey" />
+
+        <!-- Walk reminder -->
+        <LinearLayout
+            android:id="@+id/set_walk_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp"
+                android:gravity="center"
+                android:layout_weight="0.4">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/walk_reminder"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|start"
+                android:padding="@dimen/_8sdp"
+                android:layout_weight="0.2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Walk Reminder"
+                    android:typeface="serif"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/lightblack"/>
+
+                <TextView
+                    android:id="@+id/walk_reminder_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set walk reminder"
+                    android:typeface="serif"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/darker_gray"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:layout_weight="0.4">
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/switch3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/grey" />
+
+        <!-- Workout reminder -->
+        <LinearLayout
+            android:id="@+id/set_workout_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp"
+                android:gravity="center"
+                android:layout_weight="0.4">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/workout_reminder"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|start"
+                android:padding="@dimen/_8sdp"
+                android:layout_weight="0.2">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Workout Reminder"
+                    android:typeface="serif"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/lightblack"/>
+
+                <TextView
+                    android:id="@+id/workout_reminder_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set workout reminder"
+                    android:typeface="serif"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/darker_gray"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:layout_weight="0.4">
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/switch4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/grey" />
+
+        <!-- Weight reminder -->
+        <LinearLayout
+            android:id="@+id/set_weight_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp"
+                android:gravity="center"
+                android:layout_weight="0.4">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/weight_reminder"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|start"
+                android:padding="@dimen/_8sdp"
+                android:layout_weight="0.2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weight Reminder"
+                    android:typeface="serif"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/lightblack"/>
+
+                <TextView
+                    android:id="@+id/weight_reminder_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set weight reminder"
+                    android:typeface="serif"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/darker_gray"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:layout_weight="0.4">
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/switch5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/grey" />
+
+        <!-- Medicine reminder -->
+        <LinearLayout
+            android:id="@+id/set_medicine_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp"
+                android:gravity="center"
+                android:layout_weight="0.4">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/medicine_reminder"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|start"
+                android:padding="@dimen/_8sdp"
+                android:layout_weight="0.2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medicine Reminder"
+                    android:typeface="serif"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/lightblack"/>
+
+                <TextView
+                    android:id="@+id/med_reminder_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set medicine reminder"
+                    android:typeface="serif"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/darker_gray"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:layout_weight="0.4">
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/switch6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/grey" />
+
+        <!-- Consultation reminder -->
+        <LinearLayout
+            android:id="@+id/set_consultation_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp"
+                android:gravity="center"
+                android:layout_weight="0.4">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/consultation_reminder"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|start"
+                android:padding="@dimen/_8sdp"
+                android:layout_weight="0.2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Consultation Reminder"
+                    android:typeface="serif"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/lightblack"/>
+
+                <TextView
+                    android:id="@+id/consultation_reminder_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set consultation reminder"
+                    android:typeface="serif"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/darker_gray"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:layout_weight="0.4">
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/switch7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/grey" />
+
+        <!-- Lab test reminder -->
+        <LinearLayout
+            android:id="@+id/set_labtest_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp"
+                android:gravity="center"
+                android:layout_weight="0.4">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/lab_test_reminder"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|start"
+                android:padding="@dimen/_8sdp"
+                android:layout_weight="0.2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lab test Reminder"
+                    android:typeface="serif"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/lightblack"/>
+
+                <TextView
+                    android:id="@+id/lab_test_reminder_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set food reminder"
+                    android:typeface="serif"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/darker_gray"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:layout_weight="0.4">
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/switch8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/grey" />
+
+    </LinearLayout>
+</ScrollView>

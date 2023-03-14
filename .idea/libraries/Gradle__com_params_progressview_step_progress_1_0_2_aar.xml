@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.params.progressview:step-progress:1.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/68d88c51aad7d60e90e6d9c1a2dc4deb/jetified-step-progress-1.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/68d88c51aad7d60e90e6d9c1a2dc4deb/jetified-step-progress-1.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/68d88c51aad7d60e90e6d9c1a2dc4deb/jetified-step-progress-1.0.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/331bdc7febe5493b9e81e1c6f4264891/jetified-step-progress-1.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/331bdc7febe5493b9e81e1c6f4264891/jetified-step-progress-1.0.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/331bdc7febe5493b9e81e1c6f4264891/jetified-step-progress-1.0.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9d4dafddd23055dec6fdca361d12ec16/jetified-step-progress-1.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9d4dafddd23055dec6fdca361d12ec16/jetified-step-progress-1.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9d4dafddd23055dec6fdca361d12ec16/jetified-step-progress-1.0.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.params.progressview/step-progress/1.0.2/acdcb157ccb5cc31b5f6b23f386d8289dcb0f659/step-progress-1.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.params.progressview/step-progress/1.0.2/e81b68e3f6dd58566049fdbbf90dfa5b7cfc8eda/step-progress-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

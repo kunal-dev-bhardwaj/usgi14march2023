@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/health_menu_changer"
+        android:icon="@drawable/heart_icon"
+        android:title="Navigate to health" />
+    <item
+        android:id="@+id/nav_policy"
+        android:icon="@drawable/my_policy_line_icon_new"
+        android:title="My Policy" />
+    <item
+        android:id="@+id/nav_renawal"
+        android:icon="@drawable/renewal_line_icon_new"
+        android:title="Renewal" />
+    <item
+        android:id="@+id/nav_claim"
+        android:icon="@drawable/claim_line_icon_new"
+        android:title="Claim" />
+    <item
+        android:id="@+id/nav_tracking_status"
+        android:icon="@drawable/claim_status_line_icon"
+        android:title="Claim Status" />
+    <!--<item
+        android:id="@+id/history"
+        android:icon="@drawable/history_line_icon"
+        android:title="Archives" />-->
+
+    <item android:title="Manager">
+        <menu>
+            <item
+                android:id="@+id/nav_document"
+                android:icon="@drawable/docs_line_icon"
+                android:title="KYC Docs" />
+        </menu>
+    </item>
+
+    <item android:title="Services">
+        <menu>
+            <item
+                android:id="@+id/nav_rsa"
+                android:icon="@drawable/rsa_line_icon_new_1"
+                android:title="Roadside Assistance" />
+            <item
+                android:id="@+id/service_appoint"
+                android:icon="@drawable/service_appointment_line_icon"
+                android:title="Service Appointment" />
+            <item
+                android:id="@+id/extend_warranty"
+                android:icon="@drawable/extended_warranty_line_icon"
+                android:title="Extended Warranty" />
+            <item
+                android:id="@+id/spare_parts"
+                android:icon="@drawable/spare_part_line_icon"
+                android:title="Spare Part" />
+            <item
+                android:id="@+id/accessories"
+                android:icon="@drawable/accessories_line_icon"
+                android:title= "Accessories" />
+            <item
+                android:id="@+id/preowned"
+                android:icon="@drawable/preowned_line_icon"
+                android:title="Sell Car" />
+            <item
+                android:id="@+id/spare_car"
+                android:icon="@drawable/car_line_icon"
+                android:title="Self Drive" />
+            <!--<item
+                android:id="@+id/nav_driver"
+                android:icon="@drawable/driver_line_icon"
+                android:title="Book Driver" />-->
+        </menu>
+    </item>
+
+    <item android:title="Content">
+        <menu>
+            <!--<item
+                android:id="@+id/nav_about_us"
+                android:icon="@drawable/about_us_line_icon"
+                android:title="About Us" />-->
+            <item
+                android:id="@+id/nav_terms_condition"
+                android:icon="@drawable/terms_condition_line_icon"
+                android:title="Terms &amp; Conditions" />
+            <item
+                android:id="@+id/nav_private_policy"
+                android:icon="@drawable/privacy_policy_line_icon"
+                android:title="Privacy Policy" />
+        </menu>
+    </item>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_customer_support"
+                android:icon="@drawable/contact_us_line_icon"
+                android:title="Contact Us" />
+            <item
+                android:visible="false"
+                android:id="@+id/nav_motor_help"
+                android:icon="@drawable/help_icon_motor"
+                android:title="@string/help" />
+            <item
+                android:visible="false"
+                android:id="@+id/nav_motor_my_issues"
+                android:icon="@drawable/my_issue_nav_icon"
+                android:title="@string/my_issues" />
+            <item
+                android:id="@+id/rate_us"
+                android:icon="@drawable/nav_rate_us_1"
+                android:title="Rate Us" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout_line_icon"
+                android:title="Logout" />
+            <item android:title=""/>
+        </menu>
+    </item>
+</menu>
